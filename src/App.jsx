@@ -1,8 +1,7 @@
 import { useEffect } from 'react'
 import { Route, Routes, useLocation } from 'react-router-dom'
-import Footer from './components/Footer'
-import Header from './components/Header'
 import QuoteBasket from './components/QuoteBasket'
+import QuoteDock from './components/QuoteDock'
 import QuoteModal from './components/QuoteModal'
 import { ShopProvider } from './lib/store'
 import About from './pages/About'
@@ -26,7 +25,6 @@ export default function App() {
     <ShopProvider>
       <ScrollToTop />
       <div className="flex min-h-screen flex-col bg-white">
-        <Header />
         <main className="flex-1">
           <Routes>
             <Route path="/" element={<Home />} />
@@ -39,8 +37,8 @@ export default function App() {
             <Route path="*" element={<Home />} />
           </Routes>
         </main>
-        <Footer />
         <QuoteBasket />
+        <QuoteDock />
         <QuoteModal />
       </div>
     </ShopProvider>

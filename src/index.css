@@ -1,76 +1,258 @@
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..600&family=Plus+Jakarta+Sans:wght@400..800&family=Great+Vibes&display=swap');
 @import 'tailwindcss';
 
 @theme {
-  --font-sans: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
-  --font-display: 'Fraunces', ui-serif, Georgia, serif;
-  --font-signature: 'Great Vibes', cursive;
+  --font-sans: 'Vazirmatn', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Fraunces', 'Vazirmatn', ui-serif, Georgia, serif;
 
-  --color-forest: #075c3b;
-  --color-forest-deep: #05452c;
-  --color-emerald-brand: #13865a;
-  --color-mint: #eaf5ef;
-  --color-ink: #18352c;
-  --color-mist: #f5f7f5;
+  /* Deep navy — international trade */
+  --color-navy: #0a1b30;
+  --color-navy-deep: #061223;
+  --color-navy-soft: #132c48;
 
-  --shadow-soft: 0 24px 60px -32px rgba(7, 92, 59, 0.45);
-  --shadow-card: 0 2px 4px rgba(24, 53, 44, 0.04), 0 18px 40px -28px rgba(24, 53, 44, 0.35);
+  /* Emerald + botanical greens */
+  --color-emerald-brand: #0f7a53;
+  --color-emerald-soft: #17a06c;
+  --color-botanical: #2f7a4f;
+  --color-mint: #e8f3ec;
+
+  /* Subtle gold */
+  --color-gold: #c8a45c;
+  --color-gold-soft: #ecd9ac;
+
+  --color-ink: #122437;
+  --color-mist: #f4f7f5;
+
+  /* Legacy aliases so older class names stay on-palette */
+  --color-forest: #0f7a53;
+  --color-forest-deep: #0a1b30;
+
+  --shadow-soft: 0 30px 70px -34px rgba(6, 18, 35, 0.55);
+  --shadow-card: 0 2px 4px rgba(18, 36, 55, 0.04), 0 18px 40px -30px rgba(18, 36, 55, 0.4);
 }
 
 @layer base {
   html {
     scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
   }
 
   body {
     @apply bg-white font-sans text-ink antialiased;
+    line-height: 1.85;
   }
 
   h1,
   h2,
-  h3 {
-    letter-spacing: -0.015em;
+  h3,
+  h4 {
+    line-height: 1.45;
+    font-weight: 700;
+  }
+
+  /* Persian script must never be letter-spaced or uppercased */
+  [lang='fa'] h1,
+  [lang='fa'] h2,
+  [lang='fa'] h3 {
+    letter-spacing: 0;
   }
 
   ::selection {
-    @apply bg-mint text-forest;
+    @apply bg-mint text-emerald-brand;
+  }
+
+  img {
+    content-visibility: auto;
   }
 }
 
 @layer components {
   .container-page {
-    @apply mx-auto w-full max-w-[1360px] px-4 sm:px-6 lg:px-8;
+    @apply mx-auto w-full max-w-[1360px] px-5 sm:px-6 lg:px-10;
   }
 
   .btn-primary {
-    @apply inline-flex items-center justify-center gap-2 rounded-full bg-forest px-6 py-3 text-sm font-semibold text-white transition-all duration-200 hover:bg-emerald-brand hover:shadow-lg hover:shadow-forest/25 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-forest disabled:cursor-not-allowed disabled:opacity-60;
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-emerald-brand px-6 py-3 text-sm font-semibold text-white transition-all duration-300 hover:bg-botanical hover:shadow-lg hover:shadow-emerald-brand/25 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-brand disabled:cursor-not-allowed disabled:opacity-60;
+  }
+
+  .btn-gold {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-gold px-6 py-3 text-sm font-semibold text-navy-deep transition-all duration-300 hover:bg-gold-soft hover:shadow-lg hover:shadow-gold/30 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold;
   }
 
   .btn-secondary {
-    @apply inline-flex items-center justify-center gap-2 rounded-full border border-white/70 bg-white/10 px-6 py-3 text-sm font-semibold text-white backdrop-blur transition-all duration-200 hover:bg-white/20 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white;
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-white/25 bg-white/10 px-6 py-3 text-sm font-semibold text-white backdrop-blur transition-all duration-300 hover:border-white/50 hover:bg-white/20 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white;
   }
 
   .btn-outline {
-    @apply inline-flex items-center justify-center gap-2 rounded-full border border-forest/20 bg-white px-6 py-3 text-sm font-semibold text-forest transition-all duration-200 hover:border-forest hover:bg-mint focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-forest;
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-navy/15 bg-white px-6 py-3 text-sm font-semibold text-navy transition-all duration-300 hover:border-emerald-brand hover:bg-mint hover:text-emerald-brand focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-brand;
   }
 
   .field {
-    @apply w-full rounded-xl border border-ink/15 bg-white px-4 py-3 text-sm text-ink placeholder:text-ink/40 focus:border-forest focus:outline-none focus:ring-2 focus:ring-forest/15;
+    @apply w-full rounded-xl border border-navy/15 bg-white px-4 py-3 text-sm text-ink placeholder:text-ink/40 focus:border-emerald-brand focus:outline-none focus:ring-2 focus:ring-emerald-brand/15;
   }
 
   .eyebrow {
-    @apply text-[11px] font-semibold uppercase tracking-[0.24em] text-emerald-brand;
+    @apply inline-flex items-center gap-2 text-[12px] font-semibold text-gold;
   }
 
   .card-surface {
-    @apply rounded-2xl border border-ink/8 bg-white shadow-card;
+    @apply rounded-2xl border border-navy/10 bg-white shadow-card;
+  }
+
+  .glass {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(14px);
+  }
+}
+
+/* ---------- Hero: 3D parallax scene ---------- */
+.scene {
+  perspective: 1500px;
+  perspective-origin: 50% 45%;
+}
+
+.scene-panel {
+  position: relative;
+  transform-style: preserve-3d;
+  transform: rotateX(calc(var(--rx, 2deg) + var(--scroll-tilt, 0deg))) rotateY(var(--ry, -4deg))
+    translateZ(0);
+  transition: transform 0.6s cubic-bezier(0.22, 0.61, 0.36, 1);
+  will-change: transform;
+}
+
+.scene-layers {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  border-radius: inherit;
+  transform: translateZ(0);
+}
+
+/* Master banner image — scroll parallax */
+.scene-shift {
+  position: absolute;
+  inset: -2%;
+  transform: translate3d(0, calc(var(--parallax, 0) * -16px), 0) scale(1.02);
+  will-change: transform;
+}
+
+.scene-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  animation: sail 34s ease-in-out infinite alternate;
+  will-change: transform;
+}
+
+@keyframes sail {
+  from {
+    transform: scale(1.04) translate3d(1.4%, 0, 0);
+  }
+  to {
+    transform: scale(1.06) translate3d(-1.6%, 0, 0);
+  }
+}
+
+/* Light caustics on the water surface — drifts against the ship's course */
+.scene-glint {
+  position: absolute;
+  left: 30%;
+  right: -10%;
+  bottom: 8%;
+  height: 34%;
+  background: repeating-linear-gradient(
+    96deg,
+    rgba(255, 255, 255, 0.16) 0 1px,
+    transparent 1px 22px
+  );
+  mix-blend-mode: soft-light;
+  mask-image: linear-gradient(to top, #000, transparent 78%);
+  -webkit-mask-image: linear-gradient(to top, #000, transparent 78%);
+  animation: glint 11s linear infinite;
+  will-change: transform;
+}
+
+@keyframes glint {
+  from {
+    transform: translate3d(-4%, 0, 0);
+  }
+  to {
+    transform: translate3d(4%, 0, 0);
+  }
+}
+
+/* Slow gold sheen across the glass */
+.scene-sheen {
+  position: absolute;
+  inset: -30% -10%;
+  background: linear-gradient(
+    104deg,
+    transparent 38%,
+    rgba(236, 217, 172, 0.22) 48%,
+    rgba(236, 217, 172, 0.05) 54%,
+    transparent 62%
+  );
+  animation: sheen 16s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes sheen {
+  0%,
+  55% {
+    transform: translate3d(-40%, 0, 0);
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate3d(40%, 0, 0);
+    opacity: 0;
+  }
+}
+
+.scene-depth-shadow {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(to top, rgba(6, 18, 35, 0.72) 0%, rgba(6, 18, 35, 0.12) 34%, transparent 62%),
+    radial-gradient(ellipse at 50% 45%, transparent 40%, rgba(6, 18, 35, 0.42) 100%);
+  pointer-events: none;
+}
+
+/* Floating glass elements that sit in front of the scene in 3D space */
+.scene-chip {
+  transform: translateZ(48px);
+  transition: transform 0.6s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.scene-badge {
+  transform: translateZ(78px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scene-panel,
+  .scene-image,
+  .scene-glint,
+  .scene-sheen,
+  .scene-shift,
+  .scene-chip,
+  .scene-badge {
+    animation: none !important;
+    transition: none !important;
+    transform: none !important;
+  }
+
+  html {
+    scroll-behavior: auto;
   }
 }
 
 @keyframes fade-up {
   from {
     opacity: 0;
-    transform: translateY(14px);
+    transform: translateY(16px);
   }
   to {
     opacity: 1;
@@ -79,5 +261,9 @@
 }
 
 .animate-fade-up {
-  animation: fade-up 0.6s ease-out both;
+  animation: fade-up 0.7s cubic-bezier(0.22, 0.61, 0.36, 1) both;
+}
+
+.animate-fade-up-slow {
+  animation: fade-up 0.9s 0.12s cubic-bezier(0.22, 0.61, 0.36, 1) both;
 }

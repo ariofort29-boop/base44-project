@@ -6,80 +6,86 @@ import SectionHeading from '../components/SectionHeading'
 const values = [
   {
     icon: ShieldCheck,
-    title: 'Trust before volume',
-    text: 'Suppliers are audited for certifications, capacity and export history before they list a single product.',
+    title: 'اعتماد پیش از حجم',
+    text: 'تأمین‌کنندگان پیش از عرضه نخستین محصول، از نظر گواهی، ظرفیت و سابقه صادرات بررسی می‌شوند.',
   },
   {
     icon: Leaf,
-    title: 'Natural by default',
-    text: 'We prioritise organic, herbal and low-intervention production across every category we carry.',
+    title: 'طبیعی به‌صورت پیش‌فرض',
+    text: 'در همه دسته‌ها اولویت ما تولید ارگانیک، گیاهی و کم‌دخالت است.',
   },
   {
     icon: Globe2,
-    title: 'Global by design',
-    text: 'Documentation, labelling and logistics are built for cross-border trade from day one.',
+    title: 'جهانی از ابتدای طراحی',
+    text: 'اسناد، برچسب‌گذاری و لجستیک از روز اول برای تجارت فرامرزی طراحی شده‌اند.',
   },
   {
     icon: BadgeCheck,
-    title: 'Transparent terms',
-    text: 'MOQ, lead time, packaging and payment terms are stated upfront — no hidden landed costs.',
+    title: 'شرایط شفاف',
+    text: 'حداقل سفارش، زمان تحویل، بسته‌بندی و شرایط پرداخت از ابتدا اعلام می‌شود.',
   },
 ]
 
 const milestones = [
-  ['2014', 'Founded as a regional trading desk for natural cosmetics.'],
-  ['2018', 'Expanded into FMCG distribution across the Gulf and CIS.'],
-  ['2022', 'Launched the MR Store marketplace with 1,200 verified suppliers.'],
-  ['2025', '12,400 suppliers, 180+ destination markets and consolidated logistics hubs.'],
+  ['۱۳۹۳', 'آغاز فعالیت به‌عنوان میز بازرگانی منطقه‌ای محصولات آرایشی طبیعی.'],
+  ['۱۳۹۷', 'ورود به توزیع کالاهای مصرفی در خلیج فارس و CIS.'],
+  ['۱۴۰۱', 'راه‌اندازی بازارگاه MR Store با ۱٫۲۰۰ تأمین‌کننده تأییدشده.'],
+  ['۱۴۰۴', '۱۲٫۴۰۰ تأمین‌کننده، بیش از ۱۸۰ بازار مقصد و مراکز لجستیک تجمیعی.'],
 ]
 
 export default function About() {
   return (
     <>
       <PageHeader
-        eyebrow="About MR Store"
-        title="Nature creates value — trade makes it global"
-        description="MR Store connects international buyers with manufacturers and suppliers of cosmetics, FMCG and organic products, built on verified supply and transparent terms."
+        eyebrow="درباره MR Store"
+        title="طبیعت ارزش می‌آفریند، تجارت آن را جهانی می‌کند"
+        description="MR Store خریداران بین‌المللی را به تولیدکنندگان و تأمین‌کنندگان محصولات آرایشی، کالاهای مصرفی و ارگانیک متصل می‌کند؛ بر پایه تأمین بررسی‌شده و شرایط شفاف."
       />
 
       <section className="bg-white py-14 lg:py-16">
         <div className="container-page grid gap-10 lg:grid-cols-[1.1fr_1fr] lg:items-center">
           <div>
-            <p className="eyebrow">Our story</p>
-            <h2 className="mt-2 font-display text-3xl leading-tight text-forest">
-              A trading house built for the next decade of natural products
-            </h2>
-            <p className="mt-4 text-sm leading-relaxed text-ink/70">
-              We started as a small export desk sourcing botanical ingredients for European beauty
-              brands. Today MR Store is a marketplace where buyers compare suppliers on equal terms
-              and producers reach markets they could not access alone.
+            <p className="eyebrow">
+              <span className="h-px w-7 bg-gradient-to-r from-gold to-transparent" />
+              داستان ما
             </p>
-            <p className="mt-3 text-sm leading-relaxed text-ink/70">
-              Our team sits between the two sides of every deal: verifying manufacturers, checking
-              certifications, consolidating shipments and standing behind the terms we publish.
+            <h2 className="mt-3 text-2xl font-bold leading-[1.6] text-navy">
+              یک خانه بازرگانی برای دهه پیش‌روی محصولات طبیعی
+            </h2>
+            <p className="mt-4 text-[13px] leading-[2] text-ink/70">
+              کار خود را با یک میز صادرات کوچک برای تأمین مواد اولیه گیاهی برندهای اروپایی آغاز
+              کردیم. امروز MR Store بازارگاهی است که خریداران در آن تأمین‌کنندگان را در شرایط برابر
+              مقایسه می‌کنند و تولیدکنندگان به بازارهایی می‌رسند که پیش‌تر دسترسی نداشتند.
+            </p>
+            <p className="mt-3 text-[13px] leading-[2] text-ink/70">
+              تیم ما میان دو سوی هر معامله می‌ایستد: بررسی تولیدکنندگان، کنترل گواهی‌ها، تجمیع
+              محموله‌ها و تضمین شرایطی که اعلام می‌کنیم.
             </p>
             <Link to="/contact" className="btn-primary mt-6">
-              Talk to our team
+              گفتگو با تیم ما
             </Link>
           </div>
 
           <div className="grid grid-cols-2 gap-4">
             <img
               src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=700&q=80"
-              alt="Dried herbs and spices on a market table"
+              alt="گیاهان خشک و ادویه روی میز بازار"
               loading="lazy"
+              decoding="async"
               className="col-span-2 h-52 w-full rounded-2xl object-cover"
             />
             <img
               src="https://images.unsplash.com/photo-1587049352846-4a222e784d38?auto=format&fit=crop&w=600&q=80"
-              alt="Jars of natural honey"
+              alt="شیشه‌های عسل طبیعی"
               loading="lazy"
+              decoding="async"
               className="h-40 w-full rounded-2xl object-cover"
             />
             <img
               src="https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=600&q=80"
-              alt="Natural skincare products on a light surface"
+              alt="محصولات مراقبت پوست طبیعی"
               loading="lazy"
+              decoding="async"
               className="h-40 w-full rounded-2xl object-cover"
             />
           </div>
@@ -88,15 +94,19 @@ export default function About() {
 
       <section className="bg-mist py-14 lg:py-16">
         <div className="container-page">
-          <SectionHeading eyebrow="What guides us" title="Principles we trade by" />
-          <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          <SectionHeading
+            eyebrow="ارزش‌های ما"
+            title="چهار اصلی که هر معامله را می‌سازد"
+            description="این اصول در نحوه انتخاب تأمین‌کننده، تدوین شرایط و پاسخ‌گویی ما مشخص است."
+          />
+          <div className="mt-9 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {values.map(({ icon: Icon, title, text }) => (
-              <article key={title} className="card-surface p-5">
-                <span className="grid h-10 w-10 place-items-center rounded-xl bg-mint text-forest">
+              <article key={title} className="rounded-2xl border border-navy/10 bg-white p-5">
+                <span className="grid h-10 w-10 place-items-center rounded-xl bg-mint text-emerald-brand">
                   <Icon size={18} />
                 </span>
-                <h3 className="mt-3 text-sm font-semibold text-ink">{title}</h3>
-                <p className="mt-1.5 text-xs leading-relaxed text-ink/60">{text}</p>
+                <h3 className="mt-4 text-sm font-bold text-navy">{title}</h3>
+                <p className="mt-2 text-[12px] leading-[1.95] text-ink/60">{text}</p>
               </article>
             ))}
           </div>
@@ -104,22 +114,22 @@ export default function About() {
       </section>
 
       <section className="bg-white py-14 lg:py-16">
-        <div className="container-page grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">
+        <div className="container-page grid gap-8 lg:grid-cols-[0.8fr_1.2fr]">
           <div>
-            <p className="eyebrow">Milestones</p>
-            <h2 className="mt-2 font-display text-3xl text-forest">A decade of trade</h2>
-            <p className="mt-3 max-w-sm text-sm text-ink/60">
-              From a regional desk to a global marketplace, grown entirely on repeat buyers and
-              referred suppliers.
+            <p className="eyebrow">
+              <span className="h-px w-7 bg-gradient-to-r from-gold to-transparent" />
+              مسیر ما
             </p>
-            <p className="mt-8 font-signature text-4xl text-forest/80">Nature Creates Value</p>
+            <h2 className="mt-3 text-2xl font-bold leading-[1.6] text-navy">
+              از یک میز صادرات تا شبکه جهانی
+            </h2>
           </div>
-          <ol className="relative space-y-5 border-l border-forest/15 pl-6">
+          <ol className="relative border-r border-navy/10 pr-6">
             {milestones.map(([year, text]) => (
-              <li key={year} className="relative">
-                <span className="absolute -left-[31px] top-1.5 h-2.5 w-2.5 rounded-full bg-forest ring-4 ring-mint" />
-                <p className="font-display text-lg text-forest">{year}</p>
-                <p className="mt-1 text-sm leading-relaxed text-ink/65">{text}</p>
+              <li key={year} className="relative pb-6 last:pb-0">
+                <span className="absolute -right-[31px] top-1.5 h-2.5 w-2.5 rounded-full bg-gold ring-4 ring-gold/15" />
+                <p className="text-sm font-bold text-emerald-brand">{year}</p>
+                <p className="mt-1 text-[13px] leading-[1.95] text-ink/65">{text}</p>
               </li>
             ))}
           </ol>

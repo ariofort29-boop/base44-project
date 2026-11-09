@@ -1,7 +1,7 @@
 import { BadgeCheck, MapPin, Star } from 'lucide-react'
 import PageHeader from '../components/PageHeader'
 import SectionHeading from '../components/SectionHeading'
-import { suppliers } from '../data/catalog'
+import { PRICE_LABEL, suppliers } from '../data/catalog'
 import { useShop } from '../lib/store'
 
 export default function Suppliers() {
@@ -10,24 +10,24 @@ export default function Suppliers() {
   return (
     <>
       <PageHeader
-        eyebrow="Verified network"
-        title="Suppliers & manufacturers"
-        description="Every supplier on MR Store is trade-verified, certification-checked and referenced by at least two international buyers."
+        eyebrow="شبکه تأییدشده"
+        title="تأمین‌کنندگان و تولیدکنندگان"
+        description="هر تأمین‌کننده در MR Store از نظر سابقه تجاری و گواهی‌ها بررسی شده و حداقل دو خریدار بین‌المللی او را تأیید کرده‌اند."
       />
 
       <section className="bg-mist py-12 lg:py-16">
         <div className="container-page">
           <SectionHeading
-            eyebrow="Audited partners"
-            title="Meet the producers behind the products"
-            description="Filter by industry, country or minimum order quantity once you are signed in to a buyer account."
+            eyebrow="شرکای بازرسی‌شده"
+            title="تولیدکنندگانی که پشت محصولات هستند"
+            description="تمام همکاری‌ها بر پایه حداقل سفارش شفاف، اسناد کامل و ظرفیت صادرات واقعی شکل می‌گیرد."
           />
 
           <div className="mt-8 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
             {suppliers.map((supplier) => (
               <article key={supplier.id} className="card-surface flex flex-col p-5">
                 <div className="flex items-start gap-3">
-                  <span className="grid h-12 w-12 shrink-0 place-items-center rounded-xl bg-mint font-display text-lg font-semibold text-forest">
+                  <span className="grid h-12 w-12 shrink-0 place-items-center rounded-xl bg-mint font-display text-base font-semibold text-emerald-brand">
                     {supplier.name
                       .split(' ')
                       .map((word) => word[0])
@@ -35,34 +35,34 @@ export default function Suppliers() {
                       .slice(0, 2)}
                   </span>
                   <div className="min-w-0">
-                    <h2 className="flex items-center gap-1.5 text-base font-semibold text-ink">
+                    <h2 className="flex items-center gap-1.5 text-[15px] font-bold text-navy">
                       {supplier.name}
                       {supplier.verified && <BadgeCheck size={15} className="text-emerald-brand" />}
                     </h2>
-                    <p className="mt-0.5 flex items-center gap-1 text-xs text-ink/55">
-                      <MapPin size={12} /> {supplier.flag} {supplier.country} · {supplier.years} on MR Store
+                    <p className="mt-1 flex items-center gap-1 text-[11px] text-ink/55">
+                      <MapPin size={12} /> {supplier.countryFa} · {supplier.yearsFa} همکاری با MR Store
                     </p>
                   </div>
                 </div>
 
-                <p className="mt-3 text-sm leading-relaxed text-ink/60">{supplier.blurb}</p>
+                <p className="mt-3 text-[13px] leading-[1.95] text-ink/60">{supplier.blurbFa}</p>
 
                 <div className="mt-3 flex flex-wrap gap-1.5">
-                  {supplier.categories.map((category) => (
+                  {supplier.categoriesFa.map((category) => (
                     <span
                       key={category}
-                      className="rounded-full bg-mist px-2.5 py-1 text-[11px] font-medium text-ink/65"
+                      className="rounded-full bg-mist px-2.5 py-1 text-[11px] font-medium text-ink/60"
                     >
                       {category}
                     </span>
                   ))}
                 </div>
 
-                <div className="mt-4 flex items-center justify-between border-t border-ink/8 pt-3 text-xs text-ink/55">
-                  <span className="flex items-center gap-1 font-medium text-forest">
-                    <Star size={12} className="fill-forest" /> {supplier.rating}
+                <div className="mt-4 flex items-center justify-between border-t border-navy/8 pt-3 text-[11px] text-ink/55">
+                  <span className="flex items-center gap-1 font-medium text-emerald-brand">
+                    <Star size={12} className="fill-emerald-brand" /> {supplier.rating}
                   </span>
-                  <span>{supplier.products}</span>
+                  <span>{supplier.productsFa}</span>
                 </div>
 
                 <button
@@ -71,14 +71,16 @@ export default function Suppliers() {
                     openQuote({
                       id: supplier.id,
                       name: `${supplier.name} — supplier inquiry`,
+                      nameFa: `استعلام از ${supplier.name}`,
                       supplier: supplier.name,
                       country: supplier.country,
-                      moq: 'To be agreed',
+                      countryFa: supplier.countryFa,
+                      moqFa: 'توافقی',
                     })
                   }
-                  className="mt-4 w-full rounded-full border border-forest/25 py-2 text-xs font-semibold text-forest transition hover:border-forest hover:bg-forest hover:text-white"
+                  className="mt-4 w-full rounded-full bg-emerald-brand py-2.5 text-xs font-bold text-white transition hover:bg-botanical"
                 >
-                  Contact supplier
+                  {PRICE_LABEL}
                 </button>
               </article>
             ))}

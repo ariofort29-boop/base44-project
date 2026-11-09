@@ -21,7 +21,7 @@ export function ShopProvider({ children }) {
     setInquiries((prev) => {
       const entry = product && product !== 'general' ? product : null
       if (entry && prev.some((item) => item.id === entry.id)) return prev
-      return [...prev, entry ?? { id: 'general', name: 'General sourcing request' }]
+      return [...prev, entry ?? { id: 'general', name: 'درخواست عمومی تأمین' }]
     })
   }, [])
 

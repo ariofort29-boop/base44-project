@@ -2,62 +2,67 @@ import { ArrowRight, BadgeCheck, Layers, Megaphone, Truck } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import PageHeader from '../components/PageHeader'
 import SectionHeading from '../components/SectionHeading'
+import { useShop } from '../lib/store'
 
 const programmes = [
   {
     icon: Layers,
-    title: 'Private label',
-    text: 'Develop your own brand on proven formulations with certified production partners and compliant labelling.',
-    points: ['Formulation adaptation', 'Packaging & artwork', 'Minimum runs from 3,000 units'],
+    title: 'برند اختصاصی',
+    text: 'برند خود را روی فرمولاسیون‌های آزموده با شرکای تولید دارای گواهی و برچسب‌گذاری منطبق توسعه دهید.',
+    points: ['انطباق فرمولاسیون', 'بسته‌بندی و طرح گرافیکی', 'تیراژ تولید از ۳٫۰۰۰ واحد'],
   },
   {
     icon: Truck,
-    title: 'Distribution partner',
-    text: 'Exclusive territory agreements for importers and distributors with warehousing and local compliance.',
-    points: ['Territory exclusivity', 'Marketing assets', 'Stock planning support'],
+    title: 'شریک توزیع',
+    text: 'توافق‌نامه منطقه‌ای انحصاری برای واردکنندگان و توزیع‌کنندگان با انبارش و انطباق محلی.',
+    points: ['انحصار منطقه‌ای', 'بسته‌های بازاریابی', 'پشتیبانی برنامه‌ریزی موجودی'],
   },
   {
     icon: Megaphone,
-    title: 'Marketplace partner',
-    text: 'Agencies, marketplaces and retail chains that introduce qualified buyers to our supplier network.',
-    points: ['Referral terms', 'Dedicated buyer desk', 'Quarterly reviews'],
+    title: 'شریک بازارگاه',
+    text: 'آژانس‌ها، بازارگاه‌ها و زنجیره‌های خرده‌فروشی که خریداران واجد شرایط را به شبکه ما معرفی می‌کنند.',
+    points: ['شرایط معرفی مشتری', 'میز خریدار اختصاصی', 'بازبینی فصلی'],
   },
 ]
 
 export default function Partnership() {
+  const { openQuote } = useShop()
+
   return (
     <>
       <PageHeader
-        eyebrow="Partnership"
-        title="Grow with the MR Store network"
-        description="Whether you manufacture, distribute or represent buyers, we build long-term commercial partnerships around your strengths."
+        eyebrow="همکاری"
+        title="با شبکه MR Store رشد کنید"
+        description="چه تولیدکننده باشید، چه توزیع‌کننده یا نماینده خریداران، همکاری‌های تجاری بلندمدت را بر پایه توانمندی‌های شما می‌سازیم."
       >
-        <Link
-          to="/contact"
-          className="inline-flex items-center gap-2 rounded-full bg-mint px-6 py-3 text-sm font-semibold text-forest transition hover:bg-white"
-        >
-          Discuss a partnership <ArrowRight size={15} />
-        </Link>
+        <div className="flex flex-wrap gap-3">
+          <button type="button" onClick={() => openQuote('general')} className="btn-gold">
+            درخواست همکاری <ArrowRight size={15} />
+          </button>
+          <Link to="/contact" className="btn-secondary">
+            تماس با ما
+          </Link>
+        </div>
       </PageHeader>
 
       <section className="bg-white py-14 lg:py-16">
         <div className="container-page">
           <SectionHeading
-            eyebrow="Programmes"
-            title="Three ways to partner"
-            description="Every programme starts with a commercial fit call, a clear scope and measurable quarterly targets."
+            eyebrow="برنامه‌ها"
+            title="سه مسیر برای همکاری"
+            description="هر برنامه با یک جلسه بررسی تناسب تجاری، محدوده مشخص و اهداف فصلی قابل اندازه‌گیری آغاز می‌شود."
           />
           <div className="mt-9 grid gap-5 md:grid-cols-3">
             {programmes.map(({ icon: Icon, title, text, points }) => (
               <article key={title} className="card-surface flex flex-col p-6">
-                <span className="grid h-11 w-11 place-items-center rounded-xl bg-mint text-forest">
+                <span className="grid h-11 w-11 place-items-center rounded-xl bg-mint text-emerald-brand">
                   <Icon size={20} />
                 </span>
-                <h2 className="mt-4 font-display text-xl text-forest">{title}</h2>
-                <p className="mt-2 text-sm leading-relaxed text-ink/60">{text}</p>
+                <h2 className="mt-4 text-lg font-bold text-navy">{title}</h2>
+                <p className="mt-2 text-[13px] leading-[1.95] text-ink/60">{text}</p>
                 <ul className="mt-4 space-y-2">
                   {points.map((point) => (
-                    <li key={point} className="flex items-start gap-2 text-sm text-ink/70">
+                    <li key={point} className="flex items-start gap-2 text-[13px] text-ink/70">
                       <BadgeCheck size={16} className="mt-0.5 shrink-0 text-emerald-brand" />
                       {point}
                     </li>
@@ -65,9 +70,9 @@ export default function Partnership() {
                 </ul>
                 <Link
                   to="/contact"
-                  className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-forest hover:text-emerald-brand"
+                  className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-emerald-brand hover:text-botanical"
                 >
-                  Apply <ArrowRight size={14} />
+                  ثبت درخواست <ArrowRight size={14} />
                 </Link>
               </article>
             ))}
@@ -78,25 +83,28 @@ export default function Partnership() {
       <section className="bg-mist py-14 lg:py-16">
         <div className="container-page grid gap-8 lg:grid-cols-2 lg:items-center">
           <div>
-            <p className="eyebrow">What we bring</p>
-            <h2 className="mt-2 font-display text-3xl leading-tight text-forest">
-              Trade infrastructure, not just introductions
+            <p className="eyebrow">
+              <span className="h-px w-7 bg-gradient-to-r from-gold to-transparent" />
+              آنچه ارائه می‌دهیم
+            </p>
+            <h2 className="mt-3 text-2xl font-bold leading-[1.6] text-navy">
+              زیرساخت تجارت، نه فقط معرفی
             </h2>
-            <p className="mt-3 text-sm leading-relaxed text-ink/65">
-              Partners get access to verified supply, consolidated logistics, quality inspection and
-              documentation support — the operational layer that makes cross-border trade reliable.
+            <p className="mt-3 text-[13px] leading-[1.95] text-ink/60">
+              شرکای ما به تأمین بررسی‌شده، لجستیک تجمیعی، بازرسی کیفیت و پشتیبانی اسناد دسترسی دارند —
+              همان لایه عملیاتی که تجارت فرامرزی را قابل اتکا می‌کند.
             </p>
           </div>
           <div className="grid gap-3 sm:grid-cols-2">
             {[
-              ['12,400+', 'Verified suppliers'],
-              ['180+', 'Destination countries'],
-              ['24h', 'Quote turnaround'],
-              ['98.6%', 'On-time shipment rate'],
+              ['۱۲٫۴۰۰+', 'تأمین‌کننده تأییدشده'],
+              ['۱۸۰+', 'کشور مقصد'],
+              ['۲۴ ساعت', 'زمان پاسخ استعلام'],
+              ['۹۸٫۶٪', 'ارسال به‌موقع'],
             ].map(([value, label]) => (
-              <div key={label} className="rounded-2xl border border-ink/8 bg-white p-5">
-                <p className="font-display text-2xl text-forest">{value}</p>
-                <p className="mt-1 text-xs uppercase tracking-[0.12em] text-ink/45">{label}</p>
+              <div key={label} className="rounded-2xl border border-navy/10 bg-white p-5">
+                <p className="text-xl font-bold text-emerald-brand">{value}</p>
+                <p className="mt-1 text-[11px] text-ink/50">{label}</p>
               </div>
             ))}
           </div>

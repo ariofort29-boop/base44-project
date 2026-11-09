@@ -42,18 +42,18 @@ export default function QuoteModal() {
   }
 
   return (
-    <div className="fixed inset-0 z-[60] flex items-end justify-center bg-ink/50 p-0 backdrop-blur-sm sm:items-center sm:p-6">
+    <div className="fixed inset-0 z-[60] flex items-end justify-center bg-navy-deep/55 p-0 backdrop-blur-sm sm:items-center sm:p-6">
       <div
         role="dialog"
         aria-modal="true"
-        aria-label="Request a quote"
+        aria-label="استعلام قیمت عمده"
         className="relative max-h-[92vh] w-full max-w-lg overflow-y-auto rounded-t-3xl bg-white p-6 shadow-2xl sm:rounded-3xl sm:p-8"
       >
         <button
           type="button"
           onClick={closeQuote}
-          aria-label="Close request form"
-          className="absolute right-4 top-4 grid h-9 w-9 place-items-center rounded-full text-ink/50 transition hover:bg-mist hover:text-forest"
+          aria-label="بستن فرم استعلام"
+          className="absolute left-4 top-4 grid h-9 w-9 place-items-center rounded-full text-ink/50 transition hover:bg-mist hover:text-navy"
         >
           <X size={18} />
         </button>
@@ -61,25 +61,30 @@ export default function QuoteModal() {
         {sent ? (
           <div className="py-10 text-center">
             <CheckCircle2 size={44} className="mx-auto text-emerald-brand" />
-            <h3 className="mt-4 font-display text-2xl text-forest">Request received</h3>
-            <p className="mx-auto mt-2 max-w-sm text-sm leading-relaxed text-ink/65">
-              Our trade team will reply within one business day with pricing, samples and lead
-              times{product ? ` for ${product.name}` : ''}.
+            <h3 className="mt-4 text-xl font-bold text-navy">درخواست شما ثبت شد</h3>
+            <p className="mx-auto mt-2 max-w-sm text-[13px] leading-[1.95] text-ink/60">
+              تیم بازرگانی ما حداکثر تا یک روز کاری با شرایط قیمت عمده، نمونه و زمان تحویل
+              {product ? ` برای ${product.nameFa ?? product.name}` : ''} پاسخ می‌دهد.
             </p>
             <button type="button" onClick={closeQuote} className="btn-primary mt-6">
-              Continue browsing
+              ادامه بررسی محصولات
             </button>
           </div>
         ) : (
           <>
-            <p className="eyebrow">Request a quote</p>
-            <h3 className="mt-2 font-display text-2xl text-forest">
-              {product ? product.name : 'Tell us what you need'}
+            <p className="eyebrow">
+              <span className="h-px w-6 bg-gradient-to-r from-gold to-transparent" />
+              استعلام قیمت عمده
+            </p>
+            <h3 className="mt-2 text-xl font-bold text-navy">
+              {product ? product.nameFa ?? product.name : 'نیاز خود را برای ما بنویسید'}
             </h3>
-            <p className="mt-1.5 text-sm text-ink/60">
+            <p className="mt-1.5 text-[12px] leading-relaxed text-ink/55">
               {product
-                ? `${product.supplier} · ${product.country} · MOQ ${product.moq}`
-                : 'Share your product list and we will match you with verified suppliers.'}
+                ? `${product.supplier} · ${product.countryFa ?? product.country}${
+                    product.moqFa ? ` · حداقل سفارش ${product.moqFa}` : ''
+                  }`
+                : 'فهرست محصولات خود را بفرستید تا شما را به تأمین‌کنندگان معتبر متصل کنیم.'}
             </p>
 
             <form onSubmit={submit} className="mt-6 space-y-3">
@@ -88,16 +93,16 @@ export default function QuoteModal() {
                   required
                   value={form.name}
                   onChange={update('name')}
-                  placeholder="Full name"
-                  aria-label="Full name"
+                  placeholder="نام و نام خانوادگی"
+                  aria-label="نام و نام خانوادگی"
                   className="field"
                 />
                 <input
                   required
                   value={form.company}
                   onChange={update('company')}
-                  placeholder="Company"
-                  aria-label="Company"
+                  placeholder="نام شرکت"
+                  aria-label="نام شرکت"
                   className="field"
                 />
               </div>
@@ -107,38 +112,38 @@ export default function QuoteModal() {
                   type="email"
                   value={form.email}
                   onChange={update('email')}
-                  placeholder="Business email"
-                  aria-label="Business email"
+                  placeholder="ایمیل کاری"
+                  aria-label="ایمیل کاری"
                   className="field"
                 />
                 <input
                   value={form.country}
                   onChange={update('country')}
-                  placeholder="Destination country"
-                  aria-label="Destination country"
+                  placeholder="کشور مقصد"
+                  aria-label="کشور مقصد"
                   className="field"
                 />
               </div>
               <input
                 value={form.quantity}
                 onChange={update('quantity')}
-                placeholder="Estimated order quantity"
-                aria-label="Estimated order quantity"
+                placeholder="حجم تقریبی سفارش"
+                aria-label="حجم تقریبی سفارش"
                 className="field"
               />
               <textarea
                 value={form.message}
                 onChange={update('message')}
                 rows={3}
-                placeholder="Packaging, certifications, target price…"
-                aria-label="Message"
+                placeholder="بسته‌بندی، گواهی‌ها، شرایط تحویل…"
+                aria-label="توضیحات"
                 className="field resize-none"
               />
               <button type="submit" className="btn-primary w-full">
-                Send inquiry
+                ارسال استعلام
               </button>
               <p className="text-center text-[11px] text-ink/45">
-                Your details stay private and are shared only with the selected supplier.
+                اطلاعات شما محرمانه می‌ماند و فقط با تأمین‌کننده انتخاب‌شده به اشتراک گذاشته می‌شود.
               </p>
             </form>
           </>

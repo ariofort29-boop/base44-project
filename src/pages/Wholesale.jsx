@@ -2,65 +2,73 @@ import { ArrowRight, ClipboardList, Handshake, Ship } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import PageHeader from '../components/PageHeader'
 import SectionHeading from '../components/SectionHeading'
+import { useShop } from '../lib/store'
 
 const steps = [
   {
     icon: ClipboardList,
-    title: 'Share your requirements',
-    text: 'Send product specs, target price, packaging and destination market. Our team confirms feasibility within 24 hours.',
+    title: 'نیاز خود را ارسال کنید',
+    text: 'مشخصات محصول، حجم سفارش، بسته‌بندی و بازار مقصد را بفرستید. تیم ما تا ۲۴ ساعت امکان‌سنجی را اعلام می‌کند.',
   },
   {
     icon: Handshake,
-    title: 'Match, sample & negotiate',
-    text: 'We shortlist audited manufacturers, arrange samples and negotiate MOQ, lead time and payment terms.',
+    title: 'انتخاب، نمونه و مذاکره',
+    text: 'تولیدکنندگان بررسی‌شده را معرفی می‌کنیم، نمونه هماهنگ می‌شود و حداقل سفارش، زمان تحویل و شرایط پرداخت نهایی می‌شود.',
   },
   {
     icon: Ship,
-    title: 'Contract & ship',
-    text: 'Order placed with inspection, labelling review and consolidated freight to your warehouse.',
+    title: 'قرارداد و حمل',
+    text: 'ثبت سفارش با بازرسی، بررسی برچسب‌گذاری و حمل تجمیعی تا انبار شما انجام می‌شود.',
   },
 ]
 
 const terms = [
-  ['Minimum order', 'From 1 pallet · container loads for FMCG'],
-  ['Lead time', '15–35 days depending on production and packaging'],
-  ['Payment terms', '30/70 T/T, irrevocable L/C at sight, or escrow'],
-  ['Packaging', 'Retail-ready, private label or bulk industrial'],
-  ['Documentation', 'COO, health certificate, MSDS, ingredient list'],
-  ['Shipping', 'FOB, CIF, DAP and DDP to 180+ countries'],
+  ['حداقل سفارش', 'از یک پالت · بار کامل کانتینر برای کالاهای مصرفی'],
+  ['زمان تحویل', '۱۵ تا ۳۵ روز بر اساس تولید و بسته‌بندی'],
+  ['شرایط پرداخت', 'پیش‌پرداخت و مانده، اعتبار اسنادی یا پرداخت امانی'],
+  ['بسته‌بندی', 'آماده عرضه، برند اختصاصی یا فله صنعتی'],
+  ['اسناد', 'گواهی مبدأ، گواهی بهداشت، برگه ایمنی و فهرست مواد'],
+  ['حمل', 'FOB، CIF، DAP و DDP به بیش از ۱۸۰ کشور'],
 ]
 
 export default function Wholesale() {
+  const { openQuote } = useShop()
+
   return (
     <>
       <PageHeader
-        eyebrow="Wholesale programme"
-        title="Buy wholesale with confidence"
-        description="A structured sourcing process built for importers, distributors and retail chains — from first sample to recurring container programmes."
+        eyebrow="برنامه عمده‌فروشی"
+        title="خرید عمده با اطمینان"
+        description="یک فرایند ساختاریافته تأمین برای واردکنندگان، توزیع‌کنندگان و زنجیره‌های خرده‌فروشی — از نخستین نمونه تا برنامه‌های کانتینری مستمر."
       >
-        <Link to="/contact" className="inline-flex items-center gap-2 rounded-full bg-mint px-6 py-3 text-sm font-semibold text-forest transition hover:bg-white">
-          Talk to a trade manager <ArrowRight size={15} />
-        </Link>
+        <div className="flex flex-wrap gap-3">
+          <button type="button" onClick={() => openQuote('general')} className="btn-gold">
+            استعلام قیمت عمده <ArrowRight size={15} />
+          </button>
+          <Link to="/contact" className="btn-secondary">
+            گفتگو با کارشناس تجارت
+          </Link>
+        </div>
       </PageHeader>
 
       <section className="bg-white py-14 lg:py-16">
         <div className="container-page">
           <SectionHeading
-            eyebrow="How it works"
-            title="Three steps from inquiry to delivery"
-            description="You work with one trade manager who coordinates suppliers, samples, quality checks and freight."
+            eyebrow="فرایند کار"
+            title="سه گام از استعلام تا تحویل"
+            description="شما با یک مدیر بازرگانی کار می‌کنید که تأمین‌کنندگان، نمونه‌ها، کنترل کیفیت و حمل را هماهنگ می‌کند."
           />
           <div className="mt-9 grid gap-5 md:grid-cols-3">
             {steps.map(({ icon: Icon, title, text }, index) => (
               <article key={title} className="card-surface p-6">
                 <div className="flex items-center justify-between">
-                  <span className="grid h-11 w-11 place-items-center rounded-xl bg-mint text-forest">
+                  <span className="grid h-11 w-11 place-items-center rounded-xl bg-mint text-emerald-brand">
                     <Icon size={20} />
                   </span>
-                  <span className="font-display text-3xl text-forest/15">0{index + 1}</span>
+                  <span className="font-display text-2xl text-gold/40">0{index + 1}</span>
                 </div>
-                <h3 className="mt-4 font-display text-lg text-forest">{title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-ink/60">{text}</p>
+                <h3 className="mt-4 text-base font-bold text-navy">{title}</h3>
+                <p className="mt-2 text-[13px] leading-[1.95] text-ink/60">{text}</p>
               </article>
             ))}
           </div>
@@ -70,32 +78,36 @@ export default function Wholesale() {
       <section className="bg-mist py-14 lg:py-16">
         <div className="container-page grid gap-8 lg:grid-cols-[1fr_1.1fr] lg:items-center">
           <div>
-            <p className="eyebrow">Commercial terms</p>
-            <h2 className="mt-2 font-display text-3xl leading-tight text-forest">
-              Terms that fit real import businesses
+            <p className="eyebrow">
+              <span className="h-px w-7 bg-gradient-to-r from-gold to-transparent" />
+              شرایط تجاری
+            </p>
+            <h2 className="mt-3 text-2xl font-bold leading-[1.6] text-navy">
+              شرایطی که با کسب‌وکار واقعی واردات می‌خواند
             </h2>
-            <p className="mt-3 max-w-lg text-sm leading-relaxed text-ink/65">
-              Every quotation states the same six variables, so you can compare suppliers on equal
-              grounds and plan landed cost before you commit.
+            <p className="mt-3 max-w-lg text-[13px] leading-[1.95] text-ink/60">
+              هر پیش‌فاکتور همین شش متغیر را شفاف اعلام می‌کند تا تأمین‌کنندگان را در شرایط برابر
+              مقایسه کنید و هزینه نهایی را پیش از تعهد برنامه‌ریزی کنید.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <Link to="/products" className="btn-primary">
-                Browse products
+                مشاهده محصولات
               </Link>
               <Link to="/contact" className="btn-outline">
-                Request terms
+                درخواست شرایط
               </Link>
             </div>
           </div>
 
-          <div className="overflow-hidden rounded-2xl border border-ink/8 bg-white">
-            <dl className="divide-y divide-ink/6">
+          <div className="overflow-hidden rounded-2xl border border-navy/10 bg-white">
+            <dl className="divide-y divide-navy/8">
               {terms.map(([label, value]) => (
-                <div key={label} className="grid gap-1 px-5 py-3.5 sm:grid-cols-[160px_1fr] sm:items-center">
-                  <dt className="text-xs font-semibold uppercase tracking-[0.12em] text-ink/45">
-                    {label}
-                  </dt>
-                  <dd className="text-sm text-ink/75">{value}</dd>
+                <div
+                  key={label}
+                  className="grid gap-1 px-5 py-3.5 sm:grid-cols-[150px_1fr] sm:items-center"
+                >
+                  <dt className="text-[11px] font-semibold text-ink/45">{label}</dt>
+                  <dd className="text-[13px] leading-relaxed text-ink/75">{value}</dd>
                 </div>
               ))}
             </dl>
@@ -103,19 +115,19 @@ export default function Wholesale() {
         </div>
       </section>
 
-      <section className="bg-forest py-14">
+      <section className="bg-navy py-14">
         <div className="container-page flex flex-col items-start justify-between gap-6 lg:flex-row lg:items-center">
           <div>
-            <h2 className="font-display text-2xl text-white sm:text-3xl">
-              Planning a seasonal programme?
+            <h2 className="text-xl font-bold text-white sm:text-2xl">
+              برنامه فصلی در پیش دارید؟
             </h2>
-            <p className="mt-2 max-w-xl text-sm text-white/65">
-              Share your forecast and we will reserve production capacity across your key SKUs.
+            <p className="mt-2 max-w-xl text-[13px] leading-[1.95] text-white/60">
+              پیش‌بینی فروش خود را با ما در میان بگذارید تا ظرفیت تولید کالاهای کلیدی شما رزرو شود.
             </p>
           </div>
-          <Link to="/contact" className="inline-flex items-center gap-2 rounded-full bg-mint px-6 py-3 text-sm font-semibold text-forest transition hover:bg-white">
-            Request a quote <ArrowRight size={15} />
-          </Link>
+          <button type="button" onClick={() => openQuote('general')} className="btn-gold shrink-0">
+            استعلام قیمت عمده <ArrowRight size={15} />
+          </button>
         </div>
       </section>
     </>

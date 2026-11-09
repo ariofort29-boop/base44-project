@@ -10,18 +10,18 @@ const icons = {
 
 export default function TrustBadges() {
   return (
-    <section className="border-t border-ink/8 bg-white py-10">
-      <div className="container-page grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-        {assuranceBadges.map((badge) => {
-          const Icon = icons[badge.icon]
+    <section className="border-b border-navy/8 bg-white">
+      <div className="container-page grid gap-x-6 gap-y-5 py-7 sm:grid-cols-2 lg:grid-cols-4">
+        {assuranceBadges.map(({ titleFa, textFa, icon }) => {
+          const Icon = icons[icon] ?? BadgeCheck
           return (
-            <div key={badge.title} className="flex items-start gap-3">
-              <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-mint text-forest">
-                <Icon size={20} />
+            <div key={titleFa} className="flex items-start gap-3">
+              <span className="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-mint text-emerald-brand">
+                <Icon size={18} />
               </span>
               <div>
-                <p className="text-sm font-semibold text-ink">{badge.title}</p>
-                <p className="mt-0.5 text-xs leading-relaxed text-ink/55">{badge.text}</p>
+                <p className="text-[13px] font-bold text-navy">{titleFa}</p>
+                <p className="mt-0.5 text-[11px] leading-relaxed text-ink/55">{textFa}</p>
               </div>
             </div>
           )

@@ -6,7 +6,7 @@ import ProductCard from '../components/ProductCard'
 import { categories, products } from '../data/catalog'
 import { useShop } from '../lib/store'
 
-const categoryTitle = (slug) => categories.find((item) => item.slug === slug)?.title ?? ''
+const categoryTitle = (slug) => categories.find((item) => item.slug === slug)?.titleFa ?? ''
 
 export default function Products() {
   const [params, setParams] = useSearchParams()
@@ -36,14 +36,24 @@ export default function Products() {
       if (category !== 'all' && product.category !== category) return false
       if (isWishlist && !wishlist.includes(product.id)) return false
       if (!term) return true
-      return [product.name, product.subcategory, product.supplier, product.country, categoryTitle(product.category)]
+      return [
+        product.name,
+        product.nameFa,
+        product.subcategory,
+        product.subcategoryFa,
+        product.descFa,
+        product.supplier,
+        product.country,
+        product.countryFa,
+        categoryTitle(product.category),
+      ]
         .join(' ')
         .toLowerCase()
         .includes(term)
     })
 
     if (sort === 'rating') return [...list].sort((a, b) => b.rating - a.rating)
-    if (sort === 'name') return [...list].sort((a, b) => a.name.localeCompare(b.name))
+    if (sort === 'name') return [...list].sort((a, b) => a.nameFa.localeCompare(b.nameFa, 'fa'))
     return list
   }, [q, category, sort, isWishlist, wishlist])
 
@@ -52,69 +62,78 @@ export default function Products() {
   return (
     <>
       <PageHeader
-        eyebrow={isWishlist ? 'Saved for later' : 'Product catalogue'}
-        title={isWishlist ? 'Your wishlist' : activeCategory ? activeCategory.title : 'Wholesale products'}
+        eyebrow={isWishlist ? 'فهرست ذخیره‌شده' : 'کاتالوگ عمده‌فروشی'}
+        title={
+          isWishlist
+            ? 'فهرست محصولات شما'
+            : activeCategory
+              ? activeCategory.titleFa
+              : 'محصولات عمده'
+        }
         description={
           isWishlist
-            ? 'Products you saved while browsing. Request a quote on any item to start a conversation with the supplier.'
+            ? 'محصولاتی که هنگام بررسی ذخیره کرده‌اید. برای هر قلم می‌توانید استعلام قیمت عمده ثبت کنید.'
             : activeCategory
-              ? activeCategory.blurb
-              : 'Explore export-ready products from verified manufacturers across cosmetics, FMCG and organic categories.'
+              ? activeCategory.blurbFa
+              : 'محصولات آماده صادرات از تولیدکنندگان تأییدشده در سه صنعت آرایشی و بهداشتی، کالاهای مصرفی و ارگانیک.'
         }
       />
 
-      <section className="bg-mist py-8">
+      <section className="bg-mist py-8 lg:py-10">
         <div className="container-page">
-          <div className="flex flex-col gap-4 rounded-2xl border border-ink/8 bg-white p-4 lg:flex-row lg:items-center">
+          <div className="flex flex-col gap-4 rounded-2xl border border-navy/10 bg-white p-4 lg:flex-row lg:items-center">
             <form
               onSubmit={(event) => {
                 event.preventDefault()
                 updateParam('q', draft.trim())
               }}
-              className="flex flex-1 items-center gap-2 rounded-full border border-ink/12 bg-mist px-3 py-1.5 focus-within:border-forest focus-within:bg-white"
+              className="flex flex-1 items-center gap-2 rounded-full border border-navy/12 bg-mist px-3 py-1.5 focus-within:border-emerald-brand focus-within:bg-white"
             >
-              <Search size={16} className="text-ink/45" />
+              <Search size={16} className="text-ink/40" />
               <label className="sr-only" htmlFor="catalogue-search">
-                Search the catalogue
+                جستجو در کاتالوگ
               </label>
               <input
                 id="catalogue-search"
                 value={draft}
                 onChange={(event) => setDraft(event.target.value)}
-                placeholder="Search by product, supplier, country or brand"
-                className="min-w-0 flex-1 bg-transparent py-1.5 text-sm focus:outline-none"
+                placeholder="جستجو بر اساس محصول، تأمین‌کننده یا کشور"
+                className="min-w-0 flex-1 bg-transparent py-1.5 text-[13px] focus:outline-none"
               />
               {draft && (
                 <button
                   type="button"
-                  aria-label="Clear search"
+                  aria-label="پاک کردن جستجو"
                   onClick={() => {
                     setDraft('')
                     updateParam('q', '')
                   }}
-                  className="grid h-6 w-6 place-items-center rounded-full text-ink/40 hover:bg-white hover:text-forest"
+                  className="grid h-6 w-6 place-items-center rounded-full text-ink/40 hover:bg-white hover:text-emerald-brand"
                 >
                   <X size={13} />
                 </button>
               )}
-              <button type="submit" className="rounded-full bg-forest px-4 py-1.5 text-xs font-semibold text-white">
-                Search
+              <button
+                type="submit"
+                className="rounded-full bg-emerald-brand px-4 py-1.5 text-[11px] font-semibold text-white"
+              >
+                جستجو
               </button>
             </form>
 
             <div className="flex items-center gap-2">
-              <label htmlFor="sort" className="text-xs text-ink/50">
-                Sort
+              <label htmlFor="sort" className="text-[11px] text-ink/50">
+                ترتیب
               </label>
               <select
                 id="sort"
                 value={sort}
                 onChange={(event) => setSort(event.target.value)}
-                className="rounded-full border border-ink/12 bg-white px-3 py-2 text-xs font-medium text-ink focus:border-forest focus:outline-none"
+                className="rounded-full border border-navy/12 bg-white px-3 py-2 text-[11px] font-medium text-ink focus:border-emerald-brand focus:outline-none"
               >
-                <option value="featured">Featured</option>
-                <option value="rating">Top rated</option>
-                <option value="name">Name A–Z</option>
+                <option value="featured">پیشنهاد ویژه</option>
+                <option value="rating">بیشترین امتیاز</option>
+                <option value="name">نام (الفبا)</option>
               </select>
             </div>
           </div>
@@ -128,59 +147,67 @@ export default function Products() {
                 next.delete('view')
                 setParams(next, { replace: true })
               }}
-              className={`rounded-full px-4 py-1.5 text-xs font-semibold transition ${
+              className={`rounded-full px-4 py-1.5 text-[11px] font-semibold transition ${
                 category === 'all' && !isWishlist
-                  ? 'bg-forest text-white'
-                  : 'border border-ink/12 bg-white text-ink/70 hover:border-forest hover:text-forest'
+                  ? 'bg-navy text-white'
+                  : 'border border-navy/12 bg-white text-ink/65 hover:border-emerald-brand hover:text-emerald-brand'
               }`}
             >
-              All products
+              همه محصولات
             </button>
             {categories.map((item) => (
               <button
                 key={item.slug}
                 type="button"
                 onClick={() => updateParam('category', item.slug)}
-                className={`rounded-full px-4 py-1.5 text-xs font-semibold transition ${
+                className={`rounded-full px-4 py-1.5 text-[11px] font-semibold transition ${
                   category === item.slug
-                    ? 'bg-forest text-white'
-                    : 'border border-ink/12 bg-white text-ink/70 hover:border-forest hover:text-forest'
+                    ? 'bg-navy text-white'
+                    : 'border border-navy/12 bg-white text-ink/65 hover:border-emerald-brand hover:text-emerald-brand'
                 }`}
               >
-                {item.short}
+                {item.shortFa}
               </button>
             ))}
             {isWishlist && (
-              <span className="inline-flex items-center gap-1.5 rounded-full bg-mint px-3 py-1.5 text-xs font-semibold text-forest">
-                Wishlist only
-                <button type="button" onClick={() => updateParam('view', '')} aria-label="Leave wishlist view">
+              <span className="inline-flex items-center gap-1.5 rounded-full bg-mint px-3 py-1.5 text-[11px] font-semibold text-emerald-brand">
+                فقط ذخیره‌شده‌ها
+                <button
+                  type="button"
+                  onClick={() => updateParam('view', '')}
+                  aria-label="خروج از فهرست ذخیره‌شده"
+                >
                   <X size={12} />
                 </button>
               </span>
             )}
           </div>
 
-          <p className="mt-5 text-xs text-ink/50">
-            {results.length} {results.length === 1 ? 'product' : 'products'}
-            {q && (
-              <>
-                {' '}
-                for “<span className="font-semibold text-forest">{q}</span>”
-              </>
-            )}
-          </p>
+          <div className="mt-5 flex flex-wrap items-center justify-between gap-2">
+            <p className="text-[11px] text-ink/50">
+              {results.length.toLocaleString('fa-IR')} محصول
+              {q && (
+                <>
+                  {' '}برای «<span className="font-semibold text-emerald-brand">{q}</span>»
+                </>
+              )}
+            </p>
+            <p className="rounded-full bg-white px-3 py-1 text-[10px] text-ink/50 ring-1 ring-navy/8">
+              قیمت تمام اقلام استعلامی است — «تماس با ما»
+            </p>
+          </div>
 
           {results.length === 0 ? (
-            <div className="mt-6 rounded-2xl border border-dashed border-ink/15 bg-white p-12 text-center">
-              <PackageSearch size={36} className="mx-auto text-forest/40" />
-              <h2 className="mt-4 font-display text-xl text-forest">No products match these filters</h2>
-              <p className="mx-auto mt-2 max-w-sm text-sm text-ink/55">
+            <div className="mt-6 rounded-2xl border border-dashed border-navy/15 bg-white p-12 text-center">
+              <PackageSearch size={36} className="mx-auto text-emerald-brand/40" />
+              <h2 className="mt-4 text-lg font-bold text-navy">محصولی با این فیلترها پیدا نشد</h2>
+              <p className="mx-auto mt-2 max-w-sm text-[13px] leading-relaxed text-ink/55">
                 {isWishlist
-                  ? 'Save products with the heart icon to build a shortlist for your next order.'
-                  : 'Try a broader search term or browse all three industries.'}
+                  ? 'با آیکن قلب، محصولات موردنظر را برای سفارش بعدی ذخیره کنید.'
+                  : 'عبارت جستجو را کوتاه‌تر کنید یا هر سه صنعت را مرور کنید.'}
               </p>
               <button type="button" onClick={clearFilters} className="btn-primary mt-5">
-                Show all products
+                نمایش همه محصولات
               </button>
             </div>
           ) : (
