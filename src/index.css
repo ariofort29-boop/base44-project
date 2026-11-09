@@ -52,6 +52,19 @@
   }
 }
 
+/* Hero scroll cue: a thin light travelling down the hairline */
+@keyframes hero-cue {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(400%);
+  }
+}
+.animate-hero-cue {
+  animation: hero-cue 2.4s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
 /* Slim scrollbars inside horizontal rails */
 .no-scrollbar::-webkit-scrollbar {
   display: none;

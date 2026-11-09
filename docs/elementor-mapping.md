@@ -25,7 +25,7 @@ Shadows: soft `0 12px 32px -20px` card shadow; no gradients on solid UI.
 | React component | Elementor structure | WooCommerce note |
 | --- | --- | --- |
 | `components/layout/Header.jsx` | Header template, sticky; Top Bar container + Main Header container | Language/Currency = WPML + WooCommerce Multi-Currency; search = Product Search widget |
-| `components/home/Hero.jsx` | Hero container, 2 columns (copy / image mosaic) | Static; CTA links to Shop page |
+| `components/home/Hero.jsx` | Full-bleed pinned hero: 400svh section + sticky 100svh viewport, copy overlay on the left | Scroll-scrubbed video (`public/hero/*.mp4`, all-intra encodes) driven by `hooks/useScrollScrub.js`; in Elementor use a sticky Section with a scroll-driven video (Elementor Pro motion effects or a small custom script) — the poster frame doubles as the reduced-motion / fallback visual |
 | `components/home/TrustStrip.jsx` | 3-column icon card container | Static |
 | `components/home/CategoryShowcase.jsx` | 3-column card loop | Product Categories loop (one card per top-level category) |
 | `components/home/FeaturedProducts.jsx` | Tabbed product grid | Woo Products widget + filter tabs (or a Tabs widget per category) |
