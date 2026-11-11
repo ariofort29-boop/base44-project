@@ -51,7 +51,7 @@ export default function Wholesale() {
         </div>
       </PageHeader>
 
-      <section className="bg-white py-14 lg:py-16">
+      <section className="bg-surface py-14 lg:py-16">
         <div className="container-page">
           <SectionHeading
             eyebrow="فرایند کار"
@@ -62,30 +62,30 @@ export default function Wholesale() {
             {steps.map(({ icon: Icon, title, text }, index) => (
               <article key={title} className="card-surface p-6">
                 <div className="flex items-center justify-between">
-                  <span className="grid h-11 w-11 place-items-center rounded-xl bg-mint text-emerald-brand">
+                  <span className="grid h-11 w-11 place-items-center rounded-xl bg-mint text-emerald-soft">
                     <Icon size={20} />
                   </span>
                   <span className="font-display text-2xl text-gold/40">0{index + 1}</span>
                 </div>
-                <h3 className="mt-4 text-base font-bold text-navy">{title}</h3>
-                <p className="mt-2 text-[13px] leading-[1.95] text-ink/60">{text}</p>
+                <h3 className="mt-4 text-base font-bold text-ivory">{title}</h3>
+                <p className="mt-2 text-[13px] leading-[1.95] text-sage/60">{text}</p>
               </article>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="bg-mist py-14 lg:py-16">
+      <section className="bg-surface-2 py-14 lg:py-16">
         <div className="container-page grid gap-8 lg:grid-cols-[1fr_1.1fr] lg:items-center">
           <div>
             <p className="eyebrow">
               <span className="h-px w-7 bg-gradient-to-r from-gold to-transparent" />
               شرایط تجاری
             </p>
-            <h2 className="mt-3 text-2xl font-bold leading-[1.6] text-navy">
+            <h2 className="mt-3 text-2xl font-bold leading-[1.6] text-ivory">
               شرایطی که با کسب‌وکار واقعی واردات می‌خواند
             </h2>
-            <p className="mt-3 max-w-lg text-[13px] leading-[1.95] text-ink/60">
+            <p className="mt-3 max-w-lg text-[13px] leading-[1.95] text-sage/60">
               هر پیش‌فاکتور همین شش متغیر را شفاف اعلام می‌کند تا تأمین‌کنندگان را در شرایط برابر
               مقایسه کنید و هزینه نهایی را پیش از تعهد برنامه‌ریزی کنید.
             </p>
@@ -99,15 +99,15 @@ export default function Wholesale() {
             </div>
           </div>
 
-          <div className="overflow-hidden rounded-2xl border border-navy/10 bg-white">
+          <div className="overflow-hidden rounded-2xl border border-line/10 bg-surface">
             <dl className="divide-y divide-navy/8">
               {terms.map(([label, value]) => (
                 <div
                   key={label}
                   className="grid gap-1 px-5 py-3.5 sm:grid-cols-[150px_1fr] sm:items-center"
                 >
-                  <dt className="text-[11px] font-semibold text-ink/45">{label}</dt>
-                  <dd className="text-[13px] leading-relaxed text-ink/75">{value}</dd>
+                  <dt className="text-[11px] font-semibold text-sage/45">{label}</dt>
+                  <dd className="text-[13px] leading-relaxed text-sage/75">{value}</dd>
                 </div>
               ))}
             </dl>

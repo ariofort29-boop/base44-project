@@ -79,17 +79,17 @@ export default function Products() {
         }
       />
 
-      <section className="bg-mist py-8 lg:py-10">
+      <section className="bg-surface-2 py-8 lg:py-10">
         <div className="container-page">
-          <div className="flex flex-col gap-4 rounded-2xl border border-navy/10 bg-white p-4 lg:flex-row lg:items-center">
+          <div className="flex flex-col gap-4 rounded-2xl border border-line/10 bg-surface p-4 lg:flex-row lg:items-center">
             <form
               onSubmit={(event) => {
                 event.preventDefault()
                 updateParam('q', draft.trim())
               }}
-              className="flex flex-1 items-center gap-2 rounded-full border border-navy/12 bg-mist px-3 py-1.5 focus-within:border-emerald-brand focus-within:bg-white"
+              className="flex flex-1 items-center gap-2 rounded-full border border-line/12 bg-surface-2 px-3 py-1.5 focus-within:border-emerald-brand focus-within:bg-surface"
             >
-              <Search size={16} className="text-ink/40" />
+              <Search size={16} className="text-sage/40" />
               <label className="sr-only" htmlFor="catalogue-search">
                 جستجو در کاتالوگ
               </label>
@@ -108,7 +108,7 @@ export default function Products() {
                     setDraft('')
                     updateParam('q', '')
                   }}
-                  className="grid h-6 w-6 place-items-center rounded-full text-ink/40 hover:bg-white hover:text-emerald-brand"
+                  className="grid h-6 w-6 place-items-center rounded-full text-sage/40 hover:bg-surface hover:text-emerald-soft"
                 >
                   <X size={13} />
                 </button>
@@ -122,14 +122,14 @@ export default function Products() {
             </form>
 
             <div className="flex items-center gap-2">
-              <label htmlFor="sort" className="text-[11px] text-ink/50">
+              <label htmlFor="sort" className="text-[11px] text-sage/50">
                 ترتیب
               </label>
               <select
                 id="sort"
                 value={sort}
                 onChange={(event) => setSort(event.target.value)}
-                className="rounded-full border border-navy/12 bg-white px-3 py-2 text-[11px] font-medium text-ink focus:border-emerald-brand focus:outline-none"
+                className="rounded-full border border-line/12 bg-surface px-3 py-2 text-[11px] font-medium text-sage focus:border-emerald-brand focus:outline-none"
               >
                 <option value="featured">پیشنهاد ویژه</option>
                 <option value="rating">بیشترین امتیاز</option>
@@ -150,7 +150,7 @@ export default function Products() {
               className={`rounded-full px-4 py-1.5 text-[11px] font-semibold transition ${
                 category === 'all' && !isWishlist
                   ? 'bg-navy text-white'
-                  : 'border border-navy/12 bg-white text-ink/65 hover:border-emerald-brand hover:text-emerald-brand'
+                  : 'border border-line/12 bg-surface text-sage/65 hover:border-emerald-brand hover:text-emerald-soft'
               }`}
             >
               همه محصولات
@@ -163,14 +163,14 @@ export default function Products() {
                 className={`rounded-full px-4 py-1.5 text-[11px] font-semibold transition ${
                   category === item.slug
                     ? 'bg-navy text-white'
-                    : 'border border-navy/12 bg-white text-ink/65 hover:border-emerald-brand hover:text-emerald-brand'
+                    : 'border border-line/12 bg-surface text-sage/65 hover:border-emerald-brand hover:text-emerald-soft'
                 }`}
               >
                 {item.shortFa}
               </button>
             ))}
             {isWishlist && (
-              <span className="inline-flex items-center gap-1.5 rounded-full bg-mint px-3 py-1.5 text-[11px] font-semibold text-emerald-brand">
+              <span className="inline-flex items-center gap-1.5 rounded-full bg-mint px-3 py-1.5 text-[11px] font-semibold text-emerald-soft">
                 فقط ذخیره‌شده‌ها
                 <button
                   type="button"
@@ -184,24 +184,24 @@ export default function Products() {
           </div>
 
           <div className="mt-5 flex flex-wrap items-center justify-between gap-2">
-            <p className="text-[11px] text-ink/50">
+            <p className="text-[11px] text-sage/50">
               {results.length.toLocaleString('fa-IR')} محصول
               {q && (
                 <>
-                  {' '}برای «<span className="font-semibold text-emerald-brand">{q}</span>»
+                  {' '}برای «<span className="font-semibold text-emerald-soft">{q}</span>»
                 </>
               )}
             </p>
-            <p className="rounded-full bg-white px-3 py-1 text-[10px] text-ink/50 ring-1 ring-navy/8">
+            <p className="rounded-full bg-surface px-3 py-1 text-[10px] text-sage/50 ring-1 ring-navy/8">
               قیمت تمام اقلام استعلامی است — «تماس با ما»
             </p>
           </div>
 
           {results.length === 0 ? (
-            <div className="mt-6 rounded-2xl border border-dashed border-navy/15 bg-white p-12 text-center">
-              <PackageSearch size={36} className="mx-auto text-emerald-brand/40" />
-              <h2 className="mt-4 text-lg font-bold text-navy">محصولی با این فیلترها پیدا نشد</h2>
-              <p className="mx-auto mt-2 max-w-sm text-[13px] leading-relaxed text-ink/55">
+            <div className="mt-6 rounded-2xl border border-dashed border-line/15 bg-surface p-12 text-center">
+              <PackageSearch size={36} className="mx-auto text-emerald-soft/40" />
+              <h2 className="mt-4 text-lg font-bold text-ivory">محصولی با این فیلترها پیدا نشد</h2>
+              <p className="mx-auto mt-2 max-w-sm text-[13px] leading-relaxed text-sage/55">
                 {isWishlist
                   ? 'با آیکن قلب، محصولات موردنظر را برای سفارش بعدی ذخیره کنید.'
                   : 'عبارت جستجو را کوتاه‌تر کنید یا هر سه صنعت را مرور کنید.'}

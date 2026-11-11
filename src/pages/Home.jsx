@@ -1,7 +1,7 @@
 import CategoryStrip from '../components/CategoryStrip'
 import ExplorePaths from '../components/ExplorePaths'
 import FeaturedProducts from '../components/FeaturedProducts'
-import Hero from '../components/Hero'
+import CinematicHero from '../components/CinematicHero'
 import MainCategories from '../components/MainCategories'
 import MidSection from '../components/MidSection'
 import TradeContact from '../components/TradeContact'
@@ -11,7 +11,7 @@ import WholesaleBand from '../components/WholesaleBand'
 export default function Home() {
   return (
     <>
-      <Hero />
+      <CinematicHero />
       <TrustBadges />
       <CategoryStrip />
       <MainCategories />

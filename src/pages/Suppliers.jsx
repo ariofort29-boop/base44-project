@@ -15,7 +15,7 @@ export default function Suppliers() {
         description="هر تأمین‌کننده در MR Store از نظر سابقه تجاری و گواهی‌ها بررسی شده و حداقل دو خریدار بین‌المللی او را تأیید کرده‌اند."
       />
 
-      <section className="bg-mist py-12 lg:py-16">
+      <section className="bg-surface-2 py-12 lg:py-16">
         <div className="container-page">
           <SectionHeading
             eyebrow="شرکای بازرسی‌شده"
@@ -27,7 +27,7 @@ export default function Suppliers() {
             {suppliers.map((supplier) => (
               <article key={supplier.id} className="card-surface flex flex-col p-5">
                 <div className="flex items-start gap-3">
-                  <span className="grid h-12 w-12 shrink-0 place-items-center rounded-xl bg-mint font-display text-base font-semibold text-emerald-brand">
+                  <span className="grid h-12 w-12 shrink-0 place-items-center rounded-xl bg-mint font-display text-base font-semibold text-emerald-soft">
                     {supplier.name
                       .split(' ')
                       .map((word) => word[0])
@@ -35,31 +35,31 @@ export default function Suppliers() {
                       .slice(0, 2)}
                   </span>
                   <div className="min-w-0">
-                    <h2 className="flex items-center gap-1.5 text-[15px] font-bold text-navy">
+                    <h2 className="flex items-center gap-1.5 text-[15px] font-bold text-ivory">
                       {supplier.name}
-                      {supplier.verified && <BadgeCheck size={15} className="text-emerald-brand" />}
+                      {supplier.verified && <BadgeCheck size={15} className="text-emerald-soft" />}
                     </h2>
-                    <p className="mt-1 flex items-center gap-1 text-[11px] text-ink/55">
+                    <p className="mt-1 flex items-center gap-1 text-[11px] text-sage/55">
                       <MapPin size={12} /> {supplier.countryFa} · {supplier.yearsFa} همکاری با MR Store
                     </p>
                   </div>
                 </div>
 
-                <p className="mt-3 text-[13px] leading-[1.95] text-ink/60">{supplier.blurbFa}</p>
+                <p className="mt-3 text-[13px] leading-[1.95] text-sage/60">{supplier.blurbFa}</p>
 
                 <div className="mt-3 flex flex-wrap gap-1.5">
                   {supplier.categoriesFa.map((category) => (
                     <span
                       key={category}
-                      className="rounded-full bg-mist px-2.5 py-1 text-[11px] font-medium text-ink/60"
+                      className="rounded-full bg-surface-2 px-2.5 py-1 text-[11px] font-medium text-sage/60"
                     >
                       {category}
                     </span>
                   ))}
                 </div>
 
-                <div className="mt-4 flex items-center justify-between border-t border-navy/8 pt-3 text-[11px] text-ink/55">
-                  <span className="flex items-center gap-1 font-medium text-emerald-brand">
+                <div className="mt-4 flex items-center justify-between border-t border-line/8 pt-3 text-[11px] text-sage/55">
+                  <span className="flex items-center gap-1 font-medium text-emerald-soft">
                     <Star size={12} className="fill-emerald-brand" /> {supplier.rating}
                   </span>
                   <span>{supplier.productsFa}</span>

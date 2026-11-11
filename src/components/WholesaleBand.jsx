@@ -12,7 +12,7 @@ export default function WholesaleBand() {
   const { openQuote } = useShop()
 
   return (
-    <section className="bg-white pb-14 lg:pb-20">
+    <section className="bg-surface pb-14 lg:pb-20">
       <div className="container-page">
         <div className="relative overflow-hidden rounded-3xl">
           <img

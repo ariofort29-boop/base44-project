@@ -5,7 +5,7 @@ import SectionHeading from './SectionHeading'
 
 export default function MainCategories() {
   return (
-    <section className="bg-white py-14 lg:py-20">
+    <section className="bg-surface py-14 lg:py-20">
       <div className="container-page">
         <SectionHeading
           eyebrow="صنایع محصول"
@@ -14,7 +14,7 @@ export default function MainCategories() {
           action={
             <Link
               to="/products"
-              className="inline-flex items-center gap-1.5 text-sm font-semibold text-emerald-brand transition hover:text-botanical"
+              className="inline-flex items-center gap-1.5 text-sm font-semibold text-emerald-soft transition hover:text-botanical"
             >
               مشاهده همه محصولات <ArrowRight size={15} />
             </Link>
@@ -25,7 +25,7 @@ export default function MainCategories() {
           {categories.map((category) => (
             <article
               key={category.slug}
-              className="group flex flex-col overflow-hidden rounded-3xl border border-navy/10 bg-white shadow-card transition duration-500 hover:-translate-y-1.5 hover:border-gold/40 hover:shadow-soft"
+              className="group flex flex-col overflow-hidden rounded-3xl border border-line/10 bg-surface shadow-card transition duration-500 hover:-translate-y-1.5 hover:border-gold/40 hover:shadow-soft"
             >
               <div className="relative h-48 overflow-hidden">
                 <img
@@ -45,13 +45,13 @@ export default function MainCategories() {
               </div>
 
               <div className="flex flex-1 flex-col p-5">
-                <p className="text-[13px] leading-[1.95] text-ink/60">{category.blurbFa}</p>
+                <p className="text-[13px] leading-[1.95] text-sage/60">{category.blurbFa}</p>
                 <ul className="mt-4 flex flex-wrap gap-1.5">
                   {category.items.slice(0, 7).map((item, index) => (
                     <li key={item}>
                       <Link
                         to={`/products?category=${category.slug}&q=${encodeURIComponent(item)}`}
-                        className="inline-block rounded-full bg-mist px-2.5 py-1 text-[11px] font-medium text-ink/60 transition hover:bg-mint hover:text-emerald-brand"
+                        className="inline-block rounded-full bg-surface-2 px-2.5 py-1 text-[11px] font-medium text-sage/60 transition hover:bg-mint hover:text-emerald-soft"
                       >
                         {category.itemsFa[index] ?? item}
                       </Link>
@@ -60,7 +60,7 @@ export default function MainCategories() {
                 </ul>
                 <Link
                   to={`/products?category=${category.slug}`}
-                  className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-emerald-brand transition-all group-hover:gap-3"
+                  className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-emerald-soft transition-all group-hover:gap-3"
                 >
                   مشاهده {category.shortFa} <ArrowRight size={15} />
                 </Link>

@@ -40,14 +40,14 @@ export default function Contact() {
         description="بگویید چه محصولی تأمین می‌کنید، چه حجمی نیاز دارید و بازار مقصد کجاست. مدیر بازرگانی ما با گزینه‌ها و شرایط پاسخ می‌دهد."
       />
 
-      <section className="bg-mist py-12 lg:py-16">
+      <section className="bg-surface-2 py-12 lg:py-16">
         <div className="container-page grid gap-6 lg:grid-cols-[1.15fr_0.85fr]">
-          <div className="rounded-2xl border border-navy/10 bg-white p-6 sm:p-8">
+          <div className="rounded-2xl border border-line/10 bg-surface p-6 sm:p-8">
             {sent ? (
               <div className="py-12 text-center">
-                <CheckCircle2 size={44} className="mx-auto text-emerald-brand" />
-                <h2 className="mt-4 text-xl font-bold text-navy">پیام شما ارسال شد</h2>
-                <p className="mx-auto mt-2 max-w-sm text-[13px] leading-[1.95] text-ink/60">
+                <CheckCircle2 size={44} className="mx-auto text-emerald-soft" />
+                <h2 className="mt-4 text-xl font-bold text-ivory">پیام شما ارسال شد</h2>
+                <p className="mx-auto mt-2 max-w-sm text-[13px] leading-[1.95] text-sage/60">
                   سپاس از شما — تیم بازرگانی حداکثر تا یک روز کاری با گزینه‌های تأمین و شرایط قیمت
                   عمده پاسخ می‌دهد.
                 </p>
@@ -57,18 +57,18 @@ export default function Contact() {
               </div>
             ) : (
               <>
-                <h2 className="text-lg font-bold text-navy">ثبت استعلام</h2>
-                <p className="mt-1.5 text-[12px] text-ink/50">فیلدهای ستاره‌دار الزامی هستند.</p>
+                <h2 className="text-lg font-bold text-ivory">ثبت استعلام</h2>
+                <p className="mt-1.5 text-[12px] text-sage/50">فیلدهای ستاره‌دار الزامی هستند.</p>
                 <form onSubmit={submit} className="mt-6 space-y-4">
                   <div className="grid gap-4 sm:grid-cols-2">
                     <label className="block">
-                      <span className="mb-1.5 block text-[11px] font-medium text-ink/60">
+                      <span className="mb-1.5 block text-[11px] font-medium text-sage/60">
                         نام و نام خانوادگی *
                       </span>
                       <input required value={form.name} onChange={update('name')} className="field" />
                     </label>
                     <label className="block">
-                      <span className="mb-1.5 block text-[11px] font-medium text-ink/60">شرکت *</span>
+                      <span className="mb-1.5 block text-[11px] font-medium text-sage/60">شرکت *</span>
                       <input
                         required
                         value={form.company}
@@ -79,7 +79,7 @@ export default function Contact() {
                   </div>
                   <div className="grid gap-4 sm:grid-cols-2">
                     <label className="block">
-                      <span className="mb-1.5 block text-[11px] font-medium text-ink/60">
+                      <span className="mb-1.5 block text-[11px] font-medium text-sage/60">
                         ایمیل کاری *
                       </span>
                       <input
@@ -91,7 +91,7 @@ export default function Contact() {
                       />
                     </label>
                     <label className="block">
-                      <span className="mb-1.5 block text-[11px] font-medium text-ink/60">
+                      <span className="mb-1.5 block text-[11px] font-medium text-sage/60">
                         کشور مقصد
                       </span>
                       <input
@@ -102,7 +102,7 @@ export default function Contact() {
                     </label>
                   </div>
                   <label className="block">
-                    <span className="mb-1.5 block text-[11px] font-medium text-ink/60">
+                    <span className="mb-1.5 block text-[11px] font-medium text-sage/60">
                       موضوع درخواست
                     </span>
                     <select value={form.interest} onChange={update('interest')} className="field">
@@ -114,7 +114,7 @@ export default function Contact() {
                     </select>
                   </label>
                   <label className="block">
-                    <span className="mb-1.5 block text-[11px] font-medium text-ink/60">پیام *</span>
+                    <span className="mb-1.5 block text-[11px] font-medium text-sage/60">پیام *</span>
                     <textarea
                       required
                       rows={5}
@@ -151,13 +151,13 @@ export default function Contact() {
               </ul>
             </div>
 
-            <div className="rounded-2xl border border-navy/10 bg-white p-6">
-              <h3 className="text-base font-bold text-navy">تأمین‌کنندگان</h3>
-              <p className="mt-1.5 text-[13px] leading-[1.95] text-ink/60">
+            <div className="rounded-2xl border border-line/10 bg-surface p-6">
+              <h3 className="text-base font-bold text-ivory">تأمین‌کنندگان</h3>
+              <p className="mt-1.5 text-[13px] leading-[1.95] text-sage/60">
                 کاتالوگ، گواهی‌ها و ظرفیت صادرات خود را بفرستید — تیم تأمین ما هر هفته تأمین‌کنندگان
                 جدید را بررسی می‌کند.
               </p>
-              <p className="mt-3 text-[13px] font-semibold text-emerald-brand">
+              <p className="mt-3 text-[13px] font-semibold text-emerald-soft">
                 {contactDetails.suppliersEmail}
               </p>
             </div>

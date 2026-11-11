@@ -47,22 +47,22 @@ export default function QuoteModal() {
         role="dialog"
         aria-modal="true"
         aria-label="استعلام قیمت عمده"
-        className="relative max-h-[92vh] w-full max-w-lg overflow-y-auto rounded-t-3xl bg-white p-6 shadow-2xl sm:rounded-3xl sm:p-8"
+        className="relative max-h-[92vh] w-full max-w-lg overflow-y-auto rounded-t-3xl bg-surface p-6 shadow-2xl sm:rounded-3xl sm:p-8"
       >
         <button
           type="button"
           onClick={closeQuote}
           aria-label="بستن فرم استعلام"
-          className="absolute left-4 top-4 grid h-9 w-9 place-items-center rounded-full text-ink/50 transition hover:bg-mist hover:text-navy"
+          className="absolute left-4 top-4 grid h-9 w-9 place-items-center rounded-full text-sage/50 transition hover:bg-surface-2 hover:text-ivory"
         >
           <X size={18} />
         </button>
 
         {sent ? (
           <div className="py-10 text-center">
-            <CheckCircle2 size={44} className="mx-auto text-emerald-brand" />
-            <h3 className="mt-4 text-xl font-bold text-navy">درخواست شما ثبت شد</h3>
-            <p className="mx-auto mt-2 max-w-sm text-[13px] leading-[1.95] text-ink/60">
+            <CheckCircle2 size={44} className="mx-auto text-emerald-soft" />
+            <h3 className="mt-4 text-xl font-bold text-ivory">درخواست شما ثبت شد</h3>
+            <p className="mx-auto mt-2 max-w-sm text-[13px] leading-[1.95] text-sage/60">
               تیم بازرگانی ما حداکثر تا یک روز کاری با شرایط قیمت عمده، نمونه و زمان تحویل
               {product ? ` برای ${product.nameFa ?? product.name}` : ''} پاسخ می‌دهد.
             </p>
@@ -76,10 +76,10 @@ export default function QuoteModal() {
               <span className="h-px w-6 bg-gradient-to-r from-gold to-transparent" />
               استعلام قیمت عمده
             </p>
-            <h3 className="mt-2 text-xl font-bold text-navy">
+            <h3 className="mt-2 text-xl font-bold text-ivory">
               {product ? product.nameFa ?? product.name : 'نیاز خود را برای ما بنویسید'}
             </h3>
-            <p className="mt-1.5 text-[12px] leading-relaxed text-ink/55">
+            <p className="mt-1.5 text-[12px] leading-relaxed text-sage/55">
               {product
                 ? `${product.supplier} · ${product.countryFa ?? product.country}${
                     product.moqFa ? ` · حداقل سفارش ${product.moqFa}` : ''
@@ -142,7 +142,7 @@ export default function QuoteModal() {
               <button type="submit" className="btn-primary w-full">
                 ارسال استعلام
               </button>
-              <p className="text-center text-[11px] text-ink/45">
+              <p className="text-center text-[11px] text-sage/45">
                 اطلاعات شما محرمانه می‌ماند و فقط با تأمین‌کننده انتخاب‌شده به اشتراک گذاشته می‌شود.
               </p>
             </form>

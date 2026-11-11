@@ -6,7 +6,7 @@ import SectionHeading from './SectionHeading'
 
 export default function FeaturedProducts() {
   return (
-    <section className="bg-mist py-14 lg:py-20">
+    <section className="bg-surface-2 py-14 lg:py-20">
       <div className="container-page">
         <SectionHeading
           eyebrow="عرضه عمده تأییدشده"
@@ -15,7 +15,7 @@ export default function FeaturedProducts() {
           action={
             <Link
               to="/products"
-              className="inline-flex items-center gap-1.5 rounded-full border border-emerald-brand/25 bg-white px-5 py-2.5 text-sm font-semibold text-emerald-brand transition hover:border-emerald-brand hover:bg-mint"
+              className="inline-flex items-center gap-1.5 rounded-full border border-emerald-brand/25 bg-surface px-5 py-2.5 text-sm font-semibold text-emerald-soft transition hover:border-emerald-brand hover:bg-mint"
             >
               همه محصولات <ArrowRight size={15} />
             </Link>
@@ -28,7 +28,7 @@ export default function FeaturedProducts() {
           ))}
         </div>
 
-        <p className="mt-7 text-center text-xs leading-relaxed text-ink/45">
+        <p className="mt-7 text-center text-xs leading-relaxed text-sage/45">
           قیمت همه محصولات استعلامی است؛ برای دریافت پیش‌فاکتور عمده با ما تماس بگیرید.
         </p>
       </div>

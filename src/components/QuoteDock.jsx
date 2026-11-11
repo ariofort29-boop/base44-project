@@ -15,7 +15,7 @@ export default function QuoteDock() {
     >
       <ListChecks size={15} className="text-gold" />
       سبد استعلام
-      <span className="rounded-full bg-gold px-1.5 py-0.5 text-[10px] font-bold text-navy-deep">
+      <span className="rounded-full bg-gold px-1.5 py-0.5 text-[10px] font-bold text-ivory-deep">
         {inquiries.length.toLocaleString('fa-IR')}
       </span>
     </button>

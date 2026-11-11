@@ -11,7 +11,7 @@ export default function SectionHeading({ eyebrow, title, description, action, to
         )}
         <h2
           className={`mt-3 text-2xl font-bold sm:text-[1.75rem] ${
-            dark ? 'text-white' : 'text-navy'
+            dark ? 'text-white' : 'text-ivory'
           }`}
         >
           {title}
@@ -19,7 +19,7 @@ export default function SectionHeading({ eyebrow, title, description, action, to
         {description && (
           <p
             className={`mt-3 text-sm leading-[1.95] sm:text-[15px] ${
-              dark ? 'text-white/60' : 'text-ink/60'
+              dark ? 'text-white/60' : 'text-sage/60'
             }`}
           >
             {description}

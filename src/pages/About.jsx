@@ -42,22 +42,22 @@ export default function About() {
         description="MR Store خریداران بین‌المللی را به تولیدکنندگان و تأمین‌کنندگان محصولات آرایشی، کالاهای مصرفی و ارگانیک متصل می‌کند؛ بر پایه تأمین بررسی‌شده و شرایط شفاف."
       />
 
-      <section className="bg-white py-14 lg:py-16">
+      <section className="bg-surface py-14 lg:py-16">
         <div className="container-page grid gap-10 lg:grid-cols-[1.1fr_1fr] lg:items-center">
           <div>
             <p className="eyebrow">
               <span className="h-px w-7 bg-gradient-to-r from-gold to-transparent" />
               داستان ما
             </p>
-            <h2 className="mt-3 text-2xl font-bold leading-[1.6] text-navy">
+            <h2 className="mt-3 text-2xl font-bold leading-[1.6] text-ivory">
               یک خانه بازرگانی برای دهه پیش‌روی محصولات طبیعی
             </h2>
-            <p className="mt-4 text-[13px] leading-[2] text-ink/70">
+            <p className="mt-4 text-[13px] leading-[2] text-sage/70">
               کار خود را با یک میز صادرات کوچک برای تأمین مواد اولیه گیاهی برندهای اروپایی آغاز
               کردیم. امروز MR Store بازارگاهی است که خریداران در آن تأمین‌کنندگان را در شرایط برابر
               مقایسه می‌کنند و تولیدکنندگان به بازارهایی می‌رسند که پیش‌تر دسترسی نداشتند.
             </p>
-            <p className="mt-3 text-[13px] leading-[2] text-ink/70">
+            <p className="mt-3 text-[13px] leading-[2] text-sage/70">
               تیم ما میان دو سوی هر معامله می‌ایستد: بررسی تولیدکنندگان، کنترل گواهی‌ها، تجمیع
               محموله‌ها و تضمین شرایطی که اعلام می‌کنیم.
             </p>
@@ -92,7 +92,7 @@ export default function About() {
         </div>
       </section>
 
-      <section className="bg-mist py-14 lg:py-16">
+      <section className="bg-surface-2 py-14 lg:py-16">
         <div className="container-page">
           <SectionHeading
             eyebrow="ارزش‌های ما"
@@ -101,35 +101,35 @@ export default function About() {
           />
           <div className="mt-9 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {values.map(({ icon: Icon, title, text }) => (
-              <article key={title} className="rounded-2xl border border-navy/10 bg-white p-5">
-                <span className="grid h-10 w-10 place-items-center rounded-xl bg-mint text-emerald-brand">
+              <article key={title} className="rounded-2xl border border-line/10 bg-surface p-5">
+                <span className="grid h-10 w-10 place-items-center rounded-xl bg-mint text-emerald-soft">
                   <Icon size={18} />
                 </span>
-                <h3 className="mt-4 text-sm font-bold text-navy">{title}</h3>
-                <p className="mt-2 text-[12px] leading-[1.95] text-ink/60">{text}</p>
+                <h3 className="mt-4 text-sm font-bold text-ivory">{title}</h3>
+                <p className="mt-2 text-[12px] leading-[1.95] text-sage/60">{text}</p>
               </article>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="bg-white py-14 lg:py-16">
+      <section className="bg-surface py-14 lg:py-16">
         <div className="container-page grid gap-8 lg:grid-cols-[0.8fr_1.2fr]">
           <div>
             <p className="eyebrow">
               <span className="h-px w-7 bg-gradient-to-r from-gold to-transparent" />
               مسیر ما
             </p>
-            <h2 className="mt-3 text-2xl font-bold leading-[1.6] text-navy">
+            <h2 className="mt-3 text-2xl font-bold leading-[1.6] text-ivory">
               از یک میز صادرات تا شبکه جهانی
             </h2>
           </div>
-          <ol className="relative border-r border-navy/10 pr-6">
+          <ol className="relative border-r border-line/10 pr-6">
             {milestones.map(([year, text]) => (
               <li key={year} className="relative pb-6 last:pb-0">
                 <span className="absolute -right-[31px] top-1.5 h-2.5 w-2.5 rounded-full bg-gold ring-4 ring-gold/15" />
-                <p className="text-sm font-bold text-emerald-brand">{year}</p>
-                <p className="mt-1 text-[13px] leading-[1.95] text-ink/65">{text}</p>
+                <p className="text-sm font-bold text-emerald-soft">{year}</p>
+                <p className="mt-1 text-[13px] leading-[1.95] text-sage/65">{text}</p>
               </li>
             ))}
           </ol>

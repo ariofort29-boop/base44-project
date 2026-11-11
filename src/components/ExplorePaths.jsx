@@ -42,17 +42,17 @@ const paths = [
 
 export default function ExplorePaths() {
   return (
-    <section className="bg-mist py-14 lg:py-20">
+    <section className="bg-surface-2 py-14 lg:py-20">
       <div className="container-page">
         <div className="max-w-2xl">
           <p className="eyebrow">
             <span className="h-px w-7 bg-gradient-to-r from-gold to-transparent" />
             مسیرهای همکاری
           </p>
-          <h2 className="mt-3 text-2xl font-bold text-navy sm:text-[1.75rem]">
+          <h2 className="mt-3 text-2xl font-bold text-ivory sm:text-[1.75rem]">
             از کجا شروع می‌کنید؟
           </h2>
-          <p className="mt-3 text-sm leading-[1.95] text-ink/60">
+          <p className="mt-3 text-sm leading-[1.95] text-sage/60">
             هر مسیر شما را به یک کارشناس تجارت اختصاصی متصل می‌کند؛ از انتخاب محصول تا استعلام قیمت
             عمده.
           </p>
@@ -63,20 +63,20 @@ export default function ExplorePaths() {
             <Link
               key={title}
               to={to}
-              className="group flex items-start gap-4 rounded-2xl border border-navy/10 bg-white p-5 transition duration-400 hover:-translate-y-1 hover:border-gold/40 hover:shadow-card"
+              className="group flex items-start gap-4 rounded-2xl border border-line/10 bg-surface p-5 transition duration-400 hover:-translate-y-1 hover:border-gold/40 hover:shadow-card"
             >
-              <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-mint text-emerald-brand transition group-hover:bg-emerald-brand group-hover:text-white">
+              <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-mint text-emerald-soft transition group-hover:bg-emerald-brand group-hover:text-white">
                 <Icon size={19} />
               </span>
               <span className="flex-1">
                 <span className="flex items-center justify-between gap-2">
-                  <span className="text-sm font-bold text-navy">{title}</span>
+                  <span className="text-sm font-bold text-ivory">{title}</span>
                   <ArrowRight
                     size={15}
-                    className="shrink-0 text-ink/30 transition group-hover:-translate-x-1 group-hover:text-emerald-brand"
+                    className="shrink-0 text-sage/30 transition group-hover:-translate-x-1 group-hover:text-emerald-soft"
                   />
                 </span>
-                <span className="mt-1 block text-[12px] leading-[1.85] text-ink/55">{text}</span>
+                <span className="mt-1 block text-[12px] leading-[1.85] text-sage/55">{text}</span>
               </span>
             </Link>
           ))}

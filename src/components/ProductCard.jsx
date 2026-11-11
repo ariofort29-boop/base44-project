@@ -8,8 +8,8 @@ export default function ProductCard({ product }) {
   const wished = isWished(product.id)
 
   return (
-    <article className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-navy/10 bg-white shadow-card transition duration-500 hover:-translate-y-1.5 hover:border-gold/40 hover:shadow-soft">
-      <div className="relative aspect-[4/3] overflow-hidden bg-mist">
+    <article className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-line/10 bg-surface shadow-card transition duration-500 hover:-translate-y-1.5 hover:border-gold/40 hover:shadow-soft">
+      <div className="relative aspect-[4/3] overflow-hidden bg-surface-2">
         <img
           src={product.image}
           alt={product.nameFa}
@@ -29,7 +29,7 @@ export default function ProductCard({ product }) {
           onClick={() => toggleWishlist(product.id)}
           aria-label={wished ? `حذف ${product.nameFa} از فهرست` : `افزودن ${product.nameFa} به فهرست`}
           aria-pressed={wished}
-          className="absolute right-3 top-3 grid h-9 w-9 place-items-center rounded-full bg-white/85 text-emerald-brand shadow-sm backdrop-blur transition hover:bg-white"
+          className="absolute right-3 top-3 grid h-9 w-9 place-items-center rounded-full bg-white/85 text-emerald-soft shadow-sm backdrop-blur transition hover:bg-surface"
         >
           <Heart size={15} className={wished ? 'fill-emerald-brand' : ''} />
         </button>
@@ -37,22 +37,22 @@ export default function ProductCard({ product }) {
 
       <div className="flex flex-1 flex-col gap-3 p-4">
         <div>
-          <h3 className="text-[15px] font-bold leading-relaxed text-navy">
-            <Link to={`/products?q=${encodeURIComponent(product.name)}`} className="transition hover:text-emerald-brand">
+          <h3 className="text-[15px] font-bold leading-relaxed text-ivory">
+            <Link to={`/products?q=${encodeURIComponent(product.name)}`} className="transition hover:text-emerald-soft">
               {product.nameFa}
             </Link>
           </h3>
-          <p className="mt-1 text-[11px] text-ink/45">{product.subcategoryFa}</p>
+          <p className="mt-1 text-[11px] text-sage/45">{product.subcategoryFa}</p>
         </div>
 
-        <p className="line-clamp-2 text-xs leading-[1.9] text-ink/60">{product.descFa}</p>
+        <p className="line-clamp-2 text-xs leading-[1.9] text-sage/60">{product.descFa}</p>
 
-        <div className="flex flex-wrap items-center gap-x-3 gap-y-1.5 text-[11px] text-ink/55">
-          <span className="inline-flex items-center gap-1 text-emerald-brand">
+        <div className="flex flex-wrap items-center gap-x-3 gap-y-1.5 text-[11px] text-sage/55">
+          <span className="inline-flex items-center gap-1 text-emerald-soft">
             <ShieldCheck size={12} />
             {product.supplier}
           </span>
-          <span className="text-ink/30">·</span>
+          <span className="text-sage/30">·</span>
           <span>{product.countryFa}</span>
         </div>
 
@@ -62,8 +62,8 @@ export default function ProductCard({ product }) {
           </p>
         )}
 
-        <div className="mt-auto space-y-2.5 border-t border-navy/8 pt-3">
-          <p className="text-center text-[13px] font-bold text-navy/70">{PRICE_LABEL}</p>
+        <div className="mt-auto space-y-2.5 border-t border-line/8 pt-3">
+          <p className="text-center text-[13px] font-bold text-ivory/70">{PRICE_LABEL}</p>
           <button
             type="button"
             onClick={() => openQuote(product)}

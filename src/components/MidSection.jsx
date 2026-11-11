@@ -31,10 +31,10 @@ export default function MidSection() {
   const { openQuote } = useShop()
 
   return (
-    <section className="bg-white pb-14 lg:pb-20">
+    <section className="bg-surface pb-14 lg:pb-20">
       <div className="container-page grid gap-5 lg:grid-cols-12">
-        <aside className="rounded-2xl border border-navy/10 bg-mist/60 p-5 lg:col-span-3">
-          <h2 className="text-lg font-bold text-navy">دسته‌های پرطرفدار</h2>
+        <aside className="rounded-2xl border border-line/10 bg-surface-2/60 p-5 lg:col-span-3">
+          <h2 className="text-lg font-bold text-ivory">دسته‌های پرطرفدار</h2>
           <ul className="mt-3 divide-y divide-navy/8">
             {topCategories.map((item) => (
               <li key={item.label}>
@@ -42,10 +42,10 @@ export default function MidSection() {
                   to={`/products?category=${item.slug}&q=${encodeURIComponent(item.label)}`}
                   className="group flex items-center justify-between gap-2 py-2.5"
                 >
-                  <span className="text-[13px] text-ink/70 transition group-hover:text-emerald-brand">
+                  <span className="text-[13px] text-sage/70 transition group-hover:text-emerald-soft">
                     {item.labelFa}
                   </span>
-                  <span className="shrink-0 text-[10px] text-ink/40 transition group-hover:text-gold">
+                  <span className="shrink-0 text-[10px] text-sage/40 transition group-hover:text-gold">
                     {item.countFa}
                   </span>
                 </Link>
@@ -54,7 +54,7 @@ export default function MidSection() {
           </ul>
           <Link
             to="/products"
-            className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-emerald-brand hover:text-botanical"
+            className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-emerald-soft hover:text-botanical"
           >
             همه محصولات <ArrowRight size={14} />
           </Link>
@@ -88,18 +88,18 @@ export default function MidSection() {
         </div>
 
         <div className="space-y-5 lg:col-span-4">
-          <div className="rounded-2xl border border-navy/10 bg-white p-5">
+          <div className="rounded-2xl border border-line/10 bg-surface p-5">
             <div className="flex items-center gap-2">
-              <ShieldCheck size={18} className="text-emerald-brand" />
-              <h2 className="text-base font-bold text-navy">چرا MR Store؟</h2>
+              <ShieldCheck size={18} className="text-emerald-soft" />
+              <h2 className="text-base font-bold text-ivory">چرا MR Store؟</h2>
             </div>
             <ul className="mt-4 space-y-3">
               {reasons.map((reason) => (
                 <li key={reason} className="flex items-start gap-2.5">
-                  <span className="mt-0.5 grid h-5 w-5 shrink-0 place-items-center rounded-full bg-mint text-emerald-brand">
+                  <span className="mt-0.5 grid h-5 w-5 shrink-0 place-items-center rounded-full bg-mint text-emerald-soft">
                     <Check size={12} strokeWidth={3} />
                   </span>
-                  <span className="text-[13px] leading-[1.9] text-ink/65">{reason}</span>
+                  <span className="text-[13px] leading-[1.9] text-sage/65">{reason}</span>
                 </li>
               ))}
             </ul>
@@ -115,7 +115,7 @@ export default function MidSection() {
             <button
               type="button"
               onClick={() => openQuote('general')}
-              className="mt-5 w-full rounded-full bg-gold py-2.5 text-sm font-bold text-navy-deep transition hover:bg-gold-soft"
+              className="mt-5 w-full rounded-full bg-gold py-2.5 text-sm font-bold text-ivory-deep transition hover:bg-gold-soft"
             >
               استعلام قیمت عمده
             </button>

@@ -45,7 +45,7 @@ export default function Partnership() {
         </div>
       </PageHeader>
 
-      <section className="bg-white py-14 lg:py-16">
+      <section className="bg-surface py-14 lg:py-16">
         <div className="container-page">
           <SectionHeading
             eyebrow="برنامه‌ها"
@@ -55,22 +55,22 @@ export default function Partnership() {
           <div className="mt-9 grid gap-5 md:grid-cols-3">
             {programmes.map(({ icon: Icon, title, text, points }) => (
               <article key={title} className="card-surface flex flex-col p-6">
-                <span className="grid h-11 w-11 place-items-center rounded-xl bg-mint text-emerald-brand">
+                <span className="grid h-11 w-11 place-items-center rounded-xl bg-mint text-emerald-soft">
                   <Icon size={20} />
                 </span>
-                <h2 className="mt-4 text-lg font-bold text-navy">{title}</h2>
-                <p className="mt-2 text-[13px] leading-[1.95] text-ink/60">{text}</p>
+                <h2 className="mt-4 text-lg font-bold text-ivory">{title}</h2>
+                <p className="mt-2 text-[13px] leading-[1.95] text-sage/60">{text}</p>
                 <ul className="mt-4 space-y-2">
                   {points.map((point) => (
-                    <li key={point} className="flex items-start gap-2 text-[13px] text-ink/70">
-                      <BadgeCheck size={16} className="mt-0.5 shrink-0 text-emerald-brand" />
+                    <li key={point} className="flex items-start gap-2 text-[13px] text-sage/70">
+                      <BadgeCheck size={16} className="mt-0.5 shrink-0 text-emerald-soft" />
                       {point}
                     </li>
                   ))}
                 </ul>
                 <Link
                   to="/contact"
-                  className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-emerald-brand hover:text-botanical"
+                  className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-emerald-soft hover:text-botanical"
                 >
                   ثبت درخواست <ArrowRight size={14} />
                 </Link>
@@ -80,17 +80,17 @@ export default function Partnership() {
         </div>
       </section>
 
-      <section className="bg-mist py-14 lg:py-16">
+      <section className="bg-surface-2 py-14 lg:py-16">
         <div className="container-page grid gap-8 lg:grid-cols-2 lg:items-center">
           <div>
             <p className="eyebrow">
               <span className="h-px w-7 bg-gradient-to-r from-gold to-transparent" />
               آنچه ارائه می‌دهیم
             </p>
-            <h2 className="mt-3 text-2xl font-bold leading-[1.6] text-navy">
+            <h2 className="mt-3 text-2xl font-bold leading-[1.6] text-ivory">
               زیرساخت تجارت، نه فقط معرفی
             </h2>
-            <p className="mt-3 text-[13px] leading-[1.95] text-ink/60">
+            <p className="mt-3 text-[13px] leading-[1.95] text-sage/60">
               شرکای ما به تأمین بررسی‌شده، لجستیک تجمیعی، بازرسی کیفیت و پشتیبانی اسناد دسترسی دارند —
               همان لایه عملیاتی که تجارت فرامرزی را قابل اتکا می‌کند.
             </p>
@@ -102,9 +102,9 @@ export default function Partnership() {
               ['۲۴ ساعت', 'زمان پاسخ استعلام'],
               ['۹۸٫۶٪', 'ارسال به‌موقع'],
             ].map(([value, label]) => (
-              <div key={label} className="rounded-2xl border border-navy/10 bg-white p-5">
-                <p className="text-xl font-bold text-emerald-brand">{value}</p>
-                <p className="mt-1 text-[11px] text-ink/50">{label}</p>
+              <div key={label} className="rounded-2xl border border-line/10 bg-surface p-5">
+                <p className="text-xl font-bold text-emerald-soft">{value}</p>
+                <p className="mt-1 text-[11px] text-sage/50">{label}</p>
               </div>
             ))}
           </div>
