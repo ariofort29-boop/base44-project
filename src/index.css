@@ -106,8 +106,9 @@
     @apply inline-flex items-center justify-center gap-2 rounded-full bg-emerald-brand px-6 py-3 text-sm font-semibold text-ivory transition-all duration-300 hover:bg-botanical hover:shadow-lg hover:shadow-emerald-brand/30 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-soft disabled:cursor-not-allowed disabled:opacity-60;
   }
 
+  /* Ivory-white primary action — the site's 10% light accent on green ground */
   .btn-gold {
-    @apply inline-flex items-center justify-center gap-2 rounded-full bg-gold px-6 py-3 text-sm font-semibold text-navy-deep transition-all duration-300 hover:bg-gold-soft hover:shadow-lg hover:shadow-gold/25 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold;
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-white/60 bg-ivory px-6 py-3 text-sm font-semibold text-navy-deep transition-all duration-300 hover:bg-[#ffffff] hover:shadow-lg hover:shadow-black/25 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ivory;
   }
 
   .btn-secondary {
@@ -273,7 +274,7 @@
 
 @media (max-width: 767px) {
   .cinematic-hero {
-    height: 240vh;
+    height: 300vh;
   }
 
   .cinematic-hero.is-static {

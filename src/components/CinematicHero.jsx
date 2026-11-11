@@ -3,10 +3,9 @@ import { useCallback, useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useShop } from '../lib/store'
 
-const DESKTOP_VIDEO = '/hero-cinematic.mp4'
-const MOBILE_VIDEO = '/hero-cinematic-mobile.mp4'
+/* The uploaded hero film — one source for every breakpoint. */
+const HERO_VIDEO = '/hero-cinematic.mp4'
 const POSTER = '/hero-poster.jpg'
-const FALLBACK = '/hero-banner.gif'
 
 const stats = [
   { value: '۱۲٫۴۰۰+', label: 'تأمین‌کننده تأییدشده' },
@@ -17,9 +16,6 @@ const stats = [
 const prefersReducedMotion = () =>
   typeof window !== 'undefined' &&
   window.matchMedia('(prefers-reduced-motion: reduce)').matches
-
-const isSmallScreen = () =>
-  typeof window !== 'undefined' && window.matchMedia('(max-width: 820px)').matches
 
 /**
  * Cinematic hero: the video's playback head follows the scroll position.
@@ -32,7 +28,6 @@ export default function CinematicHero() {
   const videoRef = useRef(null)
   const copyRef = useRef(null)
   const hintRef = useRef(null)
-  const [videoSrc, setVideoSrc] = useState(DESKTOP_VIDEO)
   const [ready, setReady] = useState(false)
   const [failed, setFailed] = useState(false)
   const [reduced, setReduced] = useState(true)
@@ -40,10 +35,8 @@ export default function CinematicHero() {
 
   const staticMode = reduced || failed
 
-  // Pick the lighter mobile source once, before the video element mounts.
   useEffect(() => {
     setReduced(prefersReducedMotion())
-    setVideoSrc(isSmallScreen() ? MOBILE_VIDEO : DESKTOP_VIDEO)
   }, [])
 
   const handleReady = useCallback(() => {
@@ -128,7 +121,7 @@ export default function CinematicHero() {
       const copy = copyRef.current
       if (copy) copy.style.pointerEvents = ''
     }
-  }, [staticMode, videoSrc])
+  }, [staticMode])
 
   return (
     <section
@@ -137,10 +130,10 @@ export default function CinematicHero() {
       aria-labelledby="hero-title"
     >
       <div className="cinematic-hero__stage">
-        {/* Existing hero artwork stays underneath: no blank frame, ever. */}
+        {/* First frame of the same film stays underneath: no blank frame, ever. */}
         <img
           className="cinematic-media"
-          src={staticMode ? POSTER : FALLBACK}
+          src={POSTER}
           alt=""
           aria-hidden="true"
           decoding="async"
@@ -150,7 +143,7 @@ export default function CinematicHero() {
           <video
             ref={videoRef}
             className="cinematic-video cinematic-media"
-            src={videoSrc}
+            src={HERO_VIDEO}
             poster={POSTER}
             muted
             playsInline
@@ -168,10 +161,14 @@ export default function CinematicHero() {
         <div className="cinematic-scrim" aria-hidden="true" />
 
         {/* Brand mark — the site renders without a navigation header */}
-        <div className="absolute inset-x-0 top-0 z-20">
-          <div className="container-page flex items-center justify-between gap-4 py-5 lg:py-6">
-            <Link to="/" className="flex items-center gap-3" aria-label="MR Store — صفحه اصلی">
-              <span className="grid h-11 w-11 place-items-center rounded-2xl border border-gold/40 bg-navy-deep/50 font-display text-base font-semibold text-gold-soft backdrop-blur">
+        <div className="absolute inset-x-0 top-0 z-20 border-b border-white/15 bg-gradient-to-b from-navy-deep/70 via-navy-deep/25 to-transparent">
+          <div className="container-page flex items-center justify-between gap-4 py-4 lg:py-5">
+            <Link
+              to="/"
+              className="flex shrink-0 items-center gap-3"
+              aria-label="MR Store — صفحه اصلی"
+            >
+              <span className="grid h-11 w-11 place-items-center rounded-2xl border border-gold/45 bg-navy-deep/55 font-display text-base font-semibold text-gold-soft shadow-[inset_0_1px_0_rgba(255,255,255,0.18)] backdrop-blur lg:h-12 lg:w-12">
                 MR
               </span>
               <span className="leading-tight">
@@ -186,9 +183,9 @@ export default function CinematicHero() {
 
             <Link
               to="/contact"
-              className="group inline-flex shrink-0 items-center gap-2 whitespace-nowrap rounded-full border border-white/20 bg-navy-deep/30 px-3 py-2 text-[11px] font-semibold text-white/80 backdrop-blur transition hover:border-gold/60 hover:text-gold-soft sm:px-4 sm:text-sm"
+              className="group inline-flex shrink-0 items-center gap-2 whitespace-nowrap rounded-full border border-white/50 bg-ivory px-3 py-2 text-[11px] font-semibold text-navy-deep shadow-[0_10px_30px_-18px_rgba(0,0,0,0.9)] transition hover:bg-[#ffffff] sm:px-4 sm:text-sm"
             >
-              <MessageSquareQuote size={15} className="shrink-0 text-gold" />
+              <MessageSquareQuote size={15} className="shrink-0 text-emerald-brand" />
               <span className="sm:hidden">گفتگوی تجاری</span>
               <span className="hidden sm:inline">گفتگو با کارشناس تجارت</span>
               <ArrowRight size={14} className="hidden transition group-hover:translate-x-1 sm:block" />

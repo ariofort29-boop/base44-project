@@ -16,7 +16,7 @@ export default function TrustBadges() {
           const Icon = icons[icon] ?? BadgeCheck
           return (
             <div key={titleFa} className="flex items-start gap-3">
-              <span className="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-mint text-emerald-soft">
+              <span className="grid h-10 w-10 shrink-0 place-items-center rounded-xl border border-white/50 bg-ivory text-emerald-brand">
                 <Icon size={18} />
               </span>
               <div>
