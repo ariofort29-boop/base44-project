@@ -1,0 +1,1261 @@
+{
+ "version": "0.4",
+ "title": "MR Store — About",
+ "type": "page",
+ "content": [
+  {
+   "id": "a10003",
+   "elType": "container",
+   "settings": {
+    "content_width": "boxed",
+    "flex_direction": "column",
+    "flex_gap": {
+     "column": "24",
+     "row": "24",
+     "isLinked": true,
+     "unit": "px",
+     "size": 24
+    },
+    "padding": {
+     "unit": "px",
+     "top": "56",
+     "right": "8",
+     "bottom": "24",
+     "left": "8",
+     "isLinked": false
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "45",
+     "right": "20",
+     "bottom": "19",
+     "left": "20",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "39",
+     "right": "16",
+     "bottom": "17",
+     "left": "16",
+     "isLinked": false
+    },
+    "background_background": "classic",
+    "background_color": "#071710"
+   },
+   "elements": [
+    {
+     "id": "a10000",
+     "elType": "widget",
+     "widgetType": "text-editor",
+     "settings": {
+      "editor": "<p>درباره MR Store</p>",
+      "text_color": "#f0d9b8",
+      "_css_classes": "mr-eyebrow",
+      "typography_typography": "custom",
+      "typography_font_weight": "600",
+      "typography_font_size": {
+       "unit": "px",
+       "size": "11",
+       "sizes": []
+      },
+      "typography_letter_spacing": {
+       "unit": "px",
+       "size": "1.4",
+       "sizes": []
+      },
+      "typography_text_transform": "uppercase"
+     },
+     "elements": [],
+     "isInner": false
+    },
+    {
+     "id": "a10001",
+     "elType": "widget",
+     "widgetType": "heading",
+     "settings": {
+      "title": "طبیعت ارزش می‌آفریند، تجارت آن را جهانی می‌کند",
+      "header_size": "h1",
+      "align": "left",
+      "title_color": "#f6f1e6",
+      "typography_typography": "custom",
+      "typography_font_family": "Fraunces",
+      "typography_font_weight": "700",
+      "typography_font_size": {
+       "unit": "px",
+       "size": "34",
+       "sizes": []
+      },
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": "25",
+       "sizes": []
+      },
+      "typography_line_height": {
+       "unit": "em",
+       "size": "1.5",
+       "sizes": []
+      },
+      "_margin": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "10",
+       "left": "0",
+       "isLinked": false
+      }
+     },
+     "elements": [],
+     "isInner": false
+    },
+    {
+     "id": "a10002",
+     "elType": "widget",
+     "widgetType": "text-editor",
+     "settings": {
+      "editor": "<p>MR Store خریداران بین‌المللی را به تولیدکنندگان و تأمین‌کنندگان محصولات آرایشی، کالاهای مصرفی و ارگانیک متصل می‌کند؛ بر پایه تأمین بررسی‌شده و شرایط شفاف.</p>",
+      "text_color": "rgba(169,195,178,0.65)",
+      "align": "left",
+      "typography_typography": "custom",
+      "typography_font_weight": "400",
+      "typography_font_size": {
+       "unit": "px",
+       "size": "15",
+       "sizes": []
+      },
+      "typography_line_height": {
+       "unit": "em",
+       "size": "1.95",
+       "sizes": []
+      },
+      "_margin": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": true
+      }
+     },
+     "elements": [],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "a1000f",
+   "elType": "container",
+   "settings": {
+    "content_width": "boxed",
+    "flex_direction": "column",
+    "flex_gap": {
+     "column": "24",
+     "row": "24",
+     "isLinked": true,
+     "unit": "px",
+     "size": 24
+    },
+    "padding": {
+     "unit": "px",
+     "top": "24",
+     "right": "8",
+     "bottom": "56",
+     "left": "8",
+     "isLinked": false
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "19",
+     "right": "20",
+     "bottom": "45",
+     "left": "20",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "17",
+     "right": "16",
+     "bottom": "39",
+     "left": "16",
+     "isLinked": false
+    },
+    "background_background": "classic",
+    "background_color": "#071710"
+   },
+   "elements": [
+    {
+     "id": "a1000e",
+     "elType": "container",
+     "settings": {
+      "content_width": "full",
+      "flex_direction": "row",
+      "flex_gap": {
+       "column": "24",
+       "row": "24",
+       "isLinked": true,
+       "unit": "px",
+       "size": 24
+      },
+      "flex_wrap": "wrap",
+      "align_items": "center"
+     },
+     "elements": [
+      {
+       "id": "a10009",
+       "elType": "container",
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "12",
+         "row": "12",
+         "isLinked": true,
+         "unit": "px",
+         "size": 12
+        },
+        "flex_basis": {
+         "unit": "%",
+         "size": "52",
+         "sizes": []
+        },
+        "_element_width": "custom",
+        "_element_custom_width": {
+         "unit": "%",
+         "size": "52",
+         "sizes": []
+        },
+        "justify_content": "center"
+       },
+       "elements": [
+        {
+         "id": "a10004",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>داستان ما</p>",
+          "text_color": "#f0d9b8",
+          "_css_classes": "mr-eyebrow",
+          "typography_typography": "custom",
+          "typography_font_weight": "600",
+          "typography_font_size": {
+           "unit": "px",
+           "size": "11",
+           "sizes": []
+          },
+          "typography_letter_spacing": {
+           "unit": "px",
+           "size": "1.4",
+           "sizes": []
+          },
+          "typography_text_transform": "uppercase"
+         },
+         "elements": [],
+         "isInner": false
+        },
+        {
+         "id": "a10005",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "یک خانه بازرگانی برای دهه پیش‌روی محصولات طبیعی",
+          "header_size": "h2",
+          "align": "left",
+          "title_color": "#f6f1e6",
+          "typography_typography": "custom",
+          "typography_font_family": "Fraunces",
+          "typography_font_weight": "700",
+          "typography_font_size": {
+           "unit": "px",
+           "size": "26",
+           "sizes": []
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": "20",
+           "sizes": []
+          },
+          "typography_line_height": {
+           "unit": "em",
+           "size": "1.5",
+           "sizes": []
+          },
+          "_margin": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "12",
+           "left": "0",
+           "isLinked": false
+          }
+         },
+         "elements": [],
+         "isInner": false
+        },
+        {
+         "id": "a10006",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>کار خود را با یک میز صادرات کوچک برای تأمین مواد اولیه گیاهی برندهای اروپایی آغاز کردیم. امروز MR Store بازارگاهی است که خریداران در آن تأمین‌کنندگان را در شرایط برابر مقایسه می‌کنند و تولیدکنندگان به بازارهایی می‌رسند که پیش‌تر دسترسی نداشتند.</p>",
+          "text_color": "rgba(169,195,178,0.65)",
+          "align": "left",
+          "typography_typography": "custom",
+          "typography_font_weight": "400",
+          "typography_font_size": {
+           "unit": "px",
+           "size": "14",
+           "sizes": []
+          },
+          "typography_line_height": {
+           "unit": "em",
+           "size": "1.95",
+           "sizes": []
+          },
+          "_margin": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "12",
+           "left": "0",
+           "isLinked": false
+          }
+         },
+         "elements": [],
+         "isInner": false
+        },
+        {
+         "id": "a10007",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>تیم ما میان دو سوی هر معامله می‌ایستد: بررسی تولیدکنندگان، کنترل گواهی‌ها، تجمیع محموله‌ها و تضمین شرایطی که اعلام می‌کنیم.</p>",
+          "text_color": "rgba(169,195,178,0.65)",
+          "align": "left",
+          "typography_typography": "custom",
+          "typography_font_weight": "400",
+          "typography_font_size": {
+           "unit": "px",
+           "size": "14",
+           "sizes": []
+          },
+          "typography_line_height": {
+           "unit": "em",
+           "size": "1.95",
+           "sizes": []
+          },
+          "_margin": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "16",
+           "left": "0",
+           "isLinked": false
+          }
+         },
+         "elements": [],
+         "isInner": false
+        },
+        {
+         "id": "a10008",
+         "elType": "widget",
+         "widgetType": "button",
+         "settings": {
+          "text": "گفتگو با تیم ما",
+          "link": {
+           "url": "/contact/",
+           "is_external": "",
+           "nofollow": "",
+           "custom_attributes": ""
+          },
+          "align": "left",
+          "size": "md",
+          "typography_typography": "custom",
+          "typography_font_weight": "600",
+          "typography_font_size": {
+           "unit": "px",
+           "size": "14",
+           "sizes": []
+          },
+          "background_color": "#10291f",
+          "button_text_color": "#f6f1e6",
+          "hover_color": "#f6f1e6",
+          "button_background_hover_color": "#163a2b",
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_color": "rgba(51,96,75,0.55)",
+          "border_radius": {
+           "unit": "px",
+           "size": "999",
+           "sizes": []
+          },
+          "text_padding": {
+           "unit": "px",
+           "top": "12",
+           "right": "24",
+           "bottom": "12",
+           "left": "24",
+           "isLinked": false
+          },
+          "_margin": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": true
+          }
+         },
+         "elements": [],
+         "isInner": false
+        }
+       ],
+       "isInner": true
+      },
+      {
+       "id": "a1000d",
+       "elType": "container",
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "12",
+         "row": "12",
+         "isLinked": true,
+         "unit": "px",
+         "size": 12
+        },
+        "flex_basis": {
+         "unit": "%",
+         "size": "44",
+         "sizes": []
+        },
+        "_element_width": "custom",
+        "_element_custom_width": {
+         "unit": "%",
+         "size": "44",
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "a1000a",
+         "elType": "widget",
+         "widgetType": "image",
+         "settings": {
+          "image": {
+           "url": "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=1200&q=80",
+           "id": "",
+           "size": "",
+           "alt": "گیاهان خشک و ادویه روی میز بازار"
+          },
+          "image_size": "full",
+          "align": "center"
+         },
+         "elements": [],
+         "isInner": false
+        },
+        {
+         "id": "a1000b",
+         "elType": "widget",
+         "widgetType": "image",
+         "settings": {
+          "image": {
+           "url": "https://images.unsplash.com/photo-1587049352846-4a222e784d38?auto=format&fit=crop&w=600&q=80",
+           "id": "",
+           "size": "",
+           "alt": "شیشه‌های عسل طبیعی"
+          },
+          "image_size": "full",
+          "align": "center"
+         },
+         "elements": [],
+         "isInner": false
+        },
+        {
+         "id": "a1000c",
+         "elType": "widget",
+         "widgetType": "image",
+         "settings": {
+          "image": {
+           "url": "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=1000&q=80",
+           "id": "",
+           "size": "",
+           "alt": "محصولات مراقبت پوست طبیعی"
+          },
+          "image_size": "full",
+          "align": "center"
+         },
+         "elements": [],
+         "isInner": false
+        }
+       ],
+       "isInner": true
+      }
+     ],
+     "isInner": true
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "a1001c",
+   "elType": "container",
+   "settings": {
+    "content_width": "boxed",
+    "flex_direction": "column",
+    "flex_gap": {
+     "column": "24",
+     "row": "24",
+     "isLinked": true,
+     "unit": "px",
+     "size": 24
+    },
+    "padding": {
+     "unit": "px",
+     "top": "48",
+     "right": "8",
+     "bottom": "48",
+     "left": "8",
+     "isLinked": false
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "38",
+     "right": "20",
+     "bottom": "38",
+     "left": "20",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "34",
+     "right": "16",
+     "bottom": "34",
+     "left": "16",
+     "isLinked": false
+    },
+    "background_background": "classic",
+    "background_color": "#0a1e16"
+   },
+   "elements": [
+    {
+     "id": "a10010",
+     "elType": "widget",
+     "widgetType": "text-editor",
+     "settings": {
+      "editor": "<p>ارزش‌های ما</p>",
+      "text_color": "#f0d9b8",
+      "_css_classes": "mr-eyebrow",
+      "typography_typography": "custom",
+      "typography_font_weight": "600",
+      "typography_font_size": {
+       "unit": "px",
+       "size": "11",
+       "sizes": []
+      },
+      "typography_letter_spacing": {
+       "unit": "px",
+       "size": "1.4",
+       "sizes": []
+      },
+      "typography_text_transform": "uppercase"
+     },
+     "elements": [],
+     "isInner": false
+    },
+    {
+     "id": "a10011",
+     "elType": "widget",
+     "widgetType": "heading",
+     "settings": {
+      "title": "چهار اصلی که هر معامله را می‌سازد",
+      "header_size": "h2",
+      "align": "left",
+      "title_color": "#f6f1e6",
+      "typography_typography": "custom",
+      "typography_font_family": "Fraunces",
+      "typography_font_weight": "700",
+      "typography_font_size": {
+       "unit": "px",
+       "size": "28",
+       "sizes": []
+      },
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": "22",
+       "sizes": []
+      },
+      "typography_line_height": {
+       "unit": "em",
+       "size": "1.5",
+       "sizes": []
+      },
+      "_margin": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "10",
+       "left": "0",
+       "isLinked": false
+      }
+     },
+     "elements": [],
+     "isInner": false
+    },
+    {
+     "id": "a10012",
+     "elType": "widget",
+     "widgetType": "text-editor",
+     "settings": {
+      "editor": "<p>این اصول در نحوه انتخاب تأمین‌کننده، تدوین شرایط و پاسخ‌گویی ما مشخص است.</p>",
+      "text_color": "rgba(169,195,178,0.65)",
+      "align": "left",
+      "typography_typography": "custom",
+      "typography_font_weight": "400",
+      "typography_font_size": {
+       "unit": "px",
+       "size": "14",
+       "sizes": []
+      },
+      "typography_line_height": {
+       "unit": "em",
+       "size": "1.95",
+       "sizes": []
+      },
+      "_margin": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": true
+      }
+     },
+     "elements": [],
+     "isInner": false
+    },
+    {
+     "id": "a1001b",
+     "elType": "container",
+     "settings": {
+      "content_width": "full",
+      "flex_direction": "row",
+      "flex_gap": {
+       "column": "16",
+       "row": "16",
+       "isLinked": true,
+       "unit": "px",
+       "size": 16
+      },
+      "flex_wrap": "wrap"
+     },
+     "elements": [
+      {
+       "id": "a10014",
+       "elType": "container",
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "12",
+         "row": "12",
+         "isLinked": true,
+         "unit": "px",
+         "size": 12
+        },
+        "flex_basis": {
+         "unit": "%",
+         "size": "23",
+         "sizes": []
+        },
+        "_element_width": "custom",
+        "_element_custom_width": {
+         "unit": "%",
+         "size": "23",
+         "sizes": []
+        },
+        "padding": {
+         "unit": "px",
+         "top": "20",
+         "right": "18",
+         "bottom": "20",
+         "left": "18",
+         "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#10291f",
+        "border_radius": {
+         "unit": "px",
+         "top": "16",
+         "right": "16",
+         "bottom": "16",
+         "left": "16",
+         "isLinked": true
+        }
+       },
+       "elements": [
+        {
+         "id": "a10013",
+         "elType": "widget",
+         "widgetType": "icon-box",
+         "settings": {
+          "selected_icon": {
+           "value": "fas fa-shield-alt",
+           "library": "fa-solid"
+          },
+          "title_text": "اعتماد پیش از حجم",
+          "description_text": "تأمین‌کنندگان پیش از عرضه نخستین محصول، از نظر گواهی، ظرفیت و سابقه صادرات بررسی می‌شوند.",
+          "position": "top",
+          "title_size": "h3",
+          "primary_color": "#45c58c",
+          "title_color": "#f6f1e6",
+          "description_color": "rgba(169,195,178,0.65)",
+          "icon_size": {
+           "unit": "px",
+           "size": "20",
+           "sizes": []
+          },
+          "icon_space": {
+           "unit": "px",
+           "size": "12",
+           "sizes": []
+          },
+          "text_align": "left",
+          "title_typography_typography": "custom",
+          "title_typography_font_weight": "700",
+          "title_typography_font_size": {
+           "unit": "px",
+           "size": "15",
+           "sizes": []
+          },
+          "title_typography_line_height": {
+           "unit": "em",
+           "size": "1.6",
+           "sizes": []
+          },
+          "description_typography_typography": "custom",
+          "description_typography_font_weight": "400",
+          "description_typography_font_size": {
+           "unit": "px",
+           "size": "12",
+           "sizes": []
+          },
+          "description_typography_line_height": {
+           "unit": "em",
+           "size": "1.85",
+           "sizes": []
+          }
+         },
+         "elements": [],
+         "isInner": false
+        }
+       ],
+       "isInner": true
+      },
+      {
+       "id": "a10016",
+       "elType": "container",
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "12",
+         "row": "12",
+         "isLinked": true,
+         "unit": "px",
+         "size": 12
+        },
+        "flex_basis": {
+         "unit": "%",
+         "size": "23",
+         "sizes": []
+        },
+        "_element_width": "custom",
+        "_element_custom_width": {
+         "unit": "%",
+         "size": "23",
+         "sizes": []
+        },
+        "padding": {
+         "unit": "px",
+         "top": "20",
+         "right": "18",
+         "bottom": "20",
+         "left": "18",
+         "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#10291f",
+        "border_radius": {
+         "unit": "px",
+         "top": "16",
+         "right": "16",
+         "bottom": "16",
+         "left": "16",
+         "isLinked": true
+        }
+       },
+       "elements": [
+        {
+         "id": "a10015",
+         "elType": "widget",
+         "widgetType": "icon-box",
+         "settings": {
+          "selected_icon": {
+           "value": "fas fa-leaf",
+           "library": "fa-solid"
+          },
+          "title_text": "طبیعی به‌صورت پیش‌فرض",
+          "description_text": "در همه دسته‌ها اولویت ما تولید ارگانیک، گیاهی و کم‌دخالت است.",
+          "position": "top",
+          "title_size": "h3",
+          "primary_color": "#45c58c",
+          "title_color": "#f6f1e6",
+          "description_color": "rgba(169,195,178,0.65)",
+          "icon_size": {
+           "unit": "px",
+           "size": "20",
+           "sizes": []
+          },
+          "icon_space": {
+           "unit": "px",
+           "size": "12",
+           "sizes": []
+          },
+          "text_align": "left",
+          "title_typography_typography": "custom",
+          "title_typography_font_weight": "700",
+          "title_typography_font_size": {
+           "unit": "px",
+           "size": "15",
+           "sizes": []
+          },
+          "title_typography_line_height": {
+           "unit": "em",
+           "size": "1.6",
+           "sizes": []
+          },
+          "description_typography_typography": "custom",
+          "description_typography_font_weight": "400",
+          "description_typography_font_size": {
+           "unit": "px",
+           "size": "12",
+           "sizes": []
+          },
+          "description_typography_line_height": {
+           "unit": "em",
+           "size": "1.85",
+           "sizes": []
+          }
+         },
+         "elements": [],
+         "isInner": false
+        }
+       ],
+       "isInner": true
+      },
+      {
+       "id": "a10018",
+       "elType": "container",
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "12",
+         "row": "12",
+         "isLinked": true,
+         "unit": "px",
+         "size": 12
+        },
+        "flex_basis": {
+         "unit": "%",
+         "size": "23",
+         "sizes": []
+        },
+        "_element_width": "custom",
+        "_element_custom_width": {
+         "unit": "%",
+         "size": "23",
+         "sizes": []
+        },
+        "padding": {
+         "unit": "px",
+         "top": "20",
+         "right": "18",
+         "bottom": "20",
+         "left": "18",
+         "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#10291f",
+        "border_radius": {
+         "unit": "px",
+         "top": "16",
+         "right": "16",
+         "bottom": "16",
+         "left": "16",
+         "isLinked": true
+        }
+       },
+       "elements": [
+        {
+         "id": "a10017",
+         "elType": "widget",
+         "widgetType": "icon-box",
+         "settings": {
+          "selected_icon": {
+           "value": "fas fa-globe",
+           "library": "fa-solid"
+          },
+          "title_text": "جهانی از ابتدای طراحی",
+          "description_text": "اسناد، برچسب‌گذاری و لجستیک از روز اول برای تجارت فرامرزی طراحی شده‌اند.",
+          "position": "top",
+          "title_size": "h3",
+          "primary_color": "#45c58c",
+          "title_color": "#f6f1e6",
+          "description_color": "rgba(169,195,178,0.65)",
+          "icon_size": {
+           "unit": "px",
+           "size": "20",
+           "sizes": []
+          },
+          "icon_space": {
+           "unit": "px",
+           "size": "12",
+           "sizes": []
+          },
+          "text_align": "left",
+          "title_typography_typography": "custom",
+          "title_typography_font_weight": "700",
+          "title_typography_font_size": {
+           "unit": "px",
+           "size": "15",
+           "sizes": []
+          },
+          "title_typography_line_height": {
+           "unit": "em",
+           "size": "1.6",
+           "sizes": []
+          },
+          "description_typography_typography": "custom",
+          "description_typography_font_weight": "400",
+          "description_typography_font_size": {
+           "unit": "px",
+           "size": "12",
+           "sizes": []
+          },
+          "description_typography_line_height": {
+           "unit": "em",
+           "size": "1.85",
+           "sizes": []
+          }
+         },
+         "elements": [],
+         "isInner": false
+        }
+       ],
+       "isInner": true
+      },
+      {
+       "id": "a1001a",
+       "elType": "container",
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "12",
+         "row": "12",
+         "isLinked": true,
+         "unit": "px",
+         "size": 12
+        },
+        "flex_basis": {
+         "unit": "%",
+         "size": "23",
+         "sizes": []
+        },
+        "_element_width": "custom",
+        "_element_custom_width": {
+         "unit": "%",
+         "size": "23",
+         "sizes": []
+        },
+        "padding": {
+         "unit": "px",
+         "top": "20",
+         "right": "18",
+         "bottom": "20",
+         "left": "18",
+         "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#10291f",
+        "border_radius": {
+         "unit": "px",
+         "top": "16",
+         "right": "16",
+         "bottom": "16",
+         "left": "16",
+         "isLinked": true
+        }
+       },
+       "elements": [
+        {
+         "id": "a10019",
+         "elType": "widget",
+         "widgetType": "icon-box",
+         "settings": {
+          "selected_icon": {
+           "value": "fas fa-award",
+           "library": "fa-solid"
+          },
+          "title_text": "شرایط شفاف",
+          "description_text": "حداقل سفارش، زمان تحویل، بسته‌بندی و شرایط پرداخت از ابتدا اعلام می‌شود.",
+          "position": "top",
+          "title_size": "h3",
+          "primary_color": "#45c58c",
+          "title_color": "#f6f1e6",
+          "description_color": "rgba(169,195,178,0.65)",
+          "icon_size": {
+           "unit": "px",
+           "size": "20",
+           "sizes": []
+          },
+          "icon_space": {
+           "unit": "px",
+           "size": "12",
+           "sizes": []
+          },
+          "text_align": "left",
+          "title_typography_typography": "custom",
+          "title_typography_font_weight": "700",
+          "title_typography_font_size": {
+           "unit": "px",
+           "size": "15",
+           "sizes": []
+          },
+          "title_typography_line_height": {
+           "unit": "em",
+           "size": "1.6",
+           "sizes": []
+          },
+          "description_typography_typography": "custom",
+          "description_typography_font_weight": "400",
+          "description_typography_font_size": {
+           "unit": "px",
+           "size": "12",
+           "sizes": []
+          },
+          "description_typography_line_height": {
+           "unit": "em",
+           "size": "1.85",
+           "sizes": []
+          }
+         },
+         "elements": [],
+         "isInner": false
+        }
+       ],
+       "isInner": true
+      }
+     ],
+     "isInner": true
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "a10020",
+   "elType": "container",
+   "settings": {
+    "content_width": "boxed",
+    "flex_direction": "column",
+    "flex_gap": {
+     "column": "24",
+     "row": "24",
+     "isLinked": true,
+     "unit": "px",
+     "size": 24
+    },
+    "padding": {
+     "unit": "px",
+     "top": "48",
+     "right": "8",
+     "bottom": "64",
+     "left": "8",
+     "isLinked": false
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "38",
+     "right": "20",
+     "bottom": "51",
+     "left": "20",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "34",
+     "right": "16",
+     "bottom": "45",
+     "left": "16",
+     "isLinked": false
+    },
+    "background_background": "classic",
+    "background_color": "#071710"
+   },
+   "elements": [
+    {
+     "id": "a1001d",
+     "elType": "widget",
+     "widgetType": "text-editor",
+     "settings": {
+      "editor": "<p>مسیر ما</p>",
+      "text_color": "#f0d9b8",
+      "_css_classes": "mr-eyebrow",
+      "typography_typography": "custom",
+      "typography_font_weight": "600",
+      "typography_font_size": {
+       "unit": "px",
+       "size": "11",
+       "sizes": []
+      },
+      "typography_letter_spacing": {
+       "unit": "px",
+       "size": "1.4",
+       "sizes": []
+      },
+      "typography_text_transform": "uppercase"
+     },
+     "elements": [],
+     "isInner": false
+    },
+    {
+     "id": "a1001e",
+     "elType": "widget",
+     "widgetType": "heading",
+     "settings": {
+      "title": "از یک میز صادرات تا شبکه‌ای در ۱۸۰ بازار",
+      "header_size": "h2",
+      "align": "left",
+      "title_color": "#f6f1e6",
+      "typography_typography": "custom",
+      "typography_font_family": "Fraunces",
+      "typography_font_weight": "700",
+      "typography_font_size": {
+       "unit": "px",
+       "size": "26",
+       "sizes": []
+      },
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": "20",
+       "sizes": []
+      },
+      "typography_line_height": {
+       "unit": "em",
+       "size": "1.5",
+       "sizes": []
+      },
+      "_margin": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "8",
+       "left": "0",
+       "isLinked": false
+      }
+     },
+     "elements": [],
+     "isInner": false
+    },
+    {
+     "id": "a1001f",
+     "elType": "widget",
+     "widgetType": "icon-list",
+     "settings": {
+      "icon_list": [
+       {
+        "_id": "001a",
+        "text": "۱۳۹۳ — آغاز فعالیت به‌عنوان میز بازرگانی منطقه‌ای محصولات آرایشی طبیعی.",
+        "selected_icon": {
+         "value": "fas fa-check",
+         "library": "fa-solid"
+        }
+       },
+       {
+        "_id": "002a",
+        "text": "۱۳۹۷ — ورود به توزیع کالاهای مصرفی در خلیج فارس و CIS.",
+        "selected_icon": {
+         "value": "fas fa-check",
+         "library": "fa-solid"
+        }
+       },
+       {
+        "_id": "003a",
+        "text": "۱۴۰۱ — راه‌اندازی بازارگاه MR Store با ۱٫۲۰۰ تأمین‌کننده تأییدشده.",
+        "selected_icon": {
+         "value": "fas fa-check",
+         "library": "fa-solid"
+        }
+       },
+       {
+        "_id": "004a",
+        "text": "۱۴۰۴ — ۱۲٫۴۰۰ تأمین‌کننده، بیش از ۱۸۰ بازار مقصد و مراکز لجستیک تجمیعی.",
+        "selected_icon": {
+         "value": "fas fa-check",
+         "library": "fa-solid"
+        }
+       }
+      ],
+      "space_between": {
+       "unit": "px",
+       "size": "14",
+       "sizes": []
+      },
+      "icon_color": "#45c58c",
+      "text_color": "rgba(169,195,178,0.65)",
+      "icon_size": {
+       "unit": "px",
+       "size": "12",
+       "sizes": []
+      },
+      "text_indent": {
+       "unit": "px",
+       "size": "8",
+       "sizes": []
+      },
+      "divider": "yes",
+      "icon_typography_typography": "custom",
+      "icon_typography_font_weight": "500",
+      "icon_typography_font_size": {
+       "unit": "px",
+       "size": "14",
+       "sizes": []
+      },
+      "icon_typography_line_height": {
+       "unit": "em",
+       "size": "1.85",
+       "sizes": []
+      }
+     },
+     "elements": [],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  }
+ ],
+ "page_settings": {
+  "template": "elementor_header_footer",
+  "hide_title": "yes"
+ }
+}

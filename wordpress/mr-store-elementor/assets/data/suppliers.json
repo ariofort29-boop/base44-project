@@ -1,0 +1,130 @@
+[
+ {
+  "id": "s01",
+  "name": "Nutura Labs",
+  "country": "Germany",
+  "countryFa": "آلمان",
+  "categories": [
+   "Cosmetics",
+   "Organic"
+  ],
+  "categoriesFa": [
+   "آرایشی",
+   "ارگانیک"
+  ],
+  "products": "420 products",
+  "productsFa": "۴۲۰ محصول",
+  "years": "12 yrs",
+  "yearsFa": "۱۲ سال",
+  "rating": 4.9,
+  "verified": true,
+  "blurb": "Dermatologically tested skincare and personal care, produced in GMP-certified facilities.",
+  "blurbFa": "مراقبت پوست و بهداشت فردی با آزمایش‌های پوستی، تولید در کارخانه‌های دارای گواهی GMP."
+ },
+ {
+  "id": "s02",
+  "name": "Anatolia Botanics",
+  "country": "Turkey",
+  "countryFa": "ترکیه",
+  "categories": [
+   "Organic",
+   "FMCG"
+  ],
+  "categoriesFa": [
+   "ارگانیک",
+   "FMCG"
+  ],
+  "products": "680 products",
+  "productsFa": "۶۸۰ محصول",
+  "years": "18 yrs",
+  "yearsFa": "۱۸ سال",
+  "rating": 4.8,
+  "verified": true,
+  "blurb": "Family-run grower and exporter of herbs, honey, pickles and botanical extracts.",
+  "blurbFa": "تولیدکننده و صادرکننده خانوادگی گیاهان دارویی، عسل، ترشی و عصاره‌های گیاهی."
+ },
+ {
+  "id": "s03",
+  "name": "Green Valley Foods",
+  "country": "China",
+  "countryFa": "چین",
+  "categories": [
+   "FMCG"
+  ],
+  "categoriesFa": [
+   "FMCG"
+  ],
+  "products": "1,240 products",
+  "productsFa": "۱٫۲۴۰ محصول",
+  "years": "15 yrs",
+  "yearsFa": "۱۵ سال",
+  "rating": 4.7,
+  "verified": true,
+  "blurb": "Large-scale FMCG manufacturing with private-label and mixed-container capability.",
+  "blurbFa": "تولید انبوه کالاهای مصرفی با امکان برند اختصاصی و بار ترکیبی کانتینر."
+ },
+ {
+  "id": "s04",
+  "name": "Desert Bloom",
+  "country": "UAE",
+  "countryFa": "امارات",
+  "categories": [
+   "Cosmetics",
+   "Organic"
+  ],
+  "categoriesFa": [
+   "آرایشی",
+   "ارگانیک"
+  ],
+  "products": "310 products",
+  "productsFa": "۳۱۰ محصول",
+  "years": "9 yrs",
+  "yearsFa": "۹ سال",
+  "rating": 4.9,
+  "verified": true,
+  "blurb": "Essential oils, plant extracts and fragrance ingredients for beauty brands.",
+  "blurbFa": "اسانس‌ها، عصاره‌های گیاهی و مواد رایحه برای برندهای زیبایی."
+ },
+ {
+  "id": "s05",
+  "name": "Baikal Botanica",
+  "country": "Russia",
+  "countryFa": "روسیه",
+  "categories": [
+   "Organic",
+   "FMCG"
+  ],
+  "categoriesFa": [
+   "ارگانیک",
+   "FMCG"
+  ],
+  "products": "540 products",
+  "productsFa": "۵۴۰ محصول",
+  "years": "11 yrs",
+  "yearsFa": "۱۱ سال",
+  "rating": 4.8,
+  "verified": true,
+  "blurb": "Wild-harvested Siberian herbs, teas and cold-pressed oils with organic certification.",
+  "blurbFa": "گیاهان وحشی سیبری، چای و روغن‌های پرسرد با گواهی ارگانیک."
+ },
+ {
+  "id": "s06",
+  "name": "Al Noor Trading",
+  "country": "Saudi Arabia",
+  "countryFa": "عربستان",
+  "categories": [
+   "FMCG"
+  ],
+  "categoriesFa": [
+   "FMCG"
+  ],
+  "products": "860 products",
+  "productsFa": "۸۶۰ محصول",
+  "years": "20 yrs",
+  "yearsFa": "۲۰ سال",
+  "rating": 4.6,
+  "verified": true,
+  "blurb": "Regional distributor and co-packer for spices, seasonings and daily consumer goods.",
+  "blurbFa": "توزیع‌کننده منطقه‌ای و بسته‌بند ادویه، چاشنی و کالاهای مصرفی روزانه."
+ }
+]

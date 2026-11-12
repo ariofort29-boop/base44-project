@@ -1,0 +1,238 @@
+{
+ "categories": [
+  {
+   "slug": "cosmetics",
+   "title": "Cosmetics & Personal Care",
+   "titleFa": "آرایشی و بهداشتی",
+   "short": "Cosmetics",
+   "shortFa": "آرایشی و بهداشتی",
+   "blurb": "Skincare, haircare and beauty essentials produced by certified manufacturers with full ingredient traceability.",
+   "blurbFa": "مراقبت پوست، مراقبت مو و محصولات زیبایی از تولیدکنندگان دارای گواهی، با قابلیت ردیابی کامل مواد اولیه.",
+   "image": "https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=1200&q=80",
+   "items": [
+    "Skincare",
+    "Haircare",
+    "Body Care",
+    "Beauty Products",
+    "Makeup",
+    "Natural Cosmetics",
+    "Soaps & Cleansers",
+    "Personal Hygiene",
+    "Perfumes & Fragrances",
+    "Essential Oils"
+   ],
+   "itemsFa": [
+    "مراقبت پوست",
+    "مراقبت مو",
+    "مراقبت بدن",
+    "محصولات زیبایی",
+    "آرایش",
+    "آرایشی طبیعی",
+    "صابون و شوینده",
+    "بهداشت فردی",
+    "عطر و رایحه",
+    "اسانس‌ها"
+   ]
+  },
+  {
+   "slug": "fmcg",
+   "title": "FMCG — Fast-Moving Consumer Goods",
+   "titleFa": "کالاهای مصرفی سریع‌المصرف (FMCG)",
+   "short": "FMCG",
+   "shortFa": "FMCG",
+   "blurb": "Everyday consumer goods in retail-ready packaging, supplied in container loads or mixed pallets.",
+   "blurbFa": "کالاهای مصرفی روزمره با بسته‌بندی آماده عرضه، به صورت بار کامل کانتینر یا پالت ترکیبی.",
+   "image": "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1200&q=80",
+   "items": [
+    "Packaged Food",
+    "Beverages",
+    "Tea & Coffee",
+    "Snacks",
+    "Nuts & Dried Fruits",
+    "Honey",
+    "Spices & Seasonings",
+    "Pickles & Preserved Foods",
+    "Household Products",
+    "Cleaning Products",
+    "Daily Consumer Goods"
+   ],
+   "itemsFa": [
+    "غذای بسته‌بندی‌شده",
+    "نوشیدنی",
+    "چای و قهوه",
+    "اسنک",
+    "آجیل و میوه خشک",
+    "عسل",
+    "ادویه و چاشنی",
+    "ترشی و کنسرو",
+    "محصولات خانگی",
+    "مواد شوینده",
+    "کالای مصرفی روزانه"
+   ]
+  },
+  {
+   "slug": "organic",
+   "title": "Organic & Natural Products",
+   "titleFa": "ارگانیک و محصولات طبیعی",
+   "short": "Organic",
+   "shortFa": "ارگانیک",
+   "blurb": "Certified organic food, botanicals and raw ingredients sourced directly from growers and cooperatives.",
+   "blurbFa": "مواد غذایی ارگانیک دارای گواهی، گیاهان دارویی و مواد اولیه، مستقیم از تولیدکنندگان و تعاونی‌ها.",
+   "image": "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=1200&q=80",
+   "items": [
+    "Organic Food",
+    "Herbal Products",
+    "Herbal Teas",
+    "Natural Oils",
+    "Plant Extracts",
+    "Organic Skincare",
+    "Natural Beauty Products",
+    "Organic Ingredients",
+    "Dried Herbs & Spices",
+    "Natural Supplements"
+   ],
+   "itemsFa": [
+    "غذای ارگانیک",
+    "محصولات گیاهی",
+    "دمنوش و چای گیاهی",
+    "روغن‌های طبیعی",
+    "عصاره گیاهی",
+    "مراقبت پوست ارگانیک",
+    "محصولات زیبایی طبیعی",
+    "مواد اولیه ارگانیک",
+    "گیاهان خشک و ادویه",
+    "مکمل‌های طبیعی"
+   ]
+  }
+ ],
+ "topCategories": [
+  {
+   "label": "Natural Cosmetics",
+   "labelFa": "آرایشی طبیعی",
+   "count": "2,480 products",
+   "countFa": "۲٫۴۸۰ محصول",
+   "slug": "cosmetics"
+  },
+  {
+   "label": "Herbal Teas",
+   "labelFa": "دمنوش گیاهی",
+   "count": "1,120 products",
+   "countFa": "۱٫۱۲۰ محصول",
+   "slug": "organic"
+  },
+  {
+   "label": "Pickles & Preserved Foods",
+   "labelFa": "ترشی و کنسرو",
+   "count": "860 products",
+   "countFa": "۸۶۰ محصول",
+   "slug": "fmcg"
+  },
+  {
+   "label": "Herbal Oils & Extracts",
+   "labelFa": "روغن و عصاره گیاهی",
+   "count": "1,640 products",
+   "countFa": "۱٫۶۴۰ محصول",
+   "slug": "organic"
+  },
+  {
+   "label": "Organic Food",
+   "labelFa": "غذای ارگانیک",
+   "count": "3,020 products",
+   "countFa": "۳٫۰۲۰ محصول",
+   "slug": "organic"
+  },
+  {
+   "label": "Essential Oils",
+   "labelFa": "اسانس‌ها",
+   "count": "980 products",
+   "countFa": "۹۸۰ محصول",
+   "slug": "cosmetics"
+  },
+  {
+   "label": "Natural Soaps",
+   "labelFa": "صابون طبیعی",
+   "count": "740 products",
+   "countFa": "۷۴۰ محصول",
+   "slug": "cosmetics"
+  },
+  {
+   "label": "Dried Herbs & Spices",
+   "labelFa": "گیاهان خشک و ادویه",
+   "count": "1,380 products",
+   "countFa": "۱٫۳۸۰ محصول",
+   "slug": "fmcg"
+  }
+ ],
+ "assuranceBadges": [
+  {
+   "title": "100% Organic",
+   "titleFa": "۱۰۰٪ ارگانیک",
+   "text": "Naturally sourced ingredients",
+   "textFa": "مواد اولیه با منشأ طبیعی",
+   "icon": "leaf"
+  },
+  {
+   "title": "Quality Assurance",
+   "titleFa": "کنترل کیفیت",
+   "text": "Certified products & audits",
+   "textFa": "محصولات دارای گواهی و بازرسی",
+   "icon": "badge"
+  },
+  {
+   "title": "Fast Global Shipping",
+   "titleFa": "ارسال سریع جهانی",
+   "text": "From producer to your door",
+   "textFa": "از تولیدکننده تا انبار شما",
+   "icon": "ship"
+  },
+  {
+   "title": "Business Support",
+   "titleFa": "پشتیبانی تجاری",
+   "text": "A personal manager for your account",
+   "textFa": "مدیر حساب اختصاصی برای پرونده شما",
+   "icon": "headset"
+  }
+ ],
+ "countries": [
+  {
+   "name": "Russia",
+   "nameFa": "روسیه"
+  },
+  {
+   "name": "Azerbaijan",
+   "nameFa": "آذربایجان"
+  },
+  {
+   "name": "Iran",
+   "nameFa": "ایران"
+  },
+  {
+   "name": "Kazakhstan",
+   "nameFa": "قزاقستان"
+  },
+  {
+   "name": "Turkmenistan",
+   "nameFa": "ترکمنستان"
+  },
+  {
+   "name": "Uzbekistan",
+   "nameFa": "ازبکستان"
+  },
+  {
+   "name": "Turkey",
+   "nameFa": "ترکیه"
+  },
+  {
+   "name": "Georgia",
+   "nameFa": "گرجستان"
+  },
+  {
+   "name": "Armenia",
+   "nameFa": "ارمنستان"
+  },
+  {
+   "name": "Ukraine",
+   "nameFa": "اوکراین"
+  }
+ ]
+}

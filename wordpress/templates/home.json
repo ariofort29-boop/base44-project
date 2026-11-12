@@ -1,0 +1,4723 @@
+{
+ "version": "0.4",
+ "title": "MR Store — Home",
+ "type": "page",
+ "content": [
+  {
+   "id": "a10001",
+   "elType": "container",
+   "settings": {
+    "content_width": "full",
+    "flex_direction": "column",
+    "flex_gap": {
+     "column": "0",
+     "row": "0",
+     "isLinked": true,
+     "unit": "px",
+     "size": 0
+    },
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0",
+     "isLinked": true
+    },
+    "background_background": "classic",
+    "background_color": "#05100b"
+   },
+   "elements": [
+    {
+     "id": "a10000",
+     "elType": "widget",
+     "widgetType": "mr-hero",
+     "settings": {
+      "video_url": {
+       "url": "/wp-content/plugins/mr-store-elementor/assets/media/hero-cinematic.mp4",
+       "id": "",
+       "alt": ""
+      },
+      "poster": {
+       "url": "/wp-content/plugins/mr-store-elementor/assets/media/hero-poster.jpg",
+       "id": "",
+       "alt": ""
+      },
+      "scroll_length": {
+       "unit": "vh",
+       "size": 300,
+       "sizes": []
+      },
+      "eyebrow": "بازار عمده‌فروشی بین‌المللی",
+      "title": "تأمین عمده از",
+      "title_highlight": "تأمین‌کنندگان معتبر",
+      "subtitle": "محصولات آرایشی و بهداشتی، کالاهای مصرفی و ارگانیک از تولیدکنندگان بررسی‌شده برای واردکنندگان و توزیع‌کنندگان در بیش از ۱۸۰ کشور.",
+      "cta_primary_text": "استعلام قیمت عمده",
+      "cta_primary_link": {
+       "url": "/contact/",
+       "is_external": "",
+       "nofollow": ""
+      },
+      "cta_secondary_text": "مشاهده محصولات",
+      "cta_secondary_link": {
+       "url": "/products/",
+       "is_external": "",
+       "nofollow": ""
+      },
+      "scroll_hint": "برای دیدن فیلم اسکرول کنید",
+      "show_brandbar": "yes",
+      "brand_initials": "MR",
+      "brand_name": "MR STORE",
+      "brand_tagline": "بازار عمده‌فروشی بین‌المللی",
+      "brand_cta_text": "گفتگو با کارشناس تجارت",
+      "brand_cta_link": {
+       "url": "/contact/",
+       "is_external": "",
+       "nofollow": ""
+      },
+      "stats": [
+       {
+        "_id": "1a1",
+        "value": "۱۲٫۴۰۰+",
+        "label": "تأمین‌کننده تأییدشده"
+       },
+       {
+        "_id": "1a2",
+        "value": "۱۸۰+",
+        "label": "کشور مقصد"
+       },
+       {
+        "_id": "1a3",
+        "value": "۳",
+        "label": "صنعت اصلی"
+       }
+      ],
+      "overlay_color": "rgba(5,16,11,0.55)",
+      "title_color": "#f6f1e6",
+      "highlight_color": "#f0d9b8"
+     },
+     "elements": [],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "a10007",
+   "elType": "container",
+   "settings": {
+    "content_width": "boxed",
+    "flex_direction": "column",
+    "flex_gap": {
+     "column": "24",
+     "row": "24",
+     "isLinked": true,
+     "unit": "px",
+     "size": 24
+    },
+    "padding": {
+     "unit": "px",
+     "top": "28",
+     "right": "8",
+     "bottom": "28",
+     "left": "8",
+     "isLinked": false
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "22",
+     "right": "20",
+     "bottom": "22",
+     "left": "20",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "20",
+     "right": "16",
+     "bottom": "20",
+     "left": "16",
+     "isLinked": false
+    },
+    "background_background": "classic",
+    "background_color": "#10291f",
+    "border_border": "solid",
+    "border_width": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "1",
+     "left": "0",
+     "isLinked": false
+    },
+    "border_color": "rgba(51,96,75,0.35)"
+   },
+   "elements": [
+    {
+     "id": "a10006",
+     "elType": "container",
+     "settings": {
+      "content_width": "full",
+      "flex_direction": "row",
+      "flex_gap": {
+       "column": "24",
+       "row": "24",
+       "isLinked": true,
+       "unit": "px",
+       "size": 24
+      },
+      "flex_wrap": "wrap"
+     },
+     "elements": [
+      {
+       "id": "a10002",
+       "elType": "widget",
+       "widgetType": "icon-box",
+       "settings": {
+        "selected_icon": {
+         "value": "fas fa-seedling",
+         "library": "fa-solid"
+        },
+        "title_text": "۱۰۰٪ ارگانیک",
+        "description_text": "مواد اولیه با منشأ طبیعی",
+        "position": "left",
+        "title_size": "h3",
+        "primary_color": "#45c58c",
+        "title_color": "#f6f1e6",
+        "description_color": "rgba(169,195,178,0.65)",
+        "icon_size": {
+         "unit": "px",
+         "size": "20",
+         "sizes": []
+        },
+        "icon_space": {
+         "unit": "px",
+         "size": "12",
+         "sizes": []
+        },
+        "text_align": "left",
+        "title_typography_typography": "custom",
+        "title_typography_font_weight": "700",
+        "title_typography_font_size": {
+         "unit": "px",
+         "size": "13",
+         "sizes": []
+        },
+        "title_typography_line_height": {
+         "unit": "em",
+         "size": "1.6",
+         "sizes": []
+        },
+        "description_typography_typography": "custom",
+        "description_typography_font_weight": "400",
+        "description_typography_font_size": {
+         "unit": "px",
+         "size": "11",
+         "sizes": []
+        },
+        "description_typography_line_height": {
+         "unit": "em",
+         "size": "1.85",
+         "sizes": []
+        },
+        "_element_width": "custom",
+        "_element_custom_width": {
+         "unit": "%",
+         "size": "25",
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "a10003",
+       "elType": "widget",
+       "widgetType": "icon-box",
+       "settings": {
+        "selected_icon": {
+         "value": "fas fa-certificate",
+         "library": "fa-solid"
+        },
+        "title_text": "کنترل کیفیت",
+        "description_text": "محصولات دارای گواهی و بازرسی",
+        "position": "left",
+        "title_size": "h3",
+        "primary_color": "#45c58c",
+        "title_color": "#f6f1e6",
+        "description_color": "rgba(169,195,178,0.65)",
+        "icon_size": {
+         "unit": "px",
+         "size": "20",
+         "sizes": []
+        },
+        "icon_space": {
+         "unit": "px",
+         "size": "12",
+         "sizes": []
+        },
+        "text_align": "left",
+        "title_typography_typography": "custom",
+        "title_typography_font_weight": "700",
+        "title_typography_font_size": {
+         "unit": "px",
+         "size": "13",
+         "sizes": []
+        },
+        "title_typography_line_height": {
+         "unit": "em",
+         "size": "1.6",
+         "sizes": []
+        },
+        "description_typography_typography": "custom",
+        "description_typography_font_weight": "400",
+        "description_typography_font_size": {
+         "unit": "px",
+         "size": "11",
+         "sizes": []
+        },
+        "description_typography_line_height": {
+         "unit": "em",
+         "size": "1.85",
+         "sizes": []
+        },
+        "_element_width": "custom",
+        "_element_custom_width": {
+         "unit": "%",
+         "size": "25",
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "a10004",
+       "elType": "widget",
+       "widgetType": "icon-box",
+       "settings": {
+        "selected_icon": {
+         "value": "fas fa-ship",
+         "library": "fa-solid"
+        },
+        "title_text": "ارسال جهانی",
+        "description_text": "حمل تجمیعی تا درب انبار شما",
+        "position": "left",
+        "title_size": "h3",
+        "primary_color": "#45c58c",
+        "title_color": "#f6f1e6",
+        "description_color": "rgba(169,195,178,0.65)",
+        "icon_size": {
+         "unit": "px",
+         "size": "20",
+         "sizes": []
+        },
+        "icon_space": {
+         "unit": "px",
+         "size": "12",
+         "sizes": []
+        },
+        "text_align": "left",
+        "title_typography_typography": "custom",
+        "title_typography_font_weight": "700",
+        "title_typography_font_size": {
+         "unit": "px",
+         "size": "13",
+         "sizes": []
+        },
+        "title_typography_line_height": {
+         "unit": "em",
+         "size": "1.6",
+         "sizes": []
+        },
+        "description_typography_typography": "custom",
+        "description_typography_font_weight": "400",
+        "description_typography_font_size": {
+         "unit": "px",
+         "size": "11",
+         "sizes": []
+        },
+        "description_typography_line_height": {
+         "unit": "em",
+         "size": "1.85",
+         "sizes": []
+        },
+        "_element_width": "custom",
+        "_element_custom_width": {
+         "unit": "%",
+         "size": "25",
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "a10005",
+       "elType": "widget",
+       "widgetType": "icon-box",
+       "settings": {
+        "selected_icon": {
+         "value": "fas fa-headset",
+         "library": "fa-solid"
+        },
+        "title_text": "پشتیبانی بازرگانی",
+        "description_text": "مدیر اختصاصی از استعلام تا تحویل",
+        "position": "left",
+        "title_size": "h3",
+        "primary_color": "#45c58c",
+        "title_color": "#f6f1e6",
+        "description_color": "rgba(169,195,178,0.65)",
+        "icon_size": {
+         "unit": "px",
+         "size": "20",
+         "sizes": []
+        },
+        "icon_space": {
+         "unit": "px",
+         "size": "12",
+         "sizes": []
+        },
+        "text_align": "left",
+        "title_typography_typography": "custom",
+        "title_typography_font_weight": "700",
+        "title_typography_font_size": {
+         "unit": "px",
+         "size": "13",
+         "sizes": []
+        },
+        "title_typography_line_height": {
+         "unit": "em",
+         "size": "1.6",
+         "sizes": []
+        },
+        "description_typography_typography": "custom",
+        "description_typography_font_weight": "400",
+        "description_typography_font_size": {
+         "unit": "px",
+         "size": "11",
+         "sizes": []
+        },
+        "description_typography_line_height": {
+         "unit": "em",
+         "size": "1.85",
+         "sizes": []
+        },
+        "_element_width": "custom",
+        "_element_custom_width": {
+         "unit": "%",
+         "size": "25",
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false
+      }
+     ],
+     "isInner": true
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "a10011",
+   "elType": "container",
+   "settings": {
+    "content_width": "boxed",
+    "flex_direction": "column",
+    "flex_gap": {
+     "column": "24",
+     "row": "24",
+     "isLinked": true,
+     "unit": "px",
+     "size": 24
+    },
+    "padding": {
+     "unit": "px",
+     "top": "20",
+     "right": "8",
+     "bottom": "20",
+     "left": "8",
+     "isLinked": false
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "16",
+     "right": "20",
+     "bottom": "16",
+     "left": "20",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "14",
+     "right": "16",
+     "bottom": "14",
+     "left": "16",
+     "isLinked": false
+    },
+    "background_background": "classic",
+    "background_color": "#10291f",
+    "border_border": "solid",
+    "border_width": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "1",
+     "left": "0",
+     "isLinked": false
+    },
+    "border_color": "rgba(51,96,75,0.35)"
+   },
+   "elements": [
+    {
+     "id": "a10010",
+     "elType": "container",
+     "settings": {
+      "content_width": "full",
+      "flex_direction": "row",
+      "flex_gap": {
+       "column": "4",
+       "row": "4",
+       "isLinked": true,
+       "unit": "px",
+       "size": 4
+      },
+      "flex_wrap": "wrap"
+     },
+     "elements": [
+      {
+       "id": "a10008",
+       "elType": "widget",
+       "widgetType": "icon-box",
+       "settings": {
+        "selected_icon": {
+         "value": "fas fa-sparkles",
+         "library": "fa-solid"
+        },
+        "title_text": "آرایشی و بهداشتی",
+        "description_text": "",
+        "position": "top",
+        "title_size": "h3",
+        "primary_color": "#45c58c",
+        "title_color": "#f6f1e6",
+        "description_color": "rgba(169,195,178,0.65)",
+        "icon_size": {
+         "unit": "px",
+         "size": "18",
+         "sizes": []
+        },
+        "icon_space": {
+         "unit": "px",
+         "size": "8",
+         "sizes": []
+        },
+        "text_align": "center",
+        "_css_classes": "mr-category-chip",
+        "title_typography_typography": "custom",
+        "title_typography_font_weight": "700",
+        "title_typography_font_size": {
+         "unit": "px",
+         "size": "12",
+         "sizes": []
+        },
+        "title_typography_line_height": {
+         "unit": "em",
+         "size": "1.6",
+         "sizes": []
+        },
+        "description_typography_typography": "custom",
+        "description_typography_font_weight": "400",
+        "description_typography_font_size": {
+         "unit": "px",
+         "size": "12",
+         "sizes": []
+        },
+        "description_typography_line_height": {
+         "unit": "em",
+         "size": "1.85",
+         "sizes": []
+        },
+        "_padding": {
+         "unit": "px",
+         "top": "8",
+         "right": "4",
+         "bottom": "8",
+         "left": "4",
+         "isLinked": false
+        },
+        "_element_width": "custom",
+        "_element_custom_width": {
+         "unit": "%",
+         "size": "12.5",
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "a10009",
+       "elType": "widget",
+       "widgetType": "icon-box",
+       "settings": {
+        "selected_icon": {
+         "value": "fas fa-leaf",
+         "library": "fa-solid"
+        },
+        "title_text": "دمنوش و گیاهان خشک",
+        "description_text": "",
+        "position": "top",
+        "title_size": "h3",
+        "primary_color": "#45c58c",
+        "title_color": "#f6f1e6",
+        "description_color": "rgba(169,195,178,0.65)",
+        "icon_size": {
+         "unit": "px",
+         "size": "18",
+         "sizes": []
+        },
+        "icon_space": {
+         "unit": "px",
+         "size": "8",
+         "sizes": []
+        },
+        "text_align": "center",
+        "_css_classes": "mr-category-chip",
+        "title_typography_typography": "custom",
+        "title_typography_font_weight": "700",
+        "title_typography_font_size": {
+         "unit": "px",
+         "size": "12",
+         "sizes": []
+        },
+        "title_typography_line_height": {
+         "unit": "em",
+         "size": "1.6",
+         "sizes": []
+        },
+        "description_typography_typography": "custom",
+        "description_typography_font_weight": "400",
+        "description_typography_font_size": {
+         "unit": "px",
+         "size": "12",
+         "sizes": []
+        },
+        "description_typography_line_height": {
+         "unit": "em",
+         "size": "1.85",
+         "sizes": []
+        },
+        "_padding": {
+         "unit": "px",
+         "top": "8",
+         "right": "4",
+         "bottom": "8",
+         "left": "4",
+         "isLinked": false
+        },
+        "_element_width": "custom",
+        "_element_custom_width": {
+         "unit": "%",
+         "size": "12.5",
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "a1000a",
+       "elType": "widget",
+       "widgetType": "icon-box",
+       "settings": {
+        "selected_icon": {
+         "value": "fas fa-seedling",
+         "library": "fa-solid"
+        },
+        "title_text": "غذای ارگانیک و سوپرفود",
+        "description_text": "",
+        "position": "top",
+        "title_size": "h3",
+        "primary_color": "#45c58c",
+        "title_color": "#f6f1e6",
+        "description_color": "rgba(169,195,178,0.65)",
+        "icon_size": {
+         "unit": "px",
+         "size": "18",
+         "sizes": []
+        },
+        "icon_space": {
+         "unit": "px",
+         "size": "8",
+         "sizes": []
+        },
+        "text_align": "center",
+        "_css_classes": "mr-category-chip",
+        "title_typography_typography": "custom",
+        "title_typography_font_weight": "700",
+        "title_typography_font_size": {
+         "unit": "px",
+         "size": "12",
+         "sizes": []
+        },
+        "title_typography_line_height": {
+         "unit": "em",
+         "size": "1.6",
+         "sizes": []
+        },
+        "description_typography_typography": "custom",
+        "description_typography_font_weight": "400",
+        "description_typography_font_size": {
+         "unit": "px",
+         "size": "12",
+         "sizes": []
+        },
+        "description_typography_line_height": {
+         "unit": "em",
+         "size": "1.85",
+         "sizes": []
+        },
+        "_padding": {
+         "unit": "px",
+         "top": "8",
+         "right": "4",
+         "bottom": "8",
+         "left": "4",
+         "isLinked": false
+        },
+        "_element_width": "custom",
+        "_element_custom_width": {
+         "unit": "%",
+         "size": "12.5",
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "a1000b",
+       "elType": "widget",
+       "widgetType": "icon-box",
+       "settings": {
+        "selected_icon": {
+         "value": "fas fa-tint",
+         "library": "fa-solid"
+        },
+        "title_text": "روغن و عصاره گیاهی",
+        "description_text": "",
+        "position": "top",
+        "title_size": "h3",
+        "primary_color": "#45c58c",
+        "title_color": "#f6f1e6",
+        "description_color": "rgba(169,195,178,0.65)",
+        "icon_size": {
+         "unit": "px",
+         "size": "18",
+         "sizes": []
+        },
+        "icon_space": {
+         "unit": "px",
+         "size": "8",
+         "sizes": []
+        },
+        "text_align": "center",
+        "_css_classes": "mr-category-chip",
+        "title_typography_typography": "custom",
+        "title_typography_font_weight": "700",
+        "title_typography_font_size": {
+         "unit": "px",
+         "size": "12",
+         "sizes": []
+        },
+        "title_typography_line_height": {
+         "unit": "em",
+         "size": "1.6",
+         "sizes": []
+        },
+        "description_typography_typography": "custom",
+        "description_typography_font_weight": "400",
+        "description_typography_font_size": {
+         "unit": "px",
+         "size": "12",
+         "sizes": []
+        },
+        "description_typography_line_height": {
+         "unit": "em",
+         "size": "1.85",
+         "sizes": []
+        },
+        "_padding": {
+         "unit": "px",
+         "top": "8",
+         "right": "4",
+         "bottom": "8",
+         "left": "4",
+         "isLinked": false
+        },
+        "_element_width": "custom",
+        "_element_custom_width": {
+         "unit": "%",
+         "size": "12.5",
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "a1000c",
+       "elType": "widget",
+       "widgetType": "icon-box",
+       "settings": {
+        "selected_icon": {
+         "value": "fas fa-box-open",
+         "library": "fa-solid"
+        },
+        "title_text": "ترشی و کنسرو",
+        "description_text": "",
+        "position": "top",
+        "title_size": "h3",
+        "primary_color": "#45c58c",
+        "title_color": "#f6f1e6",
+        "description_color": "rgba(169,195,178,0.65)",
+        "icon_size": {
+         "unit": "px",
+         "size": "18",
+         "sizes": []
+        },
+        "icon_space": {
+         "unit": "px",
+         "size": "8",
+         "sizes": []
+        },
+        "text_align": "center",
+        "_css_classes": "mr-category-chip",
+        "title_typography_typography": "custom",
+        "title_typography_font_weight": "700",
+        "title_typography_font_size": {
+         "unit": "px",
+         "size": "12",
+         "sizes": []
+        },
+        "title_typography_line_height": {
+         "unit": "em",
+         "size": "1.6",
+         "sizes": []
+        },
+        "description_typography_typography": "custom",
+        "description_typography_font_weight": "400",
+        "description_typography_font_size": {
+         "unit": "px",
+         "size": "12",
+         "sizes": []
+        },
+        "description_typography_line_height": {
+         "unit": "em",
+         "size": "1.85",
+         "sizes": []
+        },
+        "_padding": {
+         "unit": "px",
+         "top": "8",
+         "right": "4",
+         "bottom": "8",
+         "left": "4",
+         "isLinked": false
+        },
+        "_element_width": "custom",
+        "_element_custom_width": {
+         "unit": "%",
+         "size": "12.5",
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "a1000d",
+       "elType": "widget",
+       "widgetType": "icon-box",
+       "settings": {
+        "selected_icon": {
+         "value": "fas fa-soap",
+         "library": "fa-solid"
+        },
+        "title_text": "صابون و شوینده طبیعی",
+        "description_text": "",
+        "position": "top",
+        "title_size": "h3",
+        "primary_color": "#45c58c",
+        "title_color": "#f6f1e6",
+        "description_color": "rgba(169,195,178,0.65)",
+        "icon_size": {
+         "unit": "px",
+         "size": "18",
+         "sizes": []
+        },
+        "icon_space": {
+         "unit": "px",
+         "size": "8",
+         "sizes": []
+        },
+        "text_align": "center",
+        "_css_classes": "mr-category-chip",
+        "title_typography_typography": "custom",
+        "title_typography_font_weight": "700",
+        "title_typography_font_size": {
+         "unit": "px",
+         "size": "12",
+         "sizes": []
+        },
+        "title_typography_line_height": {
+         "unit": "em",
+         "size": "1.6",
+         "sizes": []
+        },
+        "description_typography_typography": "custom",
+        "description_typography_font_weight": "400",
+        "description_typography_font_size": {
+         "unit": "px",
+         "size": "12",
+         "sizes": []
+        },
+        "description_typography_line_height": {
+         "unit": "em",
+         "size": "1.85",
+         "sizes": []
+        },
+        "_padding": {
+         "unit": "px",
+         "top": "8",
+         "right": "4",
+         "bottom": "8",
+         "left": "4",
+         "isLinked": false
+        },
+        "_element_width": "custom",
+        "_element_custom_width": {
+         "unit": "%",
+         "size": "12.5",
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "a1000e",
+       "elType": "widget",
+       "widgetType": "icon-box",
+       "settings": {
+        "selected_icon": {
+         "value": "fas fa-flask",
+         "library": "fa-solid"
+        },
+        "title_text": "اسانس‌ها",
+        "description_text": "",
+        "position": "top",
+        "title_size": "h3",
+        "primary_color": "#45c58c",
+        "title_color": "#f6f1e6",
+        "description_color": "rgba(169,195,178,0.65)",
+        "icon_size": {
+         "unit": "px",
+         "size": "18",
+         "sizes": []
+        },
+        "icon_space": {
+         "unit": "px",
+         "size": "8",
+         "sizes": []
+        },
+        "text_align": "center",
+        "_css_classes": "mr-category-chip",
+        "title_typography_typography": "custom",
+        "title_typography_font_weight": "700",
+        "title_typography_font_size": {
+         "unit": "px",
+         "size": "12",
+         "sizes": []
+        },
+        "title_typography_line_height": {
+         "unit": "em",
+         "size": "1.6",
+         "sizes": []
+        },
+        "description_typography_typography": "custom",
+        "description_typography_font_weight": "400",
+        "description_typography_font_size": {
+         "unit": "px",
+         "size": "12",
+         "sizes": []
+        },
+        "description_typography_line_height": {
+         "unit": "em",
+         "size": "1.85",
+         "sizes": []
+        },
+        "_padding": {
+         "unit": "px",
+         "top": "8",
+         "right": "4",
+         "bottom": "8",
+         "left": "4",
+         "isLinked": false
+        },
+        "_element_width": "custom",
+        "_element_custom_width": {
+         "unit": "%",
+         "size": "12.5",
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "a1000f",
+       "elType": "widget",
+       "widgetType": "icon-box",
+       "settings": {
+        "selected_icon": {
+         "value": "fas fa-th",
+         "library": "fa-solid"
+        },
+        "title_text": "همه دسته‌ها",
+        "description_text": "",
+        "position": "top",
+        "title_size": "h3",
+        "primary_color": "#45c58c",
+        "title_color": "#f6f1e6",
+        "description_color": "rgba(169,195,178,0.65)",
+        "icon_size": {
+         "unit": "px",
+         "size": "18",
+         "sizes": []
+        },
+        "icon_space": {
+         "unit": "px",
+         "size": "8",
+         "sizes": []
+        },
+        "text_align": "center",
+        "_css_classes": "mr-category-chip",
+        "title_typography_typography": "custom",
+        "title_typography_font_weight": "700",
+        "title_typography_font_size": {
+         "unit": "px",
+         "size": "12",
+         "sizes": []
+        },
+        "title_typography_line_height": {
+         "unit": "em",
+         "size": "1.6",
+         "sizes": []
+        },
+        "description_typography_typography": "custom",
+        "description_typography_font_weight": "400",
+        "description_typography_font_size": {
+         "unit": "px",
+         "size": "12",
+         "sizes": []
+        },
+        "description_typography_line_height": {
+         "unit": "em",
+         "size": "1.85",
+         "sizes": []
+        },
+        "_padding": {
+         "unit": "px",
+         "top": "8",
+         "right": "4",
+         "bottom": "8",
+         "left": "4",
+         "isLinked": false
+        },
+        "_element_width": "custom",
+        "_element_custom_width": {
+         "unit": "%",
+         "size": "12.5",
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "isInner": false
+      }
+     ],
+     "isInner": true
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "a1001a",
+   "elType": "container",
+   "settings": {
+    "content_width": "boxed",
+    "flex_direction": "column",
+    "flex_gap": {
+     "column": "24",
+     "row": "24",
+     "isLinked": true,
+     "unit": "px",
+     "size": 24
+    },
+    "padding": {
+     "unit": "px",
+     "top": "72",
+     "right": "8",
+     "bottom": "72",
+     "left": "8",
+     "isLinked": false
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "58",
+     "right": "20",
+     "bottom": "58",
+     "left": "20",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "50",
+     "right": "16",
+     "bottom": "50",
+     "left": "16",
+     "isLinked": false
+    },
+    "background_background": "classic",
+    "background_color": "#10291f"
+   },
+   "elements": [
+    {
+     "id": "a10012",
+     "elType": "widget",
+     "widgetType": "text-editor",
+     "settings": {
+      "editor": "<p>صنایع محصول</p>",
+      "text_color": "#f0d9b8",
+      "_css_classes": "mr-eyebrow",
+      "typography_typography": "custom",
+      "typography_font_weight": "600",
+      "typography_font_size": {
+       "unit": "px",
+       "size": "11",
+       "sizes": []
+      },
+      "typography_letter_spacing": {
+       "unit": "px",
+       "size": "1.4",
+       "sizes": []
+      },
+      "typography_text_transform": "uppercase"
+     },
+     "elements": [],
+     "isInner": false
+    },
+    {
+     "id": "a10013",
+     "elType": "widget",
+     "widgetType": "heading",
+     "settings": {
+      "title": "سه صنعت، یک بازار عمده‌فروشی معتبر",
+      "header_size": "h2",
+      "align": "left",
+      "title_color": "#f6f1e6",
+      "typography_typography": "custom",
+      "typography_font_family": "Fraunces",
+      "typography_font_weight": "700",
+      "typography_font_size": {
+       "unit": "px",
+       "size": "30",
+       "sizes": []
+      },
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": "24",
+       "sizes": []
+      },
+      "typography_line_height": {
+       "unit": "em",
+       "size": "1.5",
+       "sizes": []
+      },
+      "_margin": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "10",
+       "left": "0",
+       "isLinked": false
+      }
+     },
+     "elements": [],
+     "isInner": false
+    },
+    {
+     "id": "a10014",
+     "elType": "widget",
+     "widgetType": "text-editor",
+     "settings": {
+      "editor": "<p>تولیدکنندگان و عمده‌فروشان هر سه صنعت اصلی از نظر گواهی‌ها، ظرفیت تولید و آمادگی صادرات بررسی شده‌اند.</p>",
+      "text_color": "rgba(169,195,178,0.65)",
+      "align": "left",
+      "typography_typography": "custom",
+      "typography_font_weight": "400",
+      "typography_font_size": {
+       "unit": "px",
+       "size": "14",
+       "sizes": []
+      },
+      "typography_line_height": {
+       "unit": "em",
+       "size": "1.95",
+       "sizes": []
+      },
+      "_margin": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "8",
+       "left": "0",
+       "isLinked": false
+      }
+     },
+     "elements": [],
+     "isInner": false
+    },
+    {
+     "id": "a10015",
+     "elType": "widget",
+     "widgetType": "button",
+     "settings": {
+      "text": "مشاهده همه محصولات",
+      "link": {
+       "url": "/products/",
+       "is_external": "",
+       "nofollow": "",
+       "custom_attributes": ""
+      },
+      "align": "left",
+      "size": "md",
+      "typography_typography": "custom",
+      "typography_font_weight": "600",
+      "typography_font_size": {
+       "unit": "px",
+       "size": "14",
+       "sizes": []
+      },
+      "background_color": "#10291f",
+      "button_text_color": "#f6f1e6",
+      "hover_color": "#f6f1e6",
+      "button_background_hover_color": "#163a2b",
+      "border_border": "solid",
+      "border_width": {
+       "unit": "px",
+       "top": "1",
+       "right": "1",
+       "bottom": "1",
+       "left": "1",
+       "isLinked": true
+      },
+      "border_color": "rgba(51,96,75,0.55)",
+      "border_radius": {
+       "unit": "px",
+       "size": "999",
+       "sizes": []
+      },
+      "text_padding": {
+       "unit": "px",
+       "top": "12",
+       "right": "24",
+       "bottom": "12",
+       "left": "24",
+       "isLinked": false
+      },
+      "_margin": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": true
+      }
+     },
+     "elements": [],
+     "isInner": false
+    },
+    {
+     "id": "a10019",
+     "elType": "container",
+     "settings": {
+      "content_width": "full",
+      "flex_direction": "row",
+      "flex_gap": {
+       "column": "20",
+       "row": "20",
+       "isLinked": true,
+       "unit": "px",
+       "size": 20
+      },
+      "flex_wrap": "wrap",
+      "align_items": "stretch"
+     },
+     "elements": [
+      {
+       "id": "a10016",
+       "elType": "widget",
+       "widgetType": "mr-botanical-card",
+       "settings": {
+        "image": {
+         "url": "https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=1200&q=80",
+         "id": "",
+         "alt": "آرایشی و بهداشتی"
+        },
+        "badge": "۱۰+",
+        "title": "آرایشی و بهداشتی",
+        "title_tag": "h3",
+        "text": "مراقبت پوست، مراقبت مو و محصولات زیبایی از تولیدکنندگان دارای گواهی، با قابلیت ردیابی کامل مواد اولیه.",
+        "link_text": "مشاهده آرایشی و بهداشتی",
+        "link": {
+         "url": "/products/?category=cosmetics",
+         "is_external": "",
+         "nofollow": ""
+        },
+        "vine_seed": 11,
+        "animation": "fadeInUp",
+        "animation_duration": "fast",
+        "items": [
+         {
+          "_id": "c1",
+          "label": "مراقبت پوست"
+         },
+         {
+          "_id": "c2",
+          "label": "مراقبت مو"
+         },
+         {
+          "_id": "c3",
+          "label": "مراقبت بدن"
+         },
+         {
+          "_id": "c4",
+          "label": "محصولات زیبایی"
+         },
+         {
+          "_id": "c5",
+          "label": "آرایش"
+         },
+         {
+          "_id": "c6",
+          "label": "آرایشی طبیعی"
+         },
+         {
+          "_id": "c7",
+          "label": "صابون و شوینده"
+         }
+        ]
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "a10017",
+       "elType": "widget",
+       "widgetType": "mr-botanical-card",
+       "settings": {
+        "image": {
+         "url": "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1200&q=80",
+         "id": "",
+         "alt": "کالاهای مصرفی سریع‌المصرف"
+        },
+        "badge": "۱۰+",
+        "title": "کالاهای مصرفی سریع‌المصرف (FMCG)",
+        "title_tag": "h3",
+        "text": "کالاهای مصرفی روزمره با بسته‌بندی آماده عرضه، به صورت بار کامل کانتینر یا پالت ترکیبی.",
+        "link_text": "مشاهده FMCG",
+        "link": {
+         "url": "/products/?category=fmcg",
+         "is_external": "",
+         "nofollow": ""
+        },
+        "vine_seed": 23,
+        "animation": "fadeInUp",
+        "animation_duration": "fast",
+        "animation_delay": 120,
+        "items": [
+         {
+          "_id": "f1",
+          "label": "غذای بسته‌بندی‌شده"
+         },
+         {
+          "_id": "f2",
+          "label": "نوشیدنی"
+         },
+         {
+          "_id": "f3",
+          "label": "چای و قهوه"
+         },
+         {
+          "_id": "f4",
+          "label": "تنقلات"
+         },
+         {
+          "_id": "f5",
+          "label": "ترشی و کنسرو"
+         },
+         {
+          "_id": "f6",
+          "label": "شوینده خانگی"
+         },
+         {
+          "_id": "f7",
+          "label": "بهداشت فردی"
+         }
+        ]
+       },
+       "elements": [],
+       "isInner": false
+      },
+      {
+       "id": "a10018",
+       "elType": "widget",
+       "widgetType": "mr-botanical-card",
+       "settings": {
+        "image": {
+         "url": "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=1200&q=80",
+         "id": "",
+         "alt": "محصولات ارگانیک و طبیعی"
+        },
+        "badge": "۱۱+",
+        "title": "ارگانیک و طبیعی",
+        "title_tag": "h3",
+        "text": "گیاهان دارویی، روغن‌های سردفشرده و سوپرفودهای ارگانیک با گواهی‌های بین‌المللی.",
+        "link_text": "مشاهده ارگانیک",
+        "link": {
+         "url": "/products/?category=organic",
+         "is_external": "",
+         "nofollow": ""
+        },
+        "vine_seed": 37,
+        "animation": "fadeInUp",
+        "animation_duration": "fast",
+        "animation_delay": 240,
+        "items": [
+         {
+          "_id": "o1",
+          "label": "گیاهان خشک"
+         },
+         {
+          "_id": "o2",
+          "label": "دمنوش"
+         },
+         {
+          "_id": "o3",
+          "label": "روغن گیاهی"
+         },
+         {
+          "_id": "o4",
+          "label": "عسل طبیعی"
+         },
+         {
+          "_id": "o5",
+          "label": "سوپرفود"
+         },
+         {
+          "_id": "o6",
+          "label": "ادویه"
+         }
+        ]
+       },
+       "elements": [],
+       "isInner": false
+      }
+     ],
+     "isInner": true
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "a1001c",
+   "elType": "container",
+   "settings": {
+    "content_width": "boxed",
+    "flex_direction": "column",
+    "flex_gap": {
+     "column": "24",
+     "row": "24",
+     "isLinked": true,
+     "unit": "px",
+     "size": 24
+    },
+    "padding": {
+     "unit": "px",
+     "top": "72",
+     "right": "8",
+     "bottom": "72",
+     "left": "8",
+     "isLinked": false
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "58",
+     "right": "20",
+     "bottom": "58",
+     "left": "20",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "50",
+     "right": "16",
+     "bottom": "50",
+     "left": "16",
+     "isLinked": false
+    },
+    "background_background": "classic",
+    "background_color": "#0a1e16"
+   },
+   "elements": [
+    {
+     "id": "a1001b",
+     "elType": "widget",
+     "widgetType": "mr-catalog-grid",
+     "settings": {
+      "source": "products",
+      "category": "all",
+      "limit": 6,
+      "columns": "3",
+      "columns_tablet": "2",
+      "columns_mobile": "1",
+      "show_filters": "",
+      "eyebrow": "عرضه عمده تأییدشده",
+      "title": "پیشنهادهای برگزیده این هفته",
+      "description": "انتخابی از محصولات تأمین‌کنندگان بررسی‌شده، با اسناد آماده صادرات و حداقل سفارش منعطف.",
+      "more_text": "مشاهده همه محصولات",
+      "more_link": {
+       "url": "/products/",
+       "is_external": "",
+       "nofollow": ""
+      },
+      "card_background": "#10291f",
+      "title_color": "#f6f1e6",
+      "accent_color": "#45c58c"
+     },
+     "elements": [],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "a10029",
+   "elType": "container",
+   "settings": {
+    "content_width": "boxed",
+    "flex_direction": "column",
+    "flex_gap": {
+     "column": "24",
+     "row": "24",
+     "isLinked": true,
+     "unit": "px",
+     "size": 24
+    },
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "8",
+     "bottom": "72",
+     "left": "8",
+     "isLinked": false
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "0",
+     "right": "20",
+     "bottom": "58",
+     "left": "20",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "0",
+     "right": "16",
+     "bottom": "50",
+     "left": "16",
+     "isLinked": false
+    },
+    "background_background": "classic",
+    "background_color": "#10291f"
+   },
+   "elements": [
+    {
+     "id": "a10028",
+     "elType": "container",
+     "settings": {
+      "content_width": "full",
+      "flex_direction": "row",
+      "flex_gap": {
+       "column": "28",
+       "row": "28",
+       "isLinked": true,
+       "unit": "px",
+       "size": 28
+      },
+      "flex_wrap": "wrap",
+      "padding": {
+       "unit": "px",
+       "top": "36",
+       "right": "32",
+       "bottom": "36",
+       "left": "32",
+       "isLinked": false
+      },
+      "padding_mobile": {
+       "unit": "px",
+       "top": "24",
+       "right": "18",
+       "bottom": "24",
+       "left": "18",
+       "isLinked": false
+      },
+      "background_background": "classic",
+      "background_image": {
+       "url": "https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&w=1600&q=80",
+       "id": "",
+       "size": "",
+       "alt": ""
+      },
+      "background_position": "center center",
+      "background_size": "cover",
+      "background_overlay_background": "classic",
+      "background_overlay_color": "#0c2419",
+      "background_overlay_opacity": {
+       "unit": "px",
+       "size": 0.92,
+       "sizes": []
+      },
+      "border_radius": {
+       "unit": "px",
+       "top": "24",
+       "right": "24",
+       "bottom": "24",
+       "left": "24",
+       "isLinked": true
+      },
+      "align_items": "center"
+     },
+     "elements": [
+      {
+       "id": "a10023",
+       "elType": "container",
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "12",
+         "row": "12",
+         "isLinked": true,
+         "unit": "px",
+         "size": 12
+        },
+        "flex_basis": {
+         "unit": "%",
+         "size": "54",
+         "sizes": []
+        },
+        "_element_width": "custom",
+        "_element_custom_width": {
+         "unit": "%",
+         "size": "54",
+         "sizes": []
+        },
+        "justify_content": "center"
+       },
+       "elements": [
+        {
+         "id": "a1001d",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>برنامه عمده‌فروشی</p>",
+          "text_color": "#f0d9b8",
+          "_css_classes": "mr-eyebrow",
+          "typography_typography": "custom",
+          "typography_font_weight": "600",
+          "typography_font_size": {
+           "unit": "px",
+           "size": "11",
+           "sizes": []
+          },
+          "typography_letter_spacing": {
+           "unit": "px",
+           "size": "1.4",
+           "sizes": []
+          },
+          "typography_text_transform": "uppercase"
+         },
+         "elements": [],
+         "isInner": false
+        },
+        {
+         "id": "a1001e",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "خرید عمده برای کسب‌وکار شما",
+          "header_size": "h2",
+          "align": "left",
+          "title_color": "#f6f1e6",
+          "typography_typography": "custom",
+          "typography_font_family": "Fraunces",
+          "typography_font_weight": "700",
+          "typography_font_size": {
+           "unit": "px",
+           "size": "28",
+           "sizes": []
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": "22",
+           "sizes": []
+          },
+          "typography_line_height": {
+           "unit": "em",
+           "size": "1.5",
+           "sizes": []
+          },
+          "_margin": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "10",
+           "left": "0",
+           "isLinked": false
+          }
+         },
+         "elements": [],
+         "isInner": false
+        },
+        {
+         "id": "a1001f",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>از یک پالت تا برنامه‌های کانتینری مستمر — شرایط شفاف، استاندارد کیفیت توافق‌شده و برنامه تأمین متناسب با بازار شما.</p>",
+          "text_color": "rgba(246,241,230,0.68)",
+          "align": "left",
+          "typography_typography": "custom",
+          "typography_font_weight": "400",
+          "typography_font_size": {
+           "unit": "px",
+           "size": "14",
+           "sizes": []
+          },
+          "typography_line_height": {
+           "unit": "em",
+           "size": "1.95",
+           "sizes": []
+          },
+          "_margin": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": true
+          }
+         },
+         "elements": [],
+         "isInner": false
+        },
+        {
+         "id": "a10022",
+         "elType": "container",
+         "settings": {
+          "content_width": "full",
+          "flex_direction": "row",
+          "flex_gap": {
+           "column": "12",
+           "row": "12",
+           "isLinked": true,
+           "unit": "px",
+           "size": 12
+          },
+          "flex_wrap": "wrap"
+         },
+         "elements": [
+          {
+           "id": "a10020",
+           "elType": "widget",
+           "widgetType": "button",
+           "settings": {
+            "text": "استعلام قیمت عمده",
+            "link": {
+             "url": "#quote",
+             "is_external": "",
+             "nofollow": "",
+             "custom_attributes": ""
+            },
+            "align": "left",
+            "size": "md",
+            "_css_classes": "mr-quote-trigger",
+            "typography_typography": "custom",
+            "typography_font_weight": "600",
+            "typography_font_size": {
+             "unit": "px",
+             "size": "14",
+             "sizes": []
+            },
+            "background_color": "#1f8a5f",
+            "button_text_color": "#05100b",
+            "hover_color": "#05100b",
+            "button_background_hover_color": "#ffffff",
+            "border_border": "solid",
+            "border_width": {
+             "unit": "px",
+             "top": "1",
+             "right": "1",
+             "bottom": "1",
+             "left": "1",
+             "isLinked": true
+            },
+            "border_color": "rgba(255,255,255,0.6)",
+            "border_radius": {
+             "unit": "px",
+             "size": "999",
+             "sizes": []
+            },
+            "text_padding": {
+             "unit": "px",
+             "top": "12",
+             "right": "24",
+             "bottom": "12",
+             "left": "24",
+             "isLinked": false
+            },
+            "_margin": {
+             "unit": "px",
+             "top": "0",
+             "right": "0",
+             "bottom": "0",
+             "left": "0",
+             "isLinked": true
+            }
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "a10021",
+           "elType": "widget",
+           "widgetType": "button",
+           "settings": {
+            "text": "شرایط عمده‌فروشی",
+            "link": {
+             "url": "/wholesale/",
+             "is_external": "",
+             "nofollow": "",
+             "custom_attributes": ""
+            },
+            "align": "left",
+            "size": "md",
+            "typography_typography": "custom",
+            "typography_font_weight": "600",
+            "typography_font_size": {
+             "unit": "px",
+             "size": "14",
+             "sizes": []
+            },
+            "background_color": "rgba(246,241,230,0.14)",
+            "button_text_color": "#f6f1e6",
+            "hover_color": "#f6f1e6",
+            "button_background_hover_color": "#2c8a63",
+            "border_border": "solid",
+            "border_width": {
+             "unit": "px",
+             "top": "1",
+             "right": "1",
+             "bottom": "1",
+             "left": "1",
+             "isLinked": true
+            },
+            "border_color": "rgba(255,255,255,0.5)",
+            "border_radius": {
+             "unit": "px",
+             "size": "999",
+             "sizes": []
+            },
+            "text_padding": {
+             "unit": "px",
+             "top": "12",
+             "right": "24",
+             "bottom": "12",
+             "left": "24",
+             "isLinked": false
+            },
+            "_margin": {
+             "unit": "px",
+             "top": "0",
+             "right": "0",
+             "bottom": "0",
+             "left": "0",
+             "isLinked": true
+            }
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": true
+        }
+       ],
+       "isInner": true
+      },
+      {
+       "id": "a10027",
+       "elType": "container",
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "12",
+         "row": "12",
+         "isLinked": true,
+         "unit": "px",
+         "size": 12
+        },
+        "flex_basis": {
+         "unit": "%",
+         "size": "40",
+         "sizes": []
+        },
+        "_element_width": "custom",
+        "_element_custom_width": {
+         "unit": "%",
+         "size": "40",
+         "sizes": []
+        },
+        "justify_content": "center"
+       },
+       "elements": [
+        {
+         "id": "a10024",
+         "elType": "widget",
+         "widgetType": "icon-box",
+         "settings": {
+          "selected_icon": {
+           "value": "fas fa-boxes",
+           "library": "fa-solid"
+          },
+          "title_text": "بار ترکیبی",
+          "description_text": "چند تأمین‌کننده در یک محموله تجمیع می‌شود.",
+          "position": "left",
+          "title_size": "h3",
+          "primary_color": "#f0d9b8",
+          "title_color": "#f6f1e6",
+          "description_color": "rgba(169,195,178,0.65)",
+          "icon_size": {
+           "unit": "px",
+           "size": "20",
+           "sizes": []
+          },
+          "icon_space": {
+           "unit": "px",
+           "size": "12",
+           "sizes": []
+          },
+          "text_align": "left",
+          "title_typography_typography": "custom",
+          "title_typography_font_weight": "700",
+          "title_typography_font_size": {
+           "unit": "px",
+           "size": "14",
+           "sizes": []
+          },
+          "title_typography_line_height": {
+           "unit": "em",
+           "size": "1.6",
+           "sizes": []
+          },
+          "description_typography_typography": "custom",
+          "description_typography_font_weight": "400",
+          "description_typography_font_size": {
+           "unit": "px",
+           "size": "11",
+           "sizes": []
+          },
+          "description_typography_line_height": {
+           "unit": "em",
+           "size": "1.85",
+           "sizes": []
+          },
+          "_padding": {
+           "unit": "px",
+           "top": "12",
+           "right": "14",
+           "bottom": "12",
+           "left": "14",
+           "isLinked": false
+          },
+          "_background_background": "classic",
+          "_background_color": "rgba(255,255,255,0.08)",
+          "_border_radius": {
+           "unit": "px",
+           "top": "16",
+           "right": "16",
+           "bottom": "16",
+           "left": "16",
+           "isLinked": true
+          }
+         },
+         "elements": [],
+         "isInner": false
+        },
+        {
+         "id": "a10025",
+         "elType": "widget",
+         "widgetType": "icon-box",
+         "settings": {
+          "selected_icon": {
+           "value": "fas fa-file-invoice",
+           "library": "fa-solid"
+          },
+          "title_text": "اسناد صادرات",
+          "description_text": "گواهی مبدأ، گواهی بهداشت و پشتیبانی برچسب‌گذاری.",
+          "position": "left",
+          "title_size": "h3",
+          "primary_color": "#f0d9b8",
+          "title_color": "#f6f1e6",
+          "description_color": "rgba(169,195,178,0.65)",
+          "icon_size": {
+           "unit": "px",
+           "size": "20",
+           "sizes": []
+          },
+          "icon_space": {
+           "unit": "px",
+           "size": "12",
+           "sizes": []
+          },
+          "text_align": "left",
+          "title_typography_typography": "custom",
+          "title_typography_font_weight": "700",
+          "title_typography_font_size": {
+           "unit": "px",
+           "size": "14",
+           "sizes": []
+          },
+          "title_typography_line_height": {
+           "unit": "em",
+           "size": "1.6",
+           "sizes": []
+          },
+          "description_typography_typography": "custom",
+          "description_typography_font_weight": "400",
+          "description_typography_font_size": {
+           "unit": "px",
+           "size": "11",
+           "sizes": []
+          },
+          "description_typography_line_height": {
+           "unit": "em",
+           "size": "1.85",
+           "sizes": []
+          },
+          "_padding": {
+           "unit": "px",
+           "top": "12",
+           "right": "14",
+           "bottom": "12",
+           "left": "14",
+           "isLinked": false
+          },
+          "_background_background": "classic",
+          "_background_color": "rgba(255,255,255,0.08)",
+          "_border_radius": {
+           "unit": "px",
+           "top": "16",
+           "right": "16",
+           "bottom": "16",
+           "left": "16",
+           "isLinked": true
+          }
+         },
+         "elements": [],
+         "isInner": false
+        },
+        {
+         "id": "a10026",
+         "elType": "widget",
+         "widgetType": "icon-box",
+         "settings": {
+          "selected_icon": {
+           "value": "fas fa-headset",
+           "library": "fa-solid"
+          },
+          "title_text": "مدیر اختصاصی",
+          "description_text": "یک مدیر حساب از استعلام تا تحویل.",
+          "position": "left",
+          "title_size": "h3",
+          "primary_color": "#f0d9b8",
+          "title_color": "#f6f1e6",
+          "description_color": "rgba(169,195,178,0.65)",
+          "icon_size": {
+           "unit": "px",
+           "size": "20",
+           "sizes": []
+          },
+          "icon_space": {
+           "unit": "px",
+           "size": "12",
+           "sizes": []
+          },
+          "text_align": "left",
+          "title_typography_typography": "custom",
+          "title_typography_font_weight": "700",
+          "title_typography_font_size": {
+           "unit": "px",
+           "size": "14",
+           "sizes": []
+          },
+          "title_typography_line_height": {
+           "unit": "em",
+           "size": "1.6",
+           "sizes": []
+          },
+          "description_typography_typography": "custom",
+          "description_typography_font_weight": "400",
+          "description_typography_font_size": {
+           "unit": "px",
+           "size": "11",
+           "sizes": []
+          },
+          "description_typography_line_height": {
+           "unit": "em",
+           "size": "1.85",
+           "sizes": []
+          },
+          "_padding": {
+           "unit": "px",
+           "top": "12",
+           "right": "14",
+           "bottom": "12",
+           "left": "14",
+           "isLinked": false
+          },
+          "_background_background": "classic",
+          "_background_color": "rgba(255,255,255,0.08)",
+          "_border_radius": {
+           "unit": "px",
+           "top": "16",
+           "right": "16",
+           "bottom": "16",
+           "left": "16",
+           "isLinked": true
+          }
+         },
+         "elements": [],
+         "isInner": false
+        }
+       ],
+       "isInner": true
+      }
+     ],
+     "isInner": true
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "a1002b",
+   "elType": "container",
+   "settings": {
+    "content_width": "boxed",
+    "flex_direction": "column",
+    "flex_gap": {
+     "column": "24",
+     "row": "24",
+     "isLinked": true,
+     "unit": "px",
+     "size": 24
+    },
+    "padding": {
+     "unit": "px",
+     "top": "72",
+     "right": "8",
+     "bottom": "72",
+     "left": "8",
+     "isLinked": false
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "58",
+     "right": "20",
+     "bottom": "58",
+     "left": "20",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "50",
+     "right": "16",
+     "bottom": "50",
+     "left": "16",
+     "isLinked": false
+    },
+    "background_background": "classic",
+    "background_color": "#0a1e16"
+   },
+   "elements": [
+    {
+     "id": "a1002a",
+     "elType": "widget",
+     "widgetType": "mr-eurasia-map",
+     "settings": {
+      "eyebrow": "بازارهای هدف · TARGET MARKETS",
+      "title": "Our Markets Across Eurasia",
+      "description": "Connecting markets, building partnerships, and creating opportunities across the Eurasian region.",
+      "description_fa": "بازارهای هدف ما در سراسر اوراسیا؛ اتصال بازارها، ساخت شراکت‌های بلندمدت و آفرینش فرصت برای واردکنندگان و توزیع‌کنندگان منطقه.",
+      "default_country": "IRN",
+      "reference_iso2": "ir",
+      "cta_text": "استعلام برای این بازار",
+      "cta_link": {
+       "url": "/contact/",
+       "is_external": "",
+       "nofollow": ""
+      },
+      "map_background": "#08190f",
+      "country_color": "#1f8a5f",
+      "country_hover_color": "#45c58c"
+     },
+     "elements": [],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "a1003a",
+   "elType": "container",
+   "settings": {
+    "content_width": "boxed",
+    "flex_direction": "column",
+    "flex_gap": {
+     "column": "24",
+     "row": "24",
+     "isLinked": true,
+     "unit": "px",
+     "size": 24
+    },
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "8",
+     "bottom": "72",
+     "left": "8",
+     "isLinked": false
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "0",
+     "right": "20",
+     "bottom": "58",
+     "left": "20",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "0",
+     "right": "16",
+     "bottom": "50",
+     "left": "16",
+     "isLinked": false
+    },
+    "background_background": "classic",
+    "background_color": "#10291f"
+   },
+   "elements": [
+    {
+     "id": "a10039",
+     "elType": "container",
+     "settings": {
+      "content_width": "full",
+      "flex_direction": "row",
+      "flex_gap": {
+       "column": "20",
+       "row": "20",
+       "isLinked": true,
+       "unit": "px",
+       "size": 20
+      },
+      "flex_wrap": "wrap",
+      "align_items": "stretch"
+     },
+     "elements": [
+      {
+       "id": "a1002f",
+       "elType": "container",
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "12",
+         "row": "12",
+         "isLinked": true,
+         "unit": "px",
+         "size": 12
+        },
+        "flex_basis": {
+         "unit": "%",
+         "size": "30",
+         "sizes": []
+        },
+        "_element_width": "custom",
+        "_element_custom_width": {
+         "unit": "%",
+         "size": "30",
+         "sizes": []
+        },
+        "padding": {
+         "unit": "px",
+         "top": "20",
+         "right": "20",
+         "bottom": "20",
+         "left": "20",
+         "isLinked": true
+        },
+        "background_background": "classic",
+        "background_color": "#0a1e16",
+        "border_radius": {
+         "unit": "px",
+         "top": "16",
+         "right": "16",
+         "bottom": "16",
+         "left": "16",
+         "isLinked": true
+        },
+        "border_border": "solid",
+        "border_width": {
+         "unit": "px",
+         "top": "1",
+         "right": "1",
+         "bottom": "1",
+         "left": "1",
+         "isLinked": true
+        },
+        "border_color": "rgba(51,96,75,0.25)"
+       },
+       "elements": [
+        {
+         "id": "a1002c",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "دسته‌های پرطرفدار",
+          "header_size": "h2",
+          "align": "left",
+          "title_color": "#f6f1e6",
+          "typography_typography": "custom",
+          "typography_font_family": "Vazirmatn",
+          "typography_font_weight": "700",
+          "typography_font_size": {
+           "unit": "px",
+           "size": "18",
+           "sizes": []
+          },
+          "typography_line_height": {
+           "unit": "em",
+           "size": "1.5",
+           "sizes": []
+          },
+          "_margin": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "12",
+           "left": "0",
+           "isLinked": false
+          }
+         },
+         "elements": [],
+         "isInner": false
+        },
+        {
+         "id": "a1002d",
+         "elType": "widget",
+         "widgetType": "icon-list",
+         "settings": {
+          "icon_list": [
+           {
+            "_id": "001a",
+            "text": "آرایشی طبیعی",
+            "selected_icon": {
+             "value": "fas fa-check",
+             "library": "fa-solid"
+            },
+            "link": {
+             "url": "/products/?category=cosmetics",
+             "is_external": "",
+             "nofollow": ""
+            }
+           },
+           {
+            "_id": "002a",
+            "text": "دمنوش گیاهی",
+            "selected_icon": {
+             "value": "fas fa-check",
+             "library": "fa-solid"
+            },
+            "link": {
+             "url": "/products/?category=organic",
+             "is_external": "",
+             "nofollow": ""
+            }
+           },
+           {
+            "_id": "003a",
+            "text": "ترشی و کنسرو",
+            "selected_icon": {
+             "value": "fas fa-check",
+             "library": "fa-solid"
+            },
+            "link": {
+             "url": "/products/?category=fmcg",
+             "is_external": "",
+             "nofollow": ""
+            }
+           },
+           {
+            "_id": "004a",
+            "text": "روغن و عصاره گیاهی",
+            "selected_icon": {
+             "value": "fas fa-check",
+             "library": "fa-solid"
+            },
+            "link": {
+             "url": "/products/?category=organic",
+             "is_external": "",
+             "nofollow": ""
+            }
+           },
+           {
+            "_id": "005a",
+            "text": "غذای ارگانیک",
+            "selected_icon": {
+             "value": "fas fa-check",
+             "library": "fa-solid"
+            },
+            "link": {
+             "url": "/products/?category=organic",
+             "is_external": "",
+             "nofollow": ""
+            }
+           },
+           {
+            "_id": "006a",
+            "text": "اسانس‌ها",
+            "selected_icon": {
+             "value": "fas fa-check",
+             "library": "fa-solid"
+            },
+            "link": {
+             "url": "/products/?mr_q=Essential",
+             "is_external": "",
+             "nofollow": ""
+            }
+           },
+           {
+            "_id": "007a",
+            "text": "صابون طبیعی",
+            "selected_icon": {
+             "value": "fas fa-check",
+             "library": "fa-solid"
+            },
+            "link": {
+             "url": "/products/?category=cosmetics",
+             "is_external": "",
+             "nofollow": ""
+            }
+           },
+           {
+            "_id": "008a",
+            "text": "گیاهان خشک و ادویه",
+            "selected_icon": {
+             "value": "fas fa-check",
+             "library": "fa-solid"
+            },
+            "link": {
+             "url": "/products/?category=fmcg",
+             "is_external": "",
+             "nofollow": ""
+            }
+           }
+          ],
+          "space_between": {
+           "unit": "px",
+           "size": "12",
+           "sizes": []
+          },
+          "icon_color": "#45c58c",
+          "text_color": "rgba(169,195,178,0.65)",
+          "icon_size": {
+           "unit": "px",
+           "size": "12",
+           "sizes": []
+          },
+          "text_indent": {
+           "unit": "px",
+           "size": "8",
+           "sizes": []
+          },
+          "divider": "yes",
+          "icon_typography_typography": "custom",
+          "icon_typography_font_weight": "500",
+          "icon_typography_font_size": {
+           "unit": "px",
+           "size": "13",
+           "sizes": []
+          },
+          "icon_typography_line_height": {
+           "unit": "em",
+           "size": "1.85",
+           "sizes": []
+          }
+         },
+         "elements": [],
+         "isInner": false
+        },
+        {
+         "id": "a1002e",
+         "elType": "widget",
+         "widgetType": "button",
+         "settings": {
+          "text": "همه محصولات",
+          "link": {
+           "url": "/products/",
+           "is_external": "",
+           "nofollow": "",
+           "custom_attributes": ""
+          },
+          "align": "left",
+          "size": "md",
+          "typography_typography": "custom",
+          "typography_font_weight": "600",
+          "typography_font_size": {
+           "unit": "px",
+           "size": "14",
+           "sizes": []
+          },
+          "background_color": "#10291f",
+          "button_text_color": "#f6f1e6",
+          "hover_color": "#f6f1e6",
+          "button_background_hover_color": "#163a2b",
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_color": "rgba(51,96,75,0.55)",
+          "border_radius": {
+           "unit": "px",
+           "size": "999",
+           "sizes": []
+          },
+          "text_padding": {
+           "unit": "px",
+           "top": "12",
+           "right": "24",
+           "bottom": "12",
+           "left": "24",
+           "isLinked": false
+          },
+          "_margin": {
+           "unit": "px",
+           "top": "0",
+           "right": "12",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": false
+          }
+         },
+         "elements": [],
+         "isInner": false
+        }
+       ],
+       "isInner": true
+      },
+      {
+       "id": "a10032",
+       "elType": "container",
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "16",
+         "row": "16",
+         "isLinked": true,
+         "unit": "px",
+         "size": 16
+        },
+        "flex_basis": {
+         "unit": "%",
+         "size": "36",
+         "sizes": []
+        },
+        "_element_width": "custom",
+        "_element_custom_width": {
+         "unit": "%",
+         "size": "36",
+         "sizes": []
+        }
+       },
+       "elements": [
+        {
+         "id": "a10030",
+         "elType": "widget",
+         "widgetType": "image-box",
+         "settings": {
+          "image": {
+           "url": "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=1000&q=80",
+           "id": "",
+           "alt": "مراقبت طبیعی برای زیبایی سالم"
+          },
+          "image_size": "full",
+          "title_text": "مراقبت طبیعی برای زیبایی سالم",
+          "description_text": "مراقبت پوست، مو و زیبایی گیاهی از تولیدکنندگان دارای گواهی.",
+          "position": "top",
+          "title_size": "h3",
+          "title_color": "#f6f1e6",
+          "description_color": "rgba(169,195,178,0.65)",
+          "_css_classes": "mr-image-card",
+          "title_typography_typography": "custom",
+          "title_typography_font_weight": "700",
+          "title_typography_font_size": {
+           "unit": "px",
+           "size": "15",
+           "sizes": []
+          },
+          "title_typography_line_height": {
+           "unit": "em",
+           "size": "1.6",
+           "sizes": []
+          },
+          "description_typography_typography": "custom",
+          "description_typography_font_weight": "400",
+          "description_typography_font_size": {
+           "unit": "px",
+           "size": "12",
+           "sizes": []
+          },
+          "description_typography_line_height": {
+           "unit": "em",
+           "size": "1.9",
+           "sizes": []
+          }
+         },
+         "elements": [],
+         "isInner": false
+        },
+        {
+         "id": "a10031",
+         "elType": "widget",
+         "widgetType": "image-box",
+         "settings": {
+          "image": {
+           "url": "https://images.unsplash.com/photo-1587049352851-8d4e89133924?auto=format&fit=crop&w=1000&q=80",
+           "id": "",
+           "alt": "ترشی و غذاهای تخمیری طبیعی"
+          },
+          "image_size": "full",
+          "title_text": "ترشی و غذاهای تخمیری طبیعی",
+          "description_text": "دستورهای سنتی با بسته‌بندی پایدار و برچسب آماده عرضه در هر بازار.",
+          "position": "top",
+          "title_size": "h3",
+          "title_color": "#f6f1e6",
+          "description_color": "rgba(169,195,178,0.65)",
+          "_css_classes": "mr-image-card",
+          "title_typography_typography": "custom",
+          "title_typography_font_weight": "700",
+          "title_typography_font_size": {
+           "unit": "px",
+           "size": "15",
+           "sizes": []
+          },
+          "title_typography_line_height": {
+           "unit": "em",
+           "size": "1.6",
+           "sizes": []
+          },
+          "description_typography_typography": "custom",
+          "description_typography_font_weight": "400",
+          "description_typography_font_size": {
+           "unit": "px",
+           "size": "12",
+           "sizes": []
+          },
+          "description_typography_line_height": {
+           "unit": "em",
+           "size": "1.9",
+           "sizes": []
+          }
+         },
+         "elements": [],
+         "isInner": false
+        }
+       ],
+       "isInner": true
+      },
+      {
+       "id": "a10038",
+       "elType": "container",
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "12",
+         "row": "12",
+         "isLinked": true,
+         "unit": "px",
+         "size": 12
+        },
+        "flex_basis": {
+         "unit": "%",
+         "size": "30",
+         "sizes": []
+        },
+        "_element_width": "custom",
+        "_element_custom_width": {
+         "unit": "%",
+         "size": "30",
+         "sizes": []
+        },
+        "justify_content": "center"
+       },
+       "elements": [
+        {
+         "id": "a10033",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "چرا MR Store؟",
+          "header_size": "h2",
+          "align": "left",
+          "title_color": "#f6f1e6",
+          "typography_typography": "custom",
+          "typography_font_family": "Vazirmatn",
+          "typography_font_weight": "700",
+          "typography_font_size": {
+           "unit": "px",
+           "size": "18",
+           "sizes": []
+          },
+          "typography_line_height": {
+           "unit": "em",
+           "size": "1.5",
+           "sizes": []
+          },
+          "_margin": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "10",
+           "left": "0",
+           "isLinked": false
+          }
+         },
+         "elements": [],
+         "isInner": false
+        },
+        {
+         "id": "a10034",
+         "elType": "widget",
+         "widgetType": "icon-list",
+         "settings": {
+          "icon_list": [
+           {
+            "_id": "001a",
+            "text": "تأمین‌کنندگان تأییدشده با کارخانه‌های بازرسی‌شده",
+            "selected_icon": {
+             "value": "fas fa-check",
+             "library": "fa-solid"
+            }
+           },
+           {
+            "_id": "002a",
+            "text": "معاملات امن و تضمین تجاری",
+            "selected_icon": {
+             "value": "fas fa-check",
+             "library": "fa-solid"
+            }
+           },
+           {
+            "_id": "003a",
+            "text": "لجستیک جهانی از تولیدکننده تا درب انبار",
+            "selected_icon": {
+             "value": "fas fa-check",
+             "library": "fa-solid"
+            }
+           },
+           {
+            "_id": "004a",
+            "text": "پشتیبانی اختصاصی در منطقه زمانی شما",
+            "selected_icon": {
+             "value": "fas fa-check",
+             "library": "fa-solid"
+            }
+           }
+          ],
+          "space_between": {
+           "unit": "px",
+           "size": "12",
+           "sizes": []
+          },
+          "icon_color": "#45c58c",
+          "text_color": "rgba(169,195,178,0.65)",
+          "icon_size": {
+           "unit": "px",
+           "size": "12",
+           "sizes": []
+          },
+          "text_indent": {
+           "unit": "px",
+           "size": "8",
+           "sizes": []
+          },
+          "divider": "",
+          "icon_typography_typography": "custom",
+          "icon_typography_font_weight": "500",
+          "icon_typography_font_size": {
+           "unit": "px",
+           "size": "13",
+           "sizes": []
+          },
+          "icon_typography_line_height": {
+           "unit": "em",
+           "size": "1.85",
+           "sizes": []
+          }
+         },
+         "elements": [],
+         "isInner": false
+        },
+        {
+         "id": "a10035",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "پشتیبانی تأمین",
+          "header_size": "h3",
+          "align": "left",
+          "title_color": "#f6f1e6",
+          "typography_typography": "custom",
+          "typography_font_family": "Vazirmatn",
+          "typography_font_weight": "700",
+          "typography_font_size": {
+           "unit": "px",
+           "size": "15",
+           "sizes": []
+          },
+          "typography_line_height": {
+           "unit": "em",
+           "size": "1.5",
+           "sizes": []
+          },
+          "_margin": {
+           "unit": "px",
+           "top": "12",
+           "right": "0",
+           "bottom": "6",
+           "left": "0",
+           "isLinked": false
+          }
+         },
+         "elements": [],
+         "isInner": false
+        },
+        {
+         "id": "a10036",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>تیم بازرگانی ما ظرفیت تولید، اسناد و زمان‌بندی حمل را پیش از هر پیش‌فاکتور بررسی می‌کند.</p>",
+          "text_color": "rgba(169,195,178,0.65)",
+          "align": "left",
+          "typography_typography": "custom",
+          "typography_font_weight": "400",
+          "typography_font_size": {
+           "unit": "px",
+           "size": "12",
+           "sizes": []
+          },
+          "typography_line_height": {
+           "unit": "em",
+           "size": "1.95",
+           "sizes": []
+          },
+          "_margin": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": true
+          }
+         },
+         "elements": [],
+         "isInner": false
+        },
+        {
+         "id": "a10037",
+         "elType": "widget",
+         "widgetType": "button",
+         "settings": {
+          "text": "دنبال تأمین‌کننده هستید؟",
+          "link": {
+           "url": "/contact/",
+           "is_external": "",
+           "nofollow": "",
+           "custom_attributes": ""
+          },
+          "align": "left",
+          "size": "md",
+          "typography_typography": "custom",
+          "typography_font_weight": "600",
+          "typography_font_size": {
+           "unit": "px",
+           "size": "14",
+           "sizes": []
+          },
+          "background_color": "#10291f",
+          "button_text_color": "#f6f1e6",
+          "hover_color": "#f6f1e6",
+          "button_background_hover_color": "#163a2b",
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_color": "rgba(51,96,75,0.55)",
+          "border_radius": {
+           "unit": "px",
+           "size": "999",
+           "sizes": []
+          },
+          "text_padding": {
+           "unit": "px",
+           "top": "12",
+           "right": "24",
+           "bottom": "12",
+           "left": "24",
+           "isLinked": false
+          },
+          "_margin": {
+           "unit": "px",
+           "top": "0",
+           "right": "12",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": false
+          }
+         },
+         "elements": [],
+         "isInner": false
+        }
+       ],
+       "isInner": true
+      }
+     ],
+     "isInner": true
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "a10051",
+   "elType": "container",
+   "settings": {
+    "content_width": "boxed",
+    "flex_direction": "column",
+    "flex_gap": {
+     "column": "24",
+     "row": "24",
+     "isLinked": true,
+     "unit": "px",
+     "size": 24
+    },
+    "padding": {
+     "unit": "px",
+     "top": "72",
+     "right": "8",
+     "bottom": "72",
+     "left": "8",
+     "isLinked": false
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "58",
+     "right": "20",
+     "bottom": "58",
+     "left": "20",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "50",
+     "right": "16",
+     "bottom": "50",
+     "left": "16",
+     "isLinked": false
+    },
+    "background_background": "classic",
+    "background_color": "#0a1e16"
+   },
+   "elements": [
+    {
+     "id": "a1003b",
+     "elType": "widget",
+     "widgetType": "text-editor",
+     "settings": {
+      "editor": "<p>مسیرهای همکاری</p>",
+      "text_color": "#f0d9b8",
+      "_css_classes": "mr-eyebrow",
+      "typography_typography": "custom",
+      "typography_font_weight": "600",
+      "typography_font_size": {
+       "unit": "px",
+       "size": "11",
+       "sizes": []
+      },
+      "typography_letter_spacing": {
+       "unit": "px",
+       "size": "1.4",
+       "sizes": []
+      },
+      "typography_text_transform": "uppercase"
+     },
+     "elements": [],
+     "isInner": false
+    },
+    {
+     "id": "a1003c",
+     "elType": "widget",
+     "widgetType": "heading",
+     "settings": {
+      "title": "از کجا شروع می‌کنید؟",
+      "header_size": "h2",
+      "align": "left",
+      "title_color": "#f6f1e6",
+      "typography_typography": "custom",
+      "typography_font_family": "Fraunces",
+      "typography_font_weight": "700",
+      "typography_font_size": {
+       "unit": "px",
+       "size": "28",
+       "sizes": []
+      },
+      "typography_font_size_mobile": {
+       "unit": "px",
+       "size": "22",
+       "sizes": []
+      },
+      "typography_line_height": {
+       "unit": "em",
+       "size": "1.5",
+       "sizes": []
+      },
+      "_margin": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "10",
+       "left": "0",
+       "isLinked": false
+      }
+     },
+     "elements": [],
+     "isInner": false
+    },
+    {
+     "id": "a1003d",
+     "elType": "widget",
+     "widgetType": "text-editor",
+     "settings": {
+      "editor": "<p>هر مسیر شما را به یک کارشناس تجارت اختصاصی متصل می‌کند؛ از انتخاب محصول تا استعلام قیمت عمده.</p>",
+      "text_color": "rgba(169,195,178,0.65)",
+      "align": "left",
+      "typography_typography": "custom",
+      "typography_font_weight": "400",
+      "typography_font_size": {
+       "unit": "px",
+       "size": "14",
+       "sizes": []
+      },
+      "typography_line_height": {
+       "unit": "em",
+       "size": "1.95",
+       "sizes": []
+      },
+      "_margin": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "8",
+       "left": "0",
+       "isLinked": false
+      }
+     },
+     "elements": [],
+     "isInner": false
+    },
+    {
+     "id": "a10050",
+     "elType": "container",
+     "settings": {
+      "content_width": "full",
+      "flex_direction": "row",
+      "flex_gap": {
+       "column": "16",
+       "row": "16",
+       "isLinked": true,
+       "unit": "px",
+       "size": 16
+      },
+      "flex_wrap": "wrap"
+     },
+     "elements": [
+      {
+       "id": "a10040",
+       "elType": "container",
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "12",
+         "row": "12",
+         "isLinked": true,
+         "unit": "px",
+         "size": 12
+        },
+        "flex_basis": {
+         "unit": "%",
+         "size": "31",
+         "sizes": []
+        },
+        "_element_width": "custom",
+        "_element_custom_width": {
+         "unit": "%",
+         "size": "31",
+         "sizes": []
+        },
+        "padding": {
+         "unit": "px",
+         "top": "20",
+         "right": "20",
+         "bottom": "20",
+         "left": "20",
+         "isLinked": true
+        },
+        "background_background": "classic",
+        "background_color": "#10291f",
+        "border_radius": {
+         "unit": "px",
+         "top": "16",
+         "right": "16",
+         "bottom": "16",
+         "left": "16",
+         "isLinked": true
+        },
+        "border_border": "solid",
+        "border_width": {
+         "unit": "px",
+         "top": "1",
+         "right": "1",
+         "bottom": "1",
+         "left": "1",
+         "isLinked": true
+        },
+        "border_color": "rgba(51,96,75,0.2)"
+       },
+       "elements": [
+        {
+         "id": "a1003e",
+         "elType": "widget",
+         "widgetType": "icon-box",
+         "settings": {
+          "selected_icon": {
+           "value": "fas fa-box-open",
+           "library": "fa-solid"
+          },
+          "title_text": "محصولات عمده",
+          "description_text": "کاتالوگ کامل محصولات آرایشی، مصرفی و ارگانیک با حداقل سفارش مشخص.",
+          "position": "left",
+          "title_size": "h3",
+          "primary_color": "#45c58c",
+          "title_color": "#f6f1e6",
+          "description_color": "rgba(169,195,178,0.65)",
+          "icon_size": {
+           "unit": "px",
+           "size": "20",
+           "sizes": []
+          },
+          "icon_space": {
+           "unit": "px",
+           "size": "12",
+           "sizes": []
+          },
+          "text_align": "left",
+          "title_typography_typography": "custom",
+          "title_typography_font_weight": "700",
+          "title_typography_font_size": {
+           "unit": "px",
+           "size": "14",
+           "sizes": []
+          },
+          "title_typography_line_height": {
+           "unit": "em",
+           "size": "1.6",
+           "sizes": []
+          },
+          "description_typography_typography": "custom",
+          "description_typography_font_weight": "400",
+          "description_typography_font_size": {
+           "unit": "px",
+           "size": "12",
+           "sizes": []
+          },
+          "description_typography_line_height": {
+           "unit": "em",
+           "size": "1.85",
+           "sizes": []
+          }
+         },
+         "elements": [],
+         "isInner": false
+        },
+        {
+         "id": "a1003f",
+         "elType": "widget",
+         "widgetType": "button",
+         "settings": {
+          "text": "ادامه مسیر",
+          "link": {
+           "url": "/products/",
+           "is_external": "",
+           "nofollow": "",
+           "custom_attributes": ""
+          },
+          "align": "left",
+          "size": "md",
+          "typography_typography": "custom",
+          "typography_font_weight": "600",
+          "typography_font_size": {
+           "unit": "px",
+           "size": "14",
+           "sizes": []
+          },
+          "background_color": "#10291f",
+          "button_text_color": "#f6f1e6",
+          "hover_color": "#f6f1e6",
+          "button_background_hover_color": "#163a2b",
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_color": "rgba(51,96,75,0.55)",
+          "border_radius": {
+           "unit": "px",
+           "size": "999",
+           "sizes": []
+          },
+          "text_padding": {
+           "unit": "px",
+           "top": "12",
+           "right": "24",
+           "bottom": "12",
+           "left": "24",
+           "isLinked": false
+          },
+          "_margin": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": true
+          }
+         },
+         "elements": [],
+         "isInner": false
+        }
+       ],
+       "isInner": true
+      },
+      {
+       "id": "a10043",
+       "elType": "container",
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "12",
+         "row": "12",
+         "isLinked": true,
+         "unit": "px",
+         "size": 12
+        },
+        "flex_basis": {
+         "unit": "%",
+         "size": "31",
+         "sizes": []
+        },
+        "_element_width": "custom",
+        "_element_custom_width": {
+         "unit": "%",
+         "size": "31",
+         "sizes": []
+        },
+        "padding": {
+         "unit": "px",
+         "top": "20",
+         "right": "20",
+         "bottom": "20",
+         "left": "20",
+         "isLinked": true
+        },
+        "background_background": "classic",
+        "background_color": "#10291f",
+        "border_radius": {
+         "unit": "px",
+         "top": "16",
+         "right": "16",
+         "bottom": "16",
+         "left": "16",
+         "isLinked": true
+        },
+        "border_border": "solid",
+        "border_width": {
+         "unit": "px",
+         "top": "1",
+         "right": "1",
+         "bottom": "1",
+         "left": "1",
+         "isLinked": true
+        },
+        "border_color": "rgba(51,96,75,0.2)"
+       },
+       "elements": [
+        {
+         "id": "a10041",
+         "elType": "widget",
+         "widgetType": "icon-box",
+         "settings": {
+          "selected_icon": {
+           "value": "fas fa-building",
+           "library": "fa-solid"
+          },
+          "title_text": "تأمین‌کنندگان",
+          "description_text": "تولیدکنندگان بررسی‌شده و ظرفیت صادرات هر یک.",
+          "position": "left",
+          "title_size": "h3",
+          "primary_color": "#45c58c",
+          "title_color": "#f6f1e6",
+          "description_color": "rgba(169,195,178,0.65)",
+          "icon_size": {
+           "unit": "px",
+           "size": "20",
+           "sizes": []
+          },
+          "icon_space": {
+           "unit": "px",
+           "size": "12",
+           "sizes": []
+          },
+          "text_align": "left",
+          "title_typography_typography": "custom",
+          "title_typography_font_weight": "700",
+          "title_typography_font_size": {
+           "unit": "px",
+           "size": "14",
+           "sizes": []
+          },
+          "title_typography_line_height": {
+           "unit": "em",
+           "size": "1.6",
+           "sizes": []
+          },
+          "description_typography_typography": "custom",
+          "description_typography_font_weight": "400",
+          "description_typography_font_size": {
+           "unit": "px",
+           "size": "12",
+           "sizes": []
+          },
+          "description_typography_line_height": {
+           "unit": "em",
+           "size": "1.85",
+           "sizes": []
+          }
+         },
+         "elements": [],
+         "isInner": false
+        },
+        {
+         "id": "a10042",
+         "elType": "widget",
+         "widgetType": "button",
+         "settings": {
+          "text": "ادامه مسیر",
+          "link": {
+           "url": "/suppliers/",
+           "is_external": "",
+           "nofollow": "",
+           "custom_attributes": ""
+          },
+          "align": "left",
+          "size": "md",
+          "typography_typography": "custom",
+          "typography_font_weight": "600",
+          "typography_font_size": {
+           "unit": "px",
+           "size": "14",
+           "sizes": []
+          },
+          "background_color": "#10291f",
+          "button_text_color": "#f6f1e6",
+          "hover_color": "#f6f1e6",
+          "button_background_hover_color": "#163a2b",
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_color": "rgba(51,96,75,0.55)",
+          "border_radius": {
+           "unit": "px",
+           "size": "999",
+           "sizes": []
+          },
+          "text_padding": {
+           "unit": "px",
+           "top": "12",
+           "right": "24",
+           "bottom": "12",
+           "left": "24",
+           "isLinked": false
+          },
+          "_margin": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": true
+          }
+         },
+         "elements": [],
+         "isInner": false
+        }
+       ],
+       "isInner": true
+      },
+      {
+       "id": "a10046",
+       "elType": "container",
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "12",
+         "row": "12",
+         "isLinked": true,
+         "unit": "px",
+         "size": 12
+        },
+        "flex_basis": {
+         "unit": "%",
+         "size": "31",
+         "sizes": []
+        },
+        "_element_width": "custom",
+        "_element_custom_width": {
+         "unit": "%",
+         "size": "31",
+         "sizes": []
+        },
+        "padding": {
+         "unit": "px",
+         "top": "20",
+         "right": "20",
+         "bottom": "20",
+         "left": "20",
+         "isLinked": true
+        },
+        "background_background": "classic",
+        "background_color": "#10291f",
+        "border_radius": {
+         "unit": "px",
+         "top": "16",
+         "right": "16",
+         "bottom": "16",
+         "left": "16",
+         "isLinked": true
+        },
+        "border_border": "solid",
+        "border_width": {
+         "unit": "px",
+         "top": "1",
+         "right": "1",
+         "bottom": "1",
+         "left": "1",
+         "isLinked": true
+        },
+        "border_color": "rgba(51,96,75,0.2)"
+       },
+       "elements": [
+        {
+         "id": "a10044",
+         "elType": "widget",
+         "widgetType": "icon-box",
+         "settings": {
+          "selected_icon": {
+           "value": "fas fa-handshake",
+           "library": "fa-solid"
+          },
+          "title_text": "شرایط عمده‌فروشی",
+          "description_text": "مراحل استعلام، نمونه، قرارداد و حمل‌ونقل تجمیعی.",
+          "position": "left",
+          "title_size": "h3",
+          "primary_color": "#45c58c",
+          "title_color": "#f6f1e6",
+          "description_color": "rgba(169,195,178,0.65)",
+          "icon_size": {
+           "unit": "px",
+           "size": "20",
+           "sizes": []
+          },
+          "icon_space": {
+           "unit": "px",
+           "size": "12",
+           "sizes": []
+          },
+          "text_align": "left",
+          "title_typography_typography": "custom",
+          "title_typography_font_weight": "700",
+          "title_typography_font_size": {
+           "unit": "px",
+           "size": "14",
+           "sizes": []
+          },
+          "title_typography_line_height": {
+           "unit": "em",
+           "size": "1.6",
+           "sizes": []
+          },
+          "description_typography_typography": "custom",
+          "description_typography_font_weight": "400",
+          "description_typography_font_size": {
+           "unit": "px",
+           "size": "12",
+           "sizes": []
+          },
+          "description_typography_line_height": {
+           "unit": "em",
+           "size": "1.85",
+           "sizes": []
+          }
+         },
+         "elements": [],
+         "isInner": false
+        },
+        {
+         "id": "a10045",
+         "elType": "widget",
+         "widgetType": "button",
+         "settings": {
+          "text": "ادامه مسیر",
+          "link": {
+           "url": "/wholesale/",
+           "is_external": "",
+           "nofollow": "",
+           "custom_attributes": ""
+          },
+          "align": "left",
+          "size": "md",
+          "typography_typography": "custom",
+          "typography_font_weight": "600",
+          "typography_font_size": {
+           "unit": "px",
+           "size": "14",
+           "sizes": []
+          },
+          "background_color": "#10291f",
+          "button_text_color": "#f6f1e6",
+          "hover_color": "#f6f1e6",
+          "button_background_hover_color": "#163a2b",
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_color": "rgba(51,96,75,0.55)",
+          "border_radius": {
+           "unit": "px",
+           "size": "999",
+           "sizes": []
+          },
+          "text_padding": {
+           "unit": "px",
+           "top": "12",
+           "right": "24",
+           "bottom": "12",
+           "left": "24",
+           "isLinked": false
+          },
+          "_margin": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": true
+          }
+         },
+         "elements": [],
+         "isInner": false
+        }
+       ],
+       "isInner": true
+      },
+      {
+       "id": "a10049",
+       "elType": "container",
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "12",
+         "row": "12",
+         "isLinked": true,
+         "unit": "px",
+         "size": 12
+        },
+        "flex_basis": {
+         "unit": "%",
+         "size": "31",
+         "sizes": []
+        },
+        "_element_width": "custom",
+        "_element_custom_width": {
+         "unit": "%",
+         "size": "31",
+         "sizes": []
+        },
+        "padding": {
+         "unit": "px",
+         "top": "20",
+         "right": "20",
+         "bottom": "20",
+         "left": "20",
+         "isLinked": true
+        },
+        "background_background": "classic",
+        "background_color": "#10291f",
+        "border_radius": {
+         "unit": "px",
+         "top": "16",
+         "right": "16",
+         "bottom": "16",
+         "left": "16",
+         "isLinked": true
+        },
+        "border_border": "solid",
+        "border_width": {
+         "unit": "px",
+         "top": "1",
+         "right": "1",
+         "bottom": "1",
+         "left": "1",
+         "isLinked": true
+        },
+        "border_color": "rgba(51,96,75,0.2)"
+       },
+       "elements": [
+        {
+         "id": "a10047",
+         "elType": "widget",
+         "widgetType": "icon-box",
+         "settings": {
+          "selected_icon": {
+           "value": "fas fa-layer-group",
+           "library": "fa-solid"
+          },
+          "title_text": "همکاری با ما",
+          "description_text": "برند اختصاصی، نمایندگی توزیع و همکاری بازارگاهی.",
+          "position": "left",
+          "title_size": "h3",
+          "primary_color": "#45c58c",
+          "title_color": "#f6f1e6",
+          "description_color": "rgba(169,195,178,0.65)",
+          "icon_size": {
+           "unit": "px",
+           "size": "20",
+           "sizes": []
+          },
+          "icon_space": {
+           "unit": "px",
+           "size": "12",
+           "sizes": []
+          },
+          "text_align": "left",
+          "title_typography_typography": "custom",
+          "title_typography_font_weight": "700",
+          "title_typography_font_size": {
+           "unit": "px",
+           "size": "14",
+           "sizes": []
+          },
+          "title_typography_line_height": {
+           "unit": "em",
+           "size": "1.6",
+           "sizes": []
+          },
+          "description_typography_typography": "custom",
+          "description_typography_font_weight": "400",
+          "description_typography_font_size": {
+           "unit": "px",
+           "size": "12",
+           "sizes": []
+          },
+          "description_typography_line_height": {
+           "unit": "em",
+           "size": "1.85",
+           "sizes": []
+          }
+         },
+         "elements": [],
+         "isInner": false
+        },
+        {
+         "id": "a10048",
+         "elType": "widget",
+         "widgetType": "button",
+         "settings": {
+          "text": "ادامه مسیر",
+          "link": {
+           "url": "/partnership/",
+           "is_external": "",
+           "nofollow": "",
+           "custom_attributes": ""
+          },
+          "align": "left",
+          "size": "md",
+          "typography_typography": "custom",
+          "typography_font_weight": "600",
+          "typography_font_size": {
+           "unit": "px",
+           "size": "14",
+           "sizes": []
+          },
+          "background_color": "#10291f",
+          "button_text_color": "#f6f1e6",
+          "hover_color": "#f6f1e6",
+          "button_background_hover_color": "#163a2b",
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_color": "rgba(51,96,75,0.55)",
+          "border_radius": {
+           "unit": "px",
+           "size": "999",
+           "sizes": []
+          },
+          "text_padding": {
+           "unit": "px",
+           "top": "12",
+           "right": "24",
+           "bottom": "12",
+           "left": "24",
+           "isLinked": false
+          },
+          "_margin": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": true
+          }
+         },
+         "elements": [],
+         "isInner": false
+        }
+       ],
+       "isInner": true
+      },
+      {
+       "id": "a1004c",
+       "elType": "container",
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "12",
+         "row": "12",
+         "isLinked": true,
+         "unit": "px",
+         "size": 12
+        },
+        "flex_basis": {
+         "unit": "%",
+         "size": "31",
+         "sizes": []
+        },
+        "_element_width": "custom",
+        "_element_custom_width": {
+         "unit": "%",
+         "size": "31",
+         "sizes": []
+        },
+        "padding": {
+         "unit": "px",
+         "top": "20",
+         "right": "20",
+         "bottom": "20",
+         "left": "20",
+         "isLinked": true
+        },
+        "background_background": "classic",
+        "background_color": "#10291f",
+        "border_radius": {
+         "unit": "px",
+         "top": "16",
+         "right": "16",
+         "bottom": "16",
+         "left": "16",
+         "isLinked": true
+        },
+        "border_border": "solid",
+        "border_width": {
+         "unit": "px",
+         "top": "1",
+         "right": "1",
+         "bottom": "1",
+         "left": "1",
+         "isLinked": true
+        },
+        "border_color": "rgba(51,96,75,0.2)"
+       },
+       "elements": [
+        {
+         "id": "a1004a",
+         "elType": "widget",
+         "widgetType": "icon-box",
+         "settings": {
+          "selected_icon": {
+           "value": "fas fa-info-circle",
+           "library": "fa-solid"
+          },
+          "title_text": "درباره MR Store",
+          "description_text": "داستان ما، ارزش‌ها و مسیر رشد در تجارت طبیعی.",
+          "position": "left",
+          "title_size": "h3",
+          "primary_color": "#45c58c",
+          "title_color": "#f6f1e6",
+          "description_color": "rgba(169,195,178,0.65)",
+          "icon_size": {
+           "unit": "px",
+           "size": "20",
+           "sizes": []
+          },
+          "icon_space": {
+           "unit": "px",
+           "size": "12",
+           "sizes": []
+          },
+          "text_align": "left",
+          "title_typography_typography": "custom",
+          "title_typography_font_weight": "700",
+          "title_typography_font_size": {
+           "unit": "px",
+           "size": "14",
+           "sizes": []
+          },
+          "title_typography_line_height": {
+           "unit": "em",
+           "size": "1.6",
+           "sizes": []
+          },
+          "description_typography_typography": "custom",
+          "description_typography_font_weight": "400",
+          "description_typography_font_size": {
+           "unit": "px",
+           "size": "12",
+           "sizes": []
+          },
+          "description_typography_line_height": {
+           "unit": "em",
+           "size": "1.85",
+           "sizes": []
+          }
+         },
+         "elements": [],
+         "isInner": false
+        },
+        {
+         "id": "a1004b",
+         "elType": "widget",
+         "widgetType": "button",
+         "settings": {
+          "text": "ادامه مسیر",
+          "link": {
+           "url": "/about/",
+           "is_external": "",
+           "nofollow": "",
+           "custom_attributes": ""
+          },
+          "align": "left",
+          "size": "md",
+          "typography_typography": "custom",
+          "typography_font_weight": "600",
+          "typography_font_size": {
+           "unit": "px",
+           "size": "14",
+           "sizes": []
+          },
+          "background_color": "#10291f",
+          "button_text_color": "#f6f1e6",
+          "hover_color": "#f6f1e6",
+          "button_background_hover_color": "#163a2b",
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_color": "rgba(51,96,75,0.55)",
+          "border_radius": {
+           "unit": "px",
+           "size": "999",
+           "sizes": []
+          },
+          "text_padding": {
+           "unit": "px",
+           "top": "12",
+           "right": "24",
+           "bottom": "12",
+           "left": "24",
+           "isLinked": false
+          },
+          "_margin": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": true
+          }
+         },
+         "elements": [],
+         "isInner": false
+        }
+       ],
+       "isInner": true
+      },
+      {
+       "id": "a1004f",
+       "elType": "container",
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "12",
+         "row": "12",
+         "isLinked": true,
+         "unit": "px",
+         "size": 12
+        },
+        "flex_basis": {
+         "unit": "%",
+         "size": "31",
+         "sizes": []
+        },
+        "_element_width": "custom",
+        "_element_custom_width": {
+         "unit": "%",
+         "size": "31",
+         "sizes": []
+        },
+        "padding": {
+         "unit": "px",
+         "top": "20",
+         "right": "20",
+         "bottom": "20",
+         "left": "20",
+         "isLinked": true
+        },
+        "background_background": "classic",
+        "background_color": "#10291f",
+        "border_radius": {
+         "unit": "px",
+         "top": "16",
+         "right": "16",
+         "bottom": "16",
+         "left": "16",
+         "isLinked": true
+        },
+        "border_border": "solid",
+        "border_width": {
+         "unit": "px",
+         "top": "1",
+         "right": "1",
+         "bottom": "1",
+         "left": "1",
+         "isLinked": true
+        },
+        "border_color": "rgba(51,96,75,0.2)"
+       },
+       "elements": [
+        {
+         "id": "a1004d",
+         "elType": "widget",
+         "widgetType": "icon-box",
+         "settings": {
+          "selected_icon": {
+           "value": "fas fa-envelope",
+           "library": "fa-solid"
+          },
+          "title_text": "تماس و استعلام",
+          "description_text": "گفتگو با کارشناس تجارت و ثبت درخواست همکاری.",
+          "position": "left",
+          "title_size": "h3",
+          "primary_color": "#45c58c",
+          "title_color": "#f6f1e6",
+          "description_color": "rgba(169,195,178,0.65)",
+          "icon_size": {
+           "unit": "px",
+           "size": "20",
+           "sizes": []
+          },
+          "icon_space": {
+           "unit": "px",
+           "size": "12",
+           "sizes": []
+          },
+          "text_align": "left",
+          "title_typography_typography": "custom",
+          "title_typography_font_weight": "700",
+          "title_typography_font_size": {
+           "unit": "px",
+           "size": "14",
+           "sizes": []
+          },
+          "title_typography_line_height": {
+           "unit": "em",
+           "size": "1.6",
+           "sizes": []
+          },
+          "description_typography_typography": "custom",
+          "description_typography_font_weight": "400",
+          "description_typography_font_size": {
+           "unit": "px",
+           "size": "12",
+           "sizes": []
+          },
+          "description_typography_line_height": {
+           "unit": "em",
+           "size": "1.85",
+           "sizes": []
+          }
+         },
+         "elements": [],
+         "isInner": false
+        },
+        {
+         "id": "a1004e",
+         "elType": "widget",
+         "widgetType": "button",
+         "settings": {
+          "text": "ادامه مسیر",
+          "link": {
+           "url": "/contact/",
+           "is_external": "",
+           "nofollow": "",
+           "custom_attributes": ""
+          },
+          "align": "left",
+          "size": "md",
+          "typography_typography": "custom",
+          "typography_font_weight": "600",
+          "typography_font_size": {
+           "unit": "px",
+           "size": "14",
+           "sizes": []
+          },
+          "background_color": "#10291f",
+          "button_text_color": "#f6f1e6",
+          "hover_color": "#f6f1e6",
+          "button_background_hover_color": "#163a2b",
+          "border_border": "solid",
+          "border_width": {
+           "unit": "px",
+           "top": "1",
+           "right": "1",
+           "bottom": "1",
+           "left": "1",
+           "isLinked": true
+          },
+          "border_color": "rgba(51,96,75,0.55)",
+          "border_radius": {
+           "unit": "px",
+           "size": "999",
+           "sizes": []
+          },
+          "text_padding": {
+           "unit": "px",
+           "top": "12",
+           "right": "24",
+           "bottom": "12",
+           "left": "24",
+           "isLinked": false
+          },
+          "_margin": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": true
+          }
+         },
+         "elements": [],
+         "isInner": false
+        }
+       ],
+       "isInner": true
+      }
+     ],
+     "isInner": true
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "a1005f",
+   "elType": "container",
+   "settings": {
+    "content_width": "boxed",
+    "flex_direction": "column",
+    "flex_gap": {
+     "column": "24",
+     "row": "24",
+     "isLinked": true,
+     "unit": "px",
+     "size": 24
+    },
+    "padding": {
+     "unit": "px",
+     "top": "72",
+     "right": "8",
+     "bottom": "72",
+     "left": "8",
+     "isLinked": false
+    },
+    "padding_tablet": {
+     "unit": "px",
+     "top": "58",
+     "right": "20",
+     "bottom": "58",
+     "left": "20",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "50",
+     "right": "16",
+     "bottom": "50",
+     "left": "16",
+     "isLinked": false
+    },
+    "background_background": "classic",
+    "background_color": "#05100b"
+   },
+   "elements": [
+    {
+     "id": "a1005e",
+     "elType": "container",
+     "settings": {
+      "content_width": "full",
+      "flex_direction": "row",
+      "flex_gap": {
+       "column": "32",
+       "row": "32",
+       "isLinked": true,
+       "unit": "px",
+       "size": 32
+      },
+      "flex_wrap": "wrap",
+      "align_items": "center"
+     },
+     "elements": [
+      {
+       "id": "a10058",
+       "elType": "container",
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "12",
+         "row": "12",
+         "isLinked": true,
+         "unit": "px",
+         "size": 12
+        },
+        "flex_basis": {
+         "unit": "%",
+         "size": "52",
+         "sizes": []
+        },
+        "_element_width": "custom",
+        "_element_custom_width": {
+         "unit": "%",
+         "size": "52",
+         "sizes": []
+        },
+        "justify_content": "center"
+       },
+       "elements": [
+        {
+         "id": "a10052",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>شروع همکاری</p>",
+          "text_color": "#f0d9b8",
+          "_css_classes": "mr-eyebrow",
+          "typography_typography": "custom",
+          "typography_font_weight": "600",
+          "typography_font_size": {
+           "unit": "px",
+           "size": "11",
+           "sizes": []
+          },
+          "typography_letter_spacing": {
+           "unit": "px",
+           "size": "1.4",
+           "sizes": []
+          },
+          "typography_text_transform": "uppercase"
+         },
+         "elements": [],
+         "isInner": false
+        },
+        {
+         "id": "a10053",
+         "elType": "widget",
+         "widgetType": "heading",
+         "settings": {
+          "title": "سفارش عمده بعدی شما با یک گفتگو شروع می‌شود",
+          "header_size": "h2",
+          "align": "left",
+          "title_color": "#f6f1e6",
+          "typography_typography": "custom",
+          "typography_font_family": "Fraunces",
+          "typography_font_weight": "700",
+          "typography_font_size": {
+           "unit": "px",
+           "size": "28",
+           "sizes": []
+          },
+          "typography_font_size_mobile": {
+           "unit": "px",
+           "size": "22",
+           "sizes": []
+          },
+          "typography_line_height": {
+           "unit": "em",
+           "size": "1.5",
+           "sizes": []
+          },
+          "_margin": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "10",
+           "left": "0",
+           "isLinked": false
+          }
+         },
+         "elements": [],
+         "isInner": false
+        },
+        {
+         "id": "a10054",
+         "elType": "widget",
+         "widgetType": "text-editor",
+         "settings": {
+          "editor": "<p>فهرست محصولات، حجم تقریبی و بازار مقصد را برای ما بنویسید. تیم بازرگانی MR Store شرایط تأمین، نمونه و حمل‌ونقل را برای شما آماده می‌کند.</p>",
+          "text_color": "rgba(246,241,230,0.62)",
+          "align": "left",
+          "typography_typography": "custom",
+          "typography_font_weight": "400",
+          "typography_font_size": {
+           "unit": "px",
+           "size": "14",
+           "sizes": []
+          },
+          "typography_line_height": {
+           "unit": "em",
+           "size": "1.95",
+           "sizes": []
+          },
+          "_margin": {
+           "unit": "px",
+           "top": "0",
+           "right": "0",
+           "bottom": "0",
+           "left": "0",
+           "isLinked": true
+          }
+         },
+         "elements": [],
+         "isInner": false
+        },
+        {
+         "id": "a10057",
+         "elType": "container",
+         "settings": {
+          "content_width": "full",
+          "flex_direction": "row",
+          "flex_gap": {
+           "column": "12",
+           "row": "12",
+           "isLinked": true,
+           "unit": "px",
+           "size": 12
+          },
+          "flex_wrap": "wrap"
+         },
+         "elements": [
+          {
+           "id": "a10055",
+           "elType": "widget",
+           "widgetType": "button",
+           "settings": {
+            "text": "استعلام قیمت عمده",
+            "link": {
+             "url": "#quote",
+             "is_external": "",
+             "nofollow": "",
+             "custom_attributes": ""
+            },
+            "align": "left",
+            "size": "md",
+            "_css_classes": "mr-quote-trigger",
+            "typography_typography": "custom",
+            "typography_font_weight": "600",
+            "typography_font_size": {
+             "unit": "px",
+             "size": "14",
+             "sizes": []
+            },
+            "background_color": "#1f8a5f",
+            "button_text_color": "#05100b",
+            "hover_color": "#05100b",
+            "button_background_hover_color": "#ffffff",
+            "border_border": "solid",
+            "border_width": {
+             "unit": "px",
+             "top": "1",
+             "right": "1",
+             "bottom": "1",
+             "left": "1",
+             "isLinked": true
+            },
+            "border_color": "rgba(255,255,255,0.6)",
+            "border_radius": {
+             "unit": "px",
+             "size": "999",
+             "sizes": []
+            },
+            "text_padding": {
+             "unit": "px",
+             "top": "12",
+             "right": "24",
+             "bottom": "12",
+             "left": "24",
+             "isLinked": false
+            },
+            "_margin": {
+             "unit": "px",
+             "top": "0",
+             "right": "0",
+             "bottom": "0",
+             "left": "0",
+             "isLinked": true
+            }
+           },
+           "elements": [],
+           "isInner": false
+          },
+          {
+           "id": "a10056",
+           "elType": "widget",
+           "widgetType": "button",
+           "settings": {
+            "text": "درخواست همکاری",
+            "link": {
+             "url": "/partnership/",
+             "is_external": "",
+             "nofollow": "",
+             "custom_attributes": ""
+            },
+            "align": "left",
+            "size": "md",
+            "typography_typography": "custom",
+            "typography_font_weight": "600",
+            "typography_font_size": {
+             "unit": "px",
+             "size": "14",
+             "sizes": []
+            },
+            "background_color": "rgba(246,241,230,0.14)",
+            "button_text_color": "#f6f1e6",
+            "hover_color": "#f6f1e6",
+            "button_background_hover_color": "#2c8a63",
+            "border_border": "solid",
+            "border_width": {
+             "unit": "px",
+             "top": "1",
+             "right": "1",
+             "bottom": "1",
+             "left": "1",
+             "isLinked": true
+            },
+            "border_color": "rgba(255,255,255,0.5)",
+            "border_radius": {
+             "unit": "px",
+             "size": "999",
+             "sizes": []
+            },
+            "text_padding": {
+             "unit": "px",
+             "top": "12",
+             "right": "24",
+             "bottom": "12",
+             "left": "24",
+             "isLinked": false
+            },
+            "_margin": {
+             "unit": "px",
+             "top": "0",
+             "right": "0",
+             "bottom": "0",
+             "left": "0",
+             "isLinked": true
+            }
+           },
+           "elements": [],
+           "isInner": false
+          }
+         ],
+         "isInner": true
+        }
+       ],
+       "isInner": true
+      },
+      {
+       "id": "a1005d",
+       "elType": "container",
+       "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "flex_gap": {
+         "column": "12",
+         "row": "12",
+         "isLinked": true,
+         "unit": "px",
+         "size": 12
+        },
+        "flex_basis": {
+         "unit": "%",
+         "size": "44",
+         "sizes": []
+        },
+        "_element_width": "custom",
+        "_element_custom_width": {
+         "unit": "%",
+         "size": "44",
+         "sizes": []
+        },
+        "justify_content": "center"
+       },
+       "elements": [
+        {
+         "id": "a10059",
+         "elType": "widget",
+         "widgetType": "icon-box",
+         "settings": {
+          "selected_icon": {
+           "value": "fas fa-envelope",
+           "library": "fa-solid"
+          },
+          "title_text": "ایمیل بازرگانی",
+          "description_text": "trade@mrstore.global",
+          "position": "left",
+          "title_size": "h3",
+          "primary_color": "#45c58c",
+          "title_color": "#f6f1e6",
+          "description_color": "rgba(169,195,178,0.65)",
+          "icon_size": {
+           "unit": "px",
+           "size": "20",
+           "sizes": []
+          },
+          "icon_space": {
+           "unit": "px",
+           "size": "12",
+           "sizes": []
+          },
+          "text_align": "left",
+          "title_typography_typography": "custom",
+          "title_typography_font_weight": "700",
+          "title_typography_font_size": {
+           "unit": "px",
+           "size": "11",
+           "sizes": []
+          },
+          "title_typography_line_height": {
+           "unit": "em",
+           "size": "1.6",
+           "sizes": []
+          },
+          "description_typography_typography": "custom",
+          "description_typography_font_weight": "400",
+          "description_typography_font_size": {
+           "unit": "px",
+           "size": "14",
+           "sizes": []
+          },
+          "description_typography_line_height": {
+           "unit": "em",
+           "size": "1.85",
+           "sizes": []
+          }
+         },
+         "elements": [],
+         "isInner": false
+        },
+        {
+         "id": "a1005a",
+         "elType": "widget",
+         "widgetType": "icon-box",
+         "settings": {
+          "selected_icon": {
+           "value": "fas fa-phone",
+           "library": "fa-solid"
+          },
+          "title_text": "تلفن",
+          "description_text": "+971 4 000 1188",
+          "position": "left",
+          "title_size": "h3",
+          "primary_color": "#45c58c",
+          "title_color": "#f6f1e6",
+          "description_color": "rgba(169,195,178,0.65)",
+          "icon_size": {
+           "unit": "px",
+           "size": "20",
+           "sizes": []
+          },
+          "icon_space": {
+           "unit": "px",
+           "size": "12",
+           "sizes": []
+          },
+          "text_align": "left",
+          "title_typography_typography": "custom",
+          "title_typography_font_weight": "700",
+          "title_typography_font_size": {
+           "unit": "px",
+           "size": "11",
+           "sizes": []
+          },
+          "title_typography_line_height": {
+           "unit": "em",
+           "size": "1.6",
+           "sizes": []
+          },
+          "description_typography_typography": "custom",
+          "description_typography_font_weight": "400",
+          "description_typography_font_size": {
+           "unit": "px",
+           "size": "14",
+           "sizes": []
+          },
+          "description_typography_line_height": {
+           "unit": "em",
+           "size": "1.85",
+           "sizes": []
+          }
+         },
+         "elements": [],
+         "isInner": false
+        },
+        {
+         "id": "a1005b",
+         "elType": "widget",
+         "widgetType": "icon-box",
+         "settings": {
+          "selected_icon": {
+           "value": "fas fa-map-marker-alt",
+           "library": "fa-solid"
+          },
+          "title_text": "دفتر مرکزی",
+          "description_text": "دبی · استانبول · شانگهای",
+          "position": "left",
+          "title_size": "h3",
+          "primary_color": "#45c58c",
+          "title_color": "#f6f1e6",
+          "description_color": "rgba(169,195,178,0.65)",
+          "icon_size": {
+           "unit": "px",
+           "size": "20",
+           "sizes": []
+          },
+          "icon_space": {
+           "unit": "px",
+           "size": "12",
+           "sizes": []
+          },
+          "text_align": "left",
+          "title_typography_typography": "custom",
+          "title_typography_font_weight": "700",
+          "title_typography_font_size": {
+           "unit": "px",
+           "size": "11",
+           "sizes": []
+          },
+          "title_typography_line_height": {
+           "unit": "em",
+           "size": "1.6",
+           "sizes": []
+          },
+          "description_typography_typography": "custom",
+          "description_typography_font_weight": "400",
+          "description_typography_font_size": {
+           "unit": "px",
+           "size": "14",
+           "sizes": []
+          },
+          "description_typography_line_height": {
+           "unit": "em",
+           "size": "1.85",
+           "sizes": []
+          }
+         },
+         "elements": [],
+         "isInner": false
+        },
+        {
+         "id": "a1005c",
+         "elType": "widget",
+         "widgetType": "icon-box",
+         "settings": {
+          "selected_icon": {
+           "value": "fas fa-clock",
+           "library": "fa-solid"
+          },
+          "title_text": "زمان پاسخ",
+          "description_text": "حداکثر یک روز کاری",
+          "position": "left",
+          "title_size": "h3",
+          "primary_color": "#45c58c",
+          "title_color": "#f6f1e6",
+          "description_color": "rgba(169,195,178,0.65)",
+          "icon_size": {
+           "unit": "px",
+           "size": "20",
+           "sizes": []
+          },
+          "icon_space": {
+           "unit": "px",
+           "size": "12",
+           "sizes": []
+          },
+          "text_align": "left",
+          "title_typography_typography": "custom",
+          "title_typography_font_weight": "700",
+          "title_typography_font_size": {
+           "unit": "px",
+           "size": "11",
+           "sizes": []
+          },
+          "title_typography_line_height": {
+           "unit": "em",
+           "size": "1.6",
+           "sizes": []
+          },
+          "description_typography_typography": "custom",
+          "description_typography_font_weight": "400",
+          "description_typography_font_size": {
+           "unit": "px",
+           "size": "14",
+           "sizes": []
+          },
+          "description_typography_line_height": {
+           "unit": "em",
+           "size": "1.85",
+           "sizes": []
+          }
+         },
+         "elements": [],
+         "isInner": false
+        }
+       ],
+       "isInner": true
+      }
+     ],
+     "isInner": true
+    }
+   ],
+   "isInner": false
+  }
+ ],
+ "page_settings": {
+  "template": "elementor_header_footer",
+  "hide_title": "yes"
+ }
+}
