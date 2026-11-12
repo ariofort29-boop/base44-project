@@ -1,4 +1,5 @@
 import CategoryStrip from '../components/CategoryStrip'
+import EurasiaMarkets from '../components/EurasiaMarkets'
 import ExplorePaths from '../components/ExplorePaths'
 import FeaturedProducts from '../components/FeaturedProducts'
 import CinematicHero from '../components/CinematicHero'
@@ -17,6 +18,7 @@ export default function Home() {
       <MainCategories />
       <FeaturedProducts />
       <WholesaleBand />
+      <EurasiaMarkets />
       <MidSection />
       <ExplorePaths />
       <TradeContact />

@@ -1,5 +1,6 @@
 import { ArrowRight, Building2, Handshake, Info, Mail, PackageSearch } from 'lucide-react'
 import { Link } from 'react-router-dom'
+import BotanicalFrame from './BotanicalFrame'
 
 const paths = [
   {
@@ -63,7 +64,7 @@ export default function ExplorePaths() {
             <Link
               key={title}
               to={to}
-              className="group flex items-start gap-4 rounded-2xl border border-line/10 bg-surface p-5 transition duration-400 hover:-translate-y-1 hover:border-gold/40 hover:shadow-card"
+              className="group relative flex items-start gap-4 rounded-2xl border border-line/10 bg-surface p-5 transition duration-400 hover:-translate-y-1 hover:border-gold/40 hover:shadow-card"
             >
               <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-mint text-emerald-soft transition group-hover:bg-emerald-brand group-hover:text-white">
                 <Icon size={19} />
@@ -78,6 +79,7 @@ export default function ExplorePaths() {
                 </span>
                 <span className="mt-1 block text-[12px] leading-[1.85] text-sage/55">{text}</span>
               </span>
+              <BotanicalFrame seed={title} radius={16} density={18} />
             </Link>
           ))}
         </div>

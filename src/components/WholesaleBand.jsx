@@ -1,6 +1,7 @@
 import { ArrowRight, Container, FileCheck2, Headset } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { useShop } from '../lib/store'
+import BotanicalFrame from './BotanicalFrame'
 
 const points = [
   { icon: Container, title: 'بار ترکیبی', text: 'چند تأمین‌کننده در یک محموله تجمیع می‌شود.' },
@@ -64,6 +65,7 @@ export default function WholesaleBand() {
               ))}
             </ul>
           </div>
+          <BotanicalFrame seed="wholesale-programme" radius={24} density={26} />
         </div>
       </div>
     </section>

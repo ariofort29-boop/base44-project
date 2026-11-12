@@ -348,3 +348,210 @@
 .animate-fade-up-slow {
   animation: fade-up 0.9s 0.12s cubic-bezier(0.22, 0.61, 0.36, 1) both;
 }
+
+/* ---------- Living botanical frames ---------- */
+.botanical-frame {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 5;
+}
+
+.vine-stem,
+.vine-stem__glint {
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: var(--vine-len) var(--vine-len);
+  stroke-dashoffset: var(--vine-len);
+}
+
+.vine-stem {
+  stroke: #2c7450;
+  stroke-width: 1.5;
+}
+
+.vine-stem__glint {
+  stroke: #8ed9ae;
+  stroke-width: 0.5;
+  opacity: 0.5;
+}
+
+.botanical-frame.is-active .vine-stem,
+.botanical-frame.is-active .vine-stem__glint {
+  animation: vine-draw 1.9s cubic-bezier(0.42, 0, 0.28, 1) forwards;
+}
+
+.botanical-frame.is-active .vine-stem__glint {
+  animation-delay: 0.12s;
+}
+
+.vine-leaf {
+  opacity: 0;
+  transform-box: fill-box;
+  transform-origin: 50% 100%;
+}
+
+.botanical-frame.is-active .vine-leaf {
+  animation: leaf-unfold 0.9s cubic-bezier(0.22, 0.7, 0.3, 1) var(--leaf-delay, 0s) both;
+}
+
+.vine-leaf__vein {
+  stroke: rgba(232, 250, 238, 0.45);
+  stroke-linecap: round;
+  opacity: 0;
+}
+
+.botanical-frame.is-active .vine-leaf__vein {
+  animation: leaf-vein-in 0.7s ease-out var(--leaf-delay, 0s) both;
+}
+
+.leaf-sway {
+  transform-box: fill-box;
+  transform-origin: 50% 100%;
+  animation: leaf-sway 7s ease-in-out var(--sway-delay, 2s) infinite alternate;
+  animation-play-state: paused;
+}
+
+.botanical-frame.is-active .leaf-sway {
+  animation-play-state: running;
+}
+
+@keyframes vine-draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes leaf-unfold {
+  0% {
+    opacity: 0;
+    transform: scale(0.14) rotate(-16deg);
+  }
+  55% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+@keyframes leaf-vein-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.6;
+  }
+}
+
+@keyframes leaf-sway {
+  from {
+    transform: rotate(-2.4deg);
+  }
+  to {
+    transform: rotate(2.8deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .vine-stem,
+  .vine-stem__glint {
+    animation: none !important;
+    stroke-dashoffset: 0 !important;
+  }
+
+  .vine-leaf {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .vine-leaf__vein {
+    animation: none !important;
+    opacity: 0.6 !important;
+  }
+
+  .leaf-sway {
+    animation: none !important;
+  }
+}
+
+/* ---------- Eurasian markets map ---------- */
+.eurasia-map {
+  display: block;
+  width: 100%;
+  height: auto;
+  touch-action: manipulation;
+}
+
+.eurasia-country {
+  stroke-linejoin: round;
+  outline: none;
+  transition:
+    fill 320ms ease,
+    stroke 320ms ease,
+    filter 320ms ease;
+}
+
+.eurasia-country.is-muted {
+  fill: #0e2a1e;
+  stroke: #1c4030;
+  stroke-width: 0.7;
+}
+
+.eurasia-country.is-target {
+  fill: #17624a;
+  stroke: #45b681;
+  stroke-width: 1;
+  cursor: pointer;
+}
+
+.eurasia-country.is-target:hover,
+.eurasia-country.is-target:focus-visible,
+.eurasia-country.is-target.is-active {
+  fill: #238a5f;
+  stroke: #9ce9bd;
+  filter: drop-shadow(0 0 5px rgba(69, 197, 140, 0.55));
+}
+
+.eurasia-country.is-target.is-selected {
+  fill: #2fa873;
+  stroke: #d7f7e4;
+  filter: drop-shadow(0 0 9px rgba(111, 224, 164, 0.6));
+}
+
+.eurasia-route {
+  fill: none;
+  stroke: rgba(106, 214, 158, 0.45);
+  stroke-width: 0.9;
+  stroke-dasharray: 4 8;
+  animation: route-flow 8s linear infinite;
+}
+
+.eurasia-marker {
+  fill: #c8f7dd;
+  opacity: 0.45;
+  transition:
+    opacity 250ms ease,
+    r 250ms ease;
+}
+
+.eurasia-marker.is-active {
+  opacity: 1;
+}
+
+@keyframes route-flow {
+  to {
+    stroke-dashoffset: -24;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .eurasia-route {
+    animation: none;
+  }
+}

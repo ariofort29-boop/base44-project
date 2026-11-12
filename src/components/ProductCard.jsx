@@ -2,6 +2,7 @@ import { Boxes, Heart, MessageSquareQuote, ShieldCheck } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { PRICE_LABEL, WHOLESALE_LABEL } from '../data/catalog'
 import { useShop } from '../lib/store'
+import BotanicalFrame from './BotanicalFrame'
 
 export default function ProductCard({ product }) {
   const { isWished, toggleWishlist, openQuote } = useShop()
@@ -74,6 +75,7 @@ export default function ProductCard({ product }) {
           </button>
         </div>
       </div>
+      <BotanicalFrame seed={product.id} radius={16} />
     </article>
   )
 }

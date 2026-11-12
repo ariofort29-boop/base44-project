@@ -2,6 +2,7 @@ import { ArrowRight, Check, ShieldCheck } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { topCategories } from '../data/catalog'
 import { useShop } from '../lib/store'
+import BotanicalFrame from './BotanicalFrame'
 
 const featureCards = [
   {
@@ -33,7 +34,7 @@ export default function MidSection() {
   return (
     <section className="bg-surface pb-14 lg:pb-20">
       <div className="container-page grid gap-5 lg:grid-cols-12">
-        <aside className="rounded-2xl border border-line/10 bg-surface-2/60 p-5 lg:col-span-3">
+        <aside className="relative rounded-2xl border border-line/10 bg-surface-2/60 p-5 lg:col-span-3">
           <h2 className="text-lg font-bold text-ivory">دسته‌های پرطرفدار</h2>
           <ul className="mt-3 divide-y divide-navy/8">
             {topCategories.map((item) => (
@@ -58,6 +59,7 @@ export default function MidSection() {
           >
             همه محصولات <ArrowRight size={14} />
           </Link>
+          <BotanicalFrame seed="popular-categories" radius={16} density={18} />
         </aside>
 
         <div className="grid gap-5 sm:grid-cols-2 lg:col-span-5">
@@ -83,12 +85,13 @@ export default function MidSection() {
                   مشاهده محصولات <ArrowRight size={13} />
                 </span>
               </div>
+              <BotanicalFrame seed={card.title} radius={16} density={18} />
             </Link>
           ))}
         </div>
 
         <div className="space-y-5 lg:col-span-4">
-          <div className="rounded-2xl border border-line/10 bg-surface p-5">
+          <div className="relative rounded-2xl border border-line/10 bg-surface p-5">
             <div className="flex items-center gap-2">
               <ShieldCheck size={18} className="text-emerald-soft" />
               <h2 className="text-base font-bold text-ivory">چرا MR Store؟</h2>
@@ -103,9 +106,10 @@ export default function MidSection() {
                 </li>
               ))}
             </ul>
+            <BotanicalFrame seed="why-mr-store" radius={16} density={16} />
           </div>
 
-          <div className="rounded-2xl bg-navy p-6 text-white shadow-soft">
+          <div className="relative rounded-2xl bg-navy p-6 text-white shadow-soft">
             <p className="text-[10px] font-semibold text-gold/90">پشتیبانی تأمین</p>
             <h3 className="mt-2 text-lg font-bold">دنبال تأمین‌کننده هستید؟</h3>
             <p className="mt-2 text-[13px] leading-[1.95] text-white/60">
@@ -119,6 +123,7 @@ export default function MidSection() {
             >
               استعلام قیمت عمده
             </button>
+            <BotanicalFrame seed="supply-support" radius={16} density={16} />
           </div>
         </div>
       </div>

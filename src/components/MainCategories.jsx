@@ -1,6 +1,7 @@
 import { ArrowRight } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { categories } from '../data/catalog'
+import BotanicalFrame from './BotanicalFrame'
 import SectionHeading from './SectionHeading'
 
 export default function MainCategories() {
@@ -25,7 +26,7 @@ export default function MainCategories() {
           {categories.map((category) => (
             <article
               key={category.slug}
-              className="group flex flex-col overflow-hidden rounded-3xl border border-line/10 bg-surface shadow-card transition duration-500 hover:-translate-y-1.5 hover:border-gold/40 hover:shadow-soft"
+              className="group relative flex flex-col overflow-hidden rounded-3xl border border-line/10 bg-surface shadow-card transition duration-500 hover:-translate-y-1.5 hover:border-gold/40 hover:shadow-soft"
             >
               <div className="relative h-48 overflow-hidden">
                 <img
@@ -65,6 +66,7 @@ export default function MainCategories() {
                   مشاهده {category.shortFa} <ArrowRight size={15} />
                 </Link>
               </div>
+              <BotanicalFrame seed={category.slug} radius={24} />
             </article>
           ))}
         </div>

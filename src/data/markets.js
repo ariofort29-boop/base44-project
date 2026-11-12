@@ -1,0 +1,179 @@
+/**
+ * Target markets across Eurasia.
+ *
+ * Intros and network roles are editorial descriptions of the market, not
+ * verified company data. Business notes stay null until the trade team fills
+ * them in, and the UI shows an editable placeholder instead of invented facts.
+ */
+export const marketCountries = [
+  {
+    id: 'RUS',
+    name: 'Russia',
+    nameFa: 'روسیه',
+    nameRu: 'Россия',
+    iso2: 'ru',
+    regionFa: 'اوراسیای شمالی',
+    introFa:
+      'بزرگ‌ترین بازار منطقه اوراسیا با تقاضای گسترده برای کالاهای مصرفی، محصولات آرایشی و بهداشتی و مواد غذایی بسته‌بندی‌شده.',
+    roleFa: 'گره شمالی شبکه؛ مقصد اصلی محموله‌های تجمیعی از آسیای مرکزی و قفقاز.',
+    businessFa: null,
+  },
+  {
+    id: 'KAZ',
+    name: 'Kazakhstan',
+    nameFa: 'قزاقستان',
+    nameRu: 'Казахстан',
+    iso2: 'kz',
+    regionFa: 'آسیای مرکزی',
+    introFa:
+      'بازار کلیدی آسیای مرکزی با مسیرهای ترانزیتی زمینی میان چین، روسیه و خلیج فارس.',
+    roleFa: 'گره اتصال آسیای مرکزی به مسیرهای شمالی شبکه.',
+    businessFa: null,
+  },
+  {
+    id: 'UZB',
+    name: 'Uzbekistan',
+    nameFa: 'ازبکستان',
+    nameRu: 'Узбекистан',
+    iso2: 'uz',
+    regionFa: 'آسیای مرکزی',
+    introFa:
+      'بازار پرجمعیت آسیای مرکزی با رشد تقاضا برای محصولات آرایشی، بهداشتی و مواد غذایی بسته‌بندی‌شده.',
+    roleFa: 'گره مرکزی شبکه در کریدور آسیای مرکزی.',
+    businessFa: null,
+  },
+  {
+    id: 'TKM',
+    name: 'Turkmenistan',
+    nameFa: 'ترکمنستان',
+    nameRu: 'Туркменистан',
+    iso2: 'tm',
+    regionFa: 'آسیای مرکزی',
+    introFa:
+      'بازار آسیای مرکزی با تمرکز بر تأمین کالاهای مصرفی و مسیرهای ترانزیتی شمال به جنوب.',
+    roleFa: 'گره ترانزیتی جنوب آسیای مرکزی.',
+    businessFa: null,
+  },
+  {
+    id: 'AZE',
+    name: 'Azerbaijan',
+    nameFa: 'آذربایجان',
+    nameRu: 'Азербайджан',
+    iso2: 'az',
+    regionFa: 'قفقاز',
+    introFa:
+      'پیوند قفقاز میان ایران، ترکیه و روسیه؛ بازار مناسب کالاهای مصرفی و محصولات طبیعی.',
+    roleFa: 'گره قفقاز و دروازه دسترسی به دریای خزر.',
+    businessFa: null,
+  },
+  {
+    id: 'ARM',
+    name: 'Armenia',
+    nameFa: 'ارمنستان',
+    nameRu: 'Армения',
+    iso2: 'am',
+    regionFa: 'قفقاز',
+    introFa:
+      'بازار قفقاز با روابط تجاری نزدیک به روسیه و دسترسی به اتحادیه اقتصادی اوراسیا.',
+    roleFa: 'گره قفقاز جنوبی در شبکه توزیع منطقه‌ای.',
+    businessFa: null,
+  },
+  {
+    id: 'GEO',
+    name: 'Georgia',
+    nameFa: 'گرجستان',
+    nameRu: 'Грузия',
+    iso2: 'ge',
+    regionFa: 'قفقاز',
+    introFa:
+      'دروازه قفقاز به دریای سیاه و بازار مناسب کالاهای مصرفی و محصولات کشاورزی و طبیعی.',
+    roleFa: 'گره قفقاز و مسیر دسترسی به بازارهای دریای سیاه.',
+    businessFa: null,
+  },
+  {
+    id: 'TUR',
+    name: 'Turkey',
+    nameFa: 'ترکیه',
+    nameRu: 'Türkiye',
+    iso2: 'tr',
+    regionFa: 'آناتولی و خاورمیانه',
+    introFa:
+      'بازار بزرگ و بالغ منطقه با زنجیره خرده‌فروشی توسعه‌یافته و تقاضای مستمر برای کالاهای مصرفی سریع‌المصرف.',
+    roleFa: 'گره غربی شبکه و نقطه اتصال به بازارهای مدیترانه.',
+    businessFa: null,
+  },
+  {
+    id: 'IRN',
+    name: 'Iran',
+    nameFa: 'ایران',
+    nameRu: 'Иран',
+    iso2: 'ir',
+    regionFa: 'خاورمیانه',
+    introFa:
+      'بازار خانگی MR Store با دسترسی زمینی به آسیای مرکزی، قفقاز و خاورمیانه.',
+    roleFa: 'گره مرکزی شبکه؛ نقطه اتصال کریدورهای شمال به جنوب و شرق به غرب.',
+    businessFa: null,
+  },
+  {
+    id: 'IRQ',
+    name: 'Iraq',
+    nameFa: 'عراق',
+    nameRu: 'Ирак',
+    iso2: 'iq',
+    regionFa: 'خاورمیانه',
+    introFa:
+      'بازار خاورمیانه با تقاضای رو به رشد برای مواد غذایی بسته‌بندی‌شده و کالاهای مصرفی.',
+    roleFa: 'گره غربی شبکه در مسیر خلیج فارس.',
+    businessFa: null,
+  },
+  {
+    id: 'AFG',
+    name: 'Afghanistan',
+    nameFa: 'افغانستان',
+    nameRu: 'Афганистан',
+    iso2: 'af',
+    regionFa: 'جنوب آسیای مرکزی',
+    introFa:
+      'بازار همسایه با تقاضا برای کالاهای اساسی و مواد غذایی بسته‌بندی‌شده.',
+    roleFa: 'گره جنوبی شبکه میان آسیای مرکزی و جنوب آسیا.',
+    businessFa: null,
+  },
+  {
+    id: 'PAK',
+    name: 'Pakistan',
+    nameFa: 'پاکستان',
+    nameRu: 'Пакистан',
+    iso2: 'pk',
+    regionFa: 'جنوب آسیا',
+    introFa:
+      'بازار پرجمعیت جنوب آسیا با مسیرهای زمینی و دریایی به خلیج فارس و آسیای مرکزی.',
+    roleFa: 'گره جنوب شرقی شبکه و مسیر دسترسی دریایی.',
+    businessFa: null,
+  },
+  {
+    id: 'TJK',
+    name: 'Tajikistan',
+    nameFa: 'تاجیکستان',
+    nameRu: 'Таджикистан',
+    iso2: 'tj',
+    regionFa: 'آسیای مرکزی',
+    introFa:
+      'بازار آسیای مرکزی با تقاضای محصولات غذایی و کالاهای مصرفی روزمره.',
+    roleFa: 'گره جنوب شرقی آسیای مرکزی.',
+    businessFa: null,
+  },
+  {
+    id: 'KGZ',
+    name: 'Kyrgyzstan',
+    nameFa: 'قرقیزستان',
+    nameRu: 'Кыргызстан',
+    iso2: 'kg',
+    regionFa: 'آسیای مرکزی',
+    introFa:
+      'بازار آسیای مرکزی و دروازه تجارت منطقه‌ای با چین و قزاقستان.',
+    roleFa: 'گره شرقی شبکه در کریدور چین به آسیای مرکزی.',
+    businessFa: null,
+  },
+]
+
+export const marketsById = Object.fromEntries(marketCountries.map((country) => [country.id, country]))
