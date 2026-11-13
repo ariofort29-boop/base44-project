@@ -6,6 +6,32 @@
 
 ---
 
+## ۰. دانلود آرشیوهای ZIP
+
+دو آرشیو آماده در همین محیط ساخته شده و از خود سایت قابل دانلود است:
+
+| آرشیو | آدرس در پیش‌نمایش | محتوا |
+|---|---|---|
+| `mr-store-elementor.zip` | `/downloads/mr-store-elementor.zip` | افزونهٔ کامل + ۹ قالب JSON المنتور + ابزارها + README + `wp-install/mr-store-elementor-plugin.zip` (آمادهٔ بارگذاری در وردپرس) |
+| `mr-store-standalone.zip` | `/downloads/mr-store-standalone.zip` | نسخهٔ استاتیک تک‌فایلی سایت (`index.html` با CSS/JS داخلی) + فیلم و پوستر هیرو + README |
+
+آدرس کامل هر فایل روی همان دامنه‌ای است که پیش‌نمایش را باز کرده‌اید (پورت ۳۰۰۰).
+
+### بازتولید آرشیوها
+
+هر دو ZIP با یک اسکریپت ساخته می‌شوند (از داخل سرویس اپ که `node_modules` دارد):
+
+```bash
+docker compose --project-name app --project-directory "$BASE44_PROJECT_ROOT" \
+  -f "$BASE44_CONFIG_ROOT/docker-compose.base44.yml" \
+  exec -T web node wordpress/tools/build-downloads.mjs
+```
+
+اسکریپت ابتدا کل پروژهٔ React را در یک فایل `index.html` مستقل بیلد می‌کند (مسیریابی hash،
+مسیرهای نسبی رسانه) و بعد هر دو ZIP را در `public/downloads/` می‌نویسد.
+
+---
+
 ## ۱. محتوای بسته
 
 ```
